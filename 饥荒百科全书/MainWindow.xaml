@@ -8323,7 +8323,7 @@
                                     </WrapPanel>
                                 </Canvas>
                             </ScrollViewer>
-                            <ScrollViewer x:Name="ScrollViewer_NaturalLeft_Plant" Grid.Column="0" Width="217" Height="604" HorizontalAlignment="Left" VerticalAlignment="Top" Template="{DynamicResource MyScrollViewer}">
+                            <ScrollViewer x:Name="ScrollViewer_NaturalLeft_Plant" Grid.Column="0" Width="217" Height="604" HorizontalAlignment="Left" VerticalAlignment="Top" Template="{DynamicResource MyScrollViewer}" Visibility="Collapsed">
                                 <Canvas x:Name="Canvas_NaturalLeft_P" Margin="0,-4,0,4" Background="#FFFAFAFA" HorizontalAlignment="Left" Width="200">
                                     <Image x:Name="NL_image_NaturalPicture_P" Source="Resources/N_flower_1.png" Height="64" Width="64" Margin="68,10,0,0"/>
                                     <TextBlock x:Name="NL_textBlock_NaturalName_P" TextWrapping="Wrap" Margin="92,80,0,0" FontSize="16" Text="花"/>
