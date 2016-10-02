@@ -1,5 +1,5 @@
 ﻿Module MyModule
-       
+
     Public PanelAlpha As Single = 0.6
 
     REM 食物全局变量
@@ -17,7 +17,7 @@
     Public F_Restrictions_6 As String = ""
     Public F_Restrictions_7 As String = ""
     Public F_Restrictions_Compare As String = ""
-    
+
     Public F_Recommend_Select_1 As String = "F_meat"
     Public F_Recommend_Select_2 As String = "F_morsel"
     Public F_Recommend_Select_3 As String = "F_egg"
@@ -79,7 +79,7 @@
     Public CS_FT_Wobster As Single = 0
 
     Public FoodIndex As Byte = 0
-    
+
     Public CS_ROG_SW_DST As SByte = 7 'DLC
     Public CS_F_name As String = "" '食物名称
 
@@ -111,7 +111,7 @@
     Public NB_RareArray(6) As String
     Public NP_ArrayIndex As Byte
     Public NP_PictureArray() As String
-    Public NP_ResourcesArray()() As String
+    Public NP_ResourcesArray(,) As String
     Public NP_ResourcesBurnt_1 As String
     Public NP_ResourcesBurnt_2 As String
     Public NP_ResourcesBurnt_3 As String
@@ -177,7 +177,7 @@
         End If
         Return GetValue
     End Function
-    
+
     REM ------根据字符串长度返回TextBlock高度------
     Public Function SetTextBlockHeight(Text As String, colLen As Integer)
         Dim TextBlockHeight As Double
