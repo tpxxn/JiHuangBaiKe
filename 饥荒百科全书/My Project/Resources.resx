@@ -3250,12 +3250,6 @@
   <data name="N_sapling_diseased" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_sapling_diseased.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="N_sapling_diseased_withered" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\N_sapling_diseased_withered.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="N_sapling_withered" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\N_sapling_withered.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="N_seaweed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_seaweed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4035,5 +4029,11 @@
   </data>
   <data name="N_wilds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_wilds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N_sapling_diseased_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N_sapling_diseased_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N_sapling_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N_sapling_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

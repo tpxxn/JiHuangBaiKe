@@ -8743,9 +8743,9 @@ Namespace My.Resources
         '''<summary>
         '''  查找 System.Drawing.Bitmap 类型的本地化资源。
         '''</summary>
-        Friend ReadOnly Property N_sapling_diseased_withered() As System.Drawing.Bitmap
+        Friend ReadOnly Property N_sapling_diseased_empty() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("N_sapling_diseased_withered", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("N_sapling_diseased_empty", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -8753,9 +8753,9 @@ Namespace My.Resources
         '''<summary>
         '''  查找 System.Drawing.Bitmap 类型的本地化资源。
         '''</summary>
-        Friend ReadOnly Property N_sapling_withered() As System.Drawing.Bitmap
+        Friend ReadOnly Property N_sapling_empty() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("N_sapling_withered", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("N_sapling_empty", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

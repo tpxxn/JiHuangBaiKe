@@ -3203,12 +3203,6 @@
     <Resource Include="Resources\N_sapling_diseased.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\N_sapling_diseased_withered.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\N_sapling_withered.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\N_seaweed.png" />
   </ItemGroup>
   <ItemGroup>
@@ -4112,6 +4106,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\N_tumbleweed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\N_sapling_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\N_sapling_diseased_empty.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
