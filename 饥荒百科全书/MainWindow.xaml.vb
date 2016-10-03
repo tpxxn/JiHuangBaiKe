@@ -11713,7 +11713,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_beach_click(sender As Object, e As RoutedEventArgs) Handles button_N_beach.Click
-        NB_Abundant({"N_palm_tree_1", "N_sapling", "N_grass", "G_flint", "N_crabbit_den", "N_sandy_pile", "G_seashell"})
+        NB_Abundant({"N_palm_tree_1", "N_sapling", "N_grass_sw", "G_flint", "N_crabbit_den", "N_sandy_pile", "G_seashell"})
         NB_Occasional({"G_rocky_turf", "N_boulder_1", "N_boulder_3", "N_limpet_rock", "N_wildbore_house"})
         NB_Rare({"N_crate_1"})
         N_Show_B("海滩", "Beach", "N_beach", "NoDLC", 0, 1, 0, "海滩是船难版常见的生物群落之一，它们一般有多种类型的资源。玩家进入世界(船难版)总会出生在海滩。晚上临近海洋的区域会被淹没，月圆之夜是潮汐最强的时候。")
@@ -11727,7 +11727,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_mangrove_bio_click(sender As Object, e As RoutedEventArgs) Handles button_N_mangrove_bio.Click
-        NB_Abundant({"N_mangrove_bio", "N_grass"})
+        NB_Abundant({"N_mangrove_bio", "N_grass_sw"})
         NB_Occasional({"N_shoal"})
         NB_Rare({"A_water_beefalo"})
         N_Show_B("红树林", "Mangrove", "N_mangrove_bio", "NoDLC", 0, 1, 0, "这里虽然只能乘船通行，然而一般还是认为是一个岛屿，这里生活着水牛，草不会枯萎。")
@@ -11741,7 +11741,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_meadow_click(sender As Object, e As RoutedEventArgs) Handles button_N_meadow.Click
-        NB_Abundant({"N_grass", "N_flower_1", "A_butterfly", "F_sweet_potato"})
+        NB_Abundant({"N_grass_sw", "N_flower_1", "A_butterfly", "F_sweet_potato"})
         NB_Occasional({"G_rocks", "G_flint", "N_beehive", "A_mandrake"})
         NB_Rare({"N_red_mushroom"})
         N_Show_B("草甸", "Meadow", "N_meadow", "NoDLC", 0, 1, 0, "富含草的生物群落，这里也是唯一能找到甘薯的地方，通常还有少量的蜂巢和曼德拉草。")
@@ -12357,81 +12357,98 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_light_flower_1_click(sender As Object, e As RoutedEventArgs) Handles button_N_light_flower_1.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("荧光草", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_light_flower_springy", "N_light_flower_springy_empty", "N_light_flower_1", "N_light_flower_empty_1", "N_light_flower_2", "N_light_flower_empty_2", "N_light_flower_3", "N_light_flower_empty_3"})
+        ReDim NP_ResourcesArray(7, 11)
+        NP_Resources(0, 0, {"G_light_bulb", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_light_bulb", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(4, 4, {"G_light_bulb", "×2", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(6, 6, {"G_light_bulb", "×3", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("荧光草", "Light Flower", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "N_light_flower_swamp", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_fern_1_click(sender As Object, e As RoutedEventArgs) Handles button_N_fern_1.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("蕨类植物", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_fern_", 10)
+        NP_Resources(10, {"G_foliage", "×1", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("蕨类植物", "Fern", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_cave_lichen_click(sender As Object, e As RoutedEventArgs) Handles button_N_cave_lichen.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("洞穴苔藓", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_cave_lichen", "N_cave_lichen_empty"})
+        ReDim NP_ResourcesArray(1, 11)
+        NP_Resources(0, 0, {"F_lichen", "×1", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("洞穴苔藓", "Cave Lichen", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_grass_sw_click(sender As Object, e As RoutedEventArgs) Handles button_N_grass_sw.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("船难草", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_grass_sw", "N_grass_empty_sw", "N_grass_dead"})
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_cut_grass_SW", "×1", "G_grass_tuft_SW", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
+        NP_Resources(1, 2, {"G_grass_tuft_SW", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
+        N_Show_P("船难草", "Grass(SW)", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_beach", "N_meadow", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_bamboo_patch_click(sender As Object, e As RoutedEventArgs) Handles button_N_bamboo_patch.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("竹子", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_bamboo_patch", "N_bamboo_patch_empty", "N_bamboo_patch_dead"})
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_bamboo_patch", "×1(           )", "G_bamboo_root", "×1(                      )", "", "", "", "", "S_machete", "", "S_shovel", "S_goldenshovel"})
+        NP_Resources(1, 2, {"G_bamboo_root", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
+        N_Show_P("竹子", "Bamboo Patch", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_jungle", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_viney_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_viney_bush.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("藤蔓丛", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_viney_bush", "N_viney_bush_empty", "N_viney_bush_dead"})
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_vine", "×1(           )", "G_viney_bush_root", "×1(                      )", "", "", "", "", "S_machete", "", "S_shovel", "S_goldenshovel"})
+        NP_Resources(1, 2, {"G_viney_bush_root", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
+        N_Show_P("藤蔓丛", "Viney Bush", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_jungle", "", "生成", "A_snake", "生成", "A_poison_snake", "", False, True)
     End Sub
 
     Private Sub button_N_seaweed_click(sender As Object, e As RoutedEventArgs) Handles button_N_seaweed.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("海藻", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_seaweed", "N_seaweed_empty"})
+        ReDim NP_ResourcesArray(1, 11)
+        NP_Resources(0, 0, {"F_seaweed", "×1", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("海藻", "Seaweed", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_ocean_shallow", "", "", "", "", "", "", True, False)
     End Sub
 
     Private Sub button_N_coffee_plant_click(sender As Object, e As RoutedEventArgs) Handles button_N_coffee_plant.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("咖啡树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_coffee_plant", "N_coffee_plant_empty", "N_coffee_plant_dead"})
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"F_coffee_beans", "×1", "G_coffee_plant", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
+        NP_Resources(1, 2, {"G_coffee_plant", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
+        N_Show_P("咖啡树", "Coffee Plant", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "", False, False)
     End Sub
 
     Private Sub button_N_elephant_cactus_click(sender As Object, e As RoutedEventArgs) Handles button_N_elephant_cactus.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("象仙人掌", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_elephant_cactus", "N_elephant_cactus_dead", "N_elephant_cactus_stump"})
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_cactus_spike", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
+        NP_Resources(2, 2, {"G_elephant_cactus_stump", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
+        N_Show_P("象仙人掌", "Elephant Cactus", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "", False, False)
     End Sub
 
     Private Sub button_N_sapling_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_sapling_diseased.Click
         NP_Picture("N_flower_", 11)
         NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("患病的树苗", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        N_Show_P("患病的树苗", "Flower", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
     End Sub
 
     Private Sub button_N_grass_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_grass_diseased.Click
         NP_Picture("N_flower_", 11)
         NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("患病的草", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        N_Show_P("患病的草", "Flower", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
     End Sub
 
     Private Sub button_N_berry_bush_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush_diseased.Click
         NP_Picture("N_flower_", 11)
         NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("患病的浆果灌木丛", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        N_Show_P("患病的浆果灌木丛", "Flower", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
     End Sub
 
     Private Sub button_N_juicy_berry_bush_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_juicy_berry_bush_diseased.Click
         NP_Picture("N_flower_", 11)
         NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("患病的蜜汁浆果丛", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        N_Show_P("患病的蜜汁浆果丛", "Flower", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
     End Sub
 
     Private Sub button_N_evergreen_click(sender As Object, e As RoutedEventArgs) Handles button_N_evergreen.Click
