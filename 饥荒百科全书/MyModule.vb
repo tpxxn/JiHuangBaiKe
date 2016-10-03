@@ -148,7 +148,6 @@
     Public G_ComponentListIndex As SByte = 0
     Public G_ComponentListIndexMax As SByte = -128
 
-
     REM ------------------注册表读写函数------------------
     Public Sub Reg_Write(ValueName As String, Value As Integer)
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\JiHuangBaiKe", ValueName, Value)

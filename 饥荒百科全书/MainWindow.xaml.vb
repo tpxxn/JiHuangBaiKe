@@ -6,7 +6,7 @@ Imports System.IO
 
 Public Class MainWindow
 
-    REM ------------------拖动窗口------------------
+#Region "拖动窗口"
     Private Const WM_SYSCOMMAND As Integer = &H112 '移动和调整都用到
     Private _HwndSource As HwndSource
 
@@ -32,9 +32,8 @@ Public Class MainWindow
         ReleaseCapture()
         SendMessage(_HwndSource.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0)
     End Sub
-    REM ------------------拖动窗口(END)------------------
+#End Region
 
-    REM ------------------程序加载------------------
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         REM 版本号
         UI_Version.Text = "v" & My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Build & "." & My.Application.Info.Version.Revision
@@ -84,6 +83,7 @@ Public Class MainWindow
 
         Dim LeftCanvas() As Canvas = {Canvas_CharacterLeft, Canvas_CharacterLeft_Wolfgang, Canvas_FoodLeft, Canvas_ScienceLeft, Canvas_CookingSimulatorLeft, Canvas_AnimalLeft, Canvas_AnimalLeft_Krampus, Canvas_AnimalLeft_Apackim_baggims, Canvas_AnimalLeft_PigKing, Canvas_AnimalLeft_Yaarctopus, Canvas_NaturalLeft_B, Canvas_NaturalLeft_P, Canvas_GoodsLeft_M, Canvas_GoodsLeft_E, Canvas_GoodsLeft_S, Canvas_GoodsLeft_A, Canvas_GoodsLeft_T, Canvas_GoodsLeft_P, Canvas_GoodsLeft_PL, Canvas_GoodsLeft_U, Canvas_GoodsLeft_C, Canvas_GoodsLeft_B, Canvas_GoodsLeft_BFT, Canvas_GoodsLeft_MIAB, Canvas_Setting}
         Dim RightWrapPanel() As WrapPanel = {WrapPanel_Character, WrapPanel_Food, WrapPanel_Science, WrapPanel_CookingSimulator, WrapPanel_Animal, WrapPanel_Natural, WrapPanel_Goods}
+#Region "背景及初始化开始"
         If RegReadBG <> "" Then
             Dim brush As New ImageBrush
             brush.ImageSource = New BitmapImage(New Uri(RegReadBG))
@@ -562,9 +562,11 @@ Public Class MainWindow
                 WrapPanel_G_component.Visibility = Visibility.Visible
                 WrapPanel_Goods.Height = 3270
         End Select
+#End Region
     End Sub
 
-    REM ------------------关闭/最小化按钮------------------
+#Region "主窗口按钮"
+    REM ------------------最小化/关闭按钮------------------
     Private Sub btn_close_click(sender As Object, e As RoutedEventArgs)
         Reg_Write("PanelAlphaValue", Setting_slider_Alpha.Value + 1)
         End
@@ -598,6 +600,7 @@ Public Class MainWindow
     Private Sub W_button_QRCode_click(sender As Object, e As RoutedEventArgs) Handles W_button_QRCode.Click
         Process.Start("http://wpa.qq.com/msgrd?v=3&uin=351765204&site=qq&menu=yes")
     End Sub
+#End Region
 
     REM ------------------跳转选择------------------
     Private Sub ButtonJump(VariableName As String, Optional FirstChange As String = "")
@@ -2589,6 +2592,7 @@ Public Class MainWindow
         End Select
     End Sub
 
+#Region "人物"
     REM ------------------左侧面板(人物)------------------
     Private Sub C_Show(C_Name As String, C_EnName As String, C_picture As String, C_Motto As String, C_Descriptions_1 As String, C_Descriptions_2 As String, C_Descriptions_3 As String, C_HealthValue As Single, C_HungerValue As Single, C_SanityValue As Single, C_DamageValue As Single, C_DLC As String, C_Introduce As String)
         REM ------------------特殊情况------------------
@@ -2813,7 +2817,9 @@ Public Class MainWindow
         End If
         checkBox_C_DLC_SW_click(Nothing, Nothing)
     End Sub
+#End Region
 
+#Region "食物"
     REM ------------------左侧面板(食谱)------------------
     Private Sub F_Show(F_Name As String, F_EnName As String, F_picture As String, F_HealthValue As Single, F_HungerValue As Single, F_SanityValue As Single, F_PerishValue As Single, F_CooktimeValue As Single, F_PriorityValue As Single, F_DLC As String, F_Image_FN_1 As String, F_TextBlock_FN_1 As String, F_Image_FN_OR As String, F_TextBlock_FN_OR As String, F_Image_FN_2 As String, F_TextBlock_FN_2 As String, F_Image_FN_3 As String, F_TextBlock_FN_3 As String, F_Restrictions_State As Short, F_Restrictions_image_1 As String, F_Restrictions_image_2 As String, F_Restrictions_image_3 As String, F_Restrictions_image_4 As String, F_Restrictions_image_5 As String, F_Restrictions_image_6 As String, F_Restrictions_image_7 As String, F_Restrictions_image_Compare As String, F_Restrictions_TextBlock_Compare As String, F_Introduce As String, ParamArray Recommend() As String)
         REM ------------------初始化------------------
@@ -5071,7 +5077,9 @@ Public Class MainWindow
     Private Sub button_button_F_Others_14_click(sender As Object, e As RoutedEventArgs) Handles button_F_Others_14.Click
         button_F_honeycomb_click(Nothing, Nothing)
     End Sub
+#End Region
 
+#Region "科技"
     REM ------------------左侧面板(科技)------------------
     Private Sub S_Show(S_Name As String, S_EnName As String, S_picture As String, S_DLC As String, S_DLC_ROG As SByte, S_DLC_SW As SByte, S_DLC_DST As SByte, S_image_Need_1 As String, S_textblock_Need_1 As String, S_image_Need_2 As String, S_textblock_Need_2 As String, S_image_Need_3 As String, S_textblock_Need_3 As String, S_Deblocking_Science As SByte, S_Deblocking_Character As String, S_Introduce As String)
         REM ------------------初始化------------------
@@ -6933,7 +6941,9 @@ Public Class MainWindow
         End If
         checkBox_S_DLC_DST_click(Nothing, Nothing)
     End Sub
+#End Region
 
+#Region "模拟"
     REM ------------------添加食材按钮-------------------
     REM ------------------食材(肉类)-------------------
     Private Sub button_CS_eel_click(sender As Object, e As RoutedEventArgs) Handles button_CS_eel.Click
@@ -8565,7 +8575,9 @@ Public Class MainWindow
         End If
         checkBox_CS_DLC_DST_click(Nothing, Nothing)
     End Sub
+#End Region
 
+#Region "生物"
     REM ------------------左侧面板(生物)------------------
     Private Sub A_Show(A_Name As String, A_EnName As String, A_picture As String, A_DLC As String, A_DLC_ROG As SByte, A_DLC_SW As SByte, A_DLC_DST As SByte, A_Health As Single, A_HealthDST As Single, A_Attack As Single, A_AttackPeriod As Single, A_AttackRange As Single, A_Speed As Single, A_SpeedRun As Single, A_Criticality As Single, A_Sanity As Single, A_ActiveAttack As Boolean, A_TeamWork As Boolean, A_Introduce As String, A_LootHeight As Integer, A_SpecialAbilityHeight As Integer)
         REM -----------------特殊生物判定---------------
@@ -11285,7 +11297,9 @@ Public Class MainWindow
         End If
         checkBox_A_DLC_DST_click(Nothing, Nothing)
     End Sub
+#End Region
 
+#Region "自然"
     REM ------------------左侧面板隐藏(自然)------------------
     Private Sub N_LeftPanel_Initialization()
         ScrollViewer_NaturalLeft_biome.Visibility = Visibility.Collapsed
@@ -11537,7 +11551,6 @@ Public Class MainWindow
     Private Sub button_NB_Rare_6_click(sender As Object, e As RoutedEventArgs) Handles button_NB_Rare_6.Click
         ButtonJump(NB_RareArray(5))
     End Sub
-
 
     Private Sub button_N_grasslands_click(sender As Object, e As RoutedEventArgs) Handles button_N_grasslands.Click
         NB_Abundant({"A_redbird", "N_flower_1"})
@@ -11814,6 +11827,14 @@ Public Class MainWindow
         button_NP_Switch_Left.IsEnabled = False
         button_NP_Switch_Right.IsEnabled = True
         NP_ArrayIndex = 0
+        NP_ResourcesBurnt_1 = ""
+        NP_ResourcesBurnt_2 = ""
+        NP_ResourcesBurnt_3 = ""
+        NP_ResourcesBurnt_4 = ""
+        NP_SpecialAbility_1 = ""
+        NP_SpecialAbility_2 = ""
+        NP_Biome_1 = ""
+        NP_Biome_2 = ""
         REM ------------------物品名字------------------
         NL_textBlock_NaturalName_P.Text = N_Name
         NL_textBlock_NaturalName_P.UpdateLayout()
@@ -11878,16 +11899,24 @@ Public Class MainWindow
                 button_NP_Tools_6.Visibility = Visibility.Collapsed
         End Select
         REM -----------------燃烧后资源------------------
+        button_NP_ResourcesBurnt_2.Visibility = Visibility.Collapsed
+        NL_textBlock_ResourcesBurnt_T_2.Visibility = Visibility.Collapsed
+        button_NP_ResourcesBurnt_3.Visibility = Visibility.Collapsed
+        NL_textBlock_ResourcesBurnt_T_3.Visibility = Visibility.Collapsed
+        button_NP_ResourcesBurnt_4.Visibility = Visibility.Collapsed
+        NL_textBlock_ResourcesBurnt_T_4.Visibility = Visibility.Collapsed
         If N_ResourcesBurnt_1 = "" Then
             N_WrapPanel_ResourcesBurnt_P.Visibility = Visibility.Collapsed
             N_WrapPanel_ResourcesBurntButton_P.Visibility = Visibility.Collapsed
         Else
+            N_WrapPanel_ResourcesBurntButton_P.Height = 49
             N_WrapPanel_ResourcesBurnt_P.Visibility = Visibility.Visible
             N_WrapPanel_ResourcesBurntButton_P.Visibility = Visibility.Visible
             image_NP_ResourcesBurnt_1.Source = Picture_Short_Name(Res_Short_Name(N_ResourcesBurnt_1))
             NL_textBlock_ResourcesBurnt_T_1.Text = N_ResourcesBurntT_1
             NP_ResourcesBurnt_1 = N_ResourcesBurnt_1
             If N_ResourcesBurnt_2 <> "" Then
+                N_WrapPanel_ResourcesBurntButton_P.Height = 83
                 button_NP_ResourcesBurnt_2.Visibility = Visibility.Visible
                 NL_textBlock_ResourcesBurnt_T_2.Visibility = Visibility.Visible
                 image_NP_ResourcesBurnt_2.Source = Picture_Short_Name(Res_Short_Name(N_ResourcesBurnt_2))
@@ -11895,6 +11924,7 @@ Public Class MainWindow
                 NP_ResourcesBurnt_2 = N_ResourcesBurnt_2
             End If
             If N_ResourcesBurnt_3 <> "" Then
+                N_WrapPanel_ResourcesBurntButton_P.Height = 117
                 button_NP_ResourcesBurnt_3.Visibility = Visibility.Visible
                 NL_textBlock_ResourcesBurnt_T_3.Visibility = Visibility.Visible
                 image_NP_ResourcesBurnt_3.Source = Picture_Short_Name(Res_Short_Name(N_ResourcesBurnt_3))
@@ -11902,6 +11932,7 @@ Public Class MainWindow
                 NP_ResourcesBurnt_3 = N_ResourcesBurnt_3
             End If
             If N_ResourcesBurnt_4 <> "" Then
+                N_WrapPanel_ResourcesBurntButton_P.Height = 151
                 button_NP_ResourcesBurnt_4.Visibility = Visibility.Visible
                 NL_textBlock_ResourcesBurnt_T_4.Visibility = Visibility.Visible
                 image_NP_ResourcesBurnt_4.Source = Picture_Short_Name(Res_Short_Name(N_ResourcesBurnt_4))
@@ -11991,13 +12022,17 @@ Public Class MainWindow
         If N_WrapPanel_BiomeButton_P.Visibility = Visibility.Visible Then
             WrapPanel_Frame_P_Height += N_WrapPanel_Biome_P.Height + N_WrapPanel_BiomeButton_P.Height
         End If
+        WrapPanel_Frame_P_Height += N_WrapPanel_DLC_P.Height + N_Canvas_RegenerateAndCombustibleAttribite_P.Height + N_WrapPanel_Introduce_P.Height
+        N_WrapPanel_Frame_P.Height = WrapPanel_Frame_P_Height
         If N_WrapPanel_Switch_P.Visibility = Visibility.Visible Then
+            Dim N_Switch_T As New Thickness()
+            N_Switch_T.Top = WrapPanel_Frame_P_Height + 135
+            N_Switch_T.Left = 10
+            N_WrapPanel_Switch_P.Margin = N_Switch_T
             WrapPanel_Frame_P_Height += 100
         End If
-        WrapPanel_Frame_P_Height += N_WrapPanel_DLC_P.Height + N_Canvas_RegenerateAndCombustibleAttribite_P.Height + N_WrapPanel_Introduce_P.Height 
-        N_WrapPanel_Frame_P.Height = WrapPanel_Frame_P_Height
-        If N_WrapPanel_Frame_P.Height + 135 > 604 Then
-            Canvas_NaturalLeft_P.Height = N_WrapPanel_Frame_P.Height + 135
+        If WrapPanel_Frame_P_Height + 135 > 604 Then
+            Canvas_NaturalLeft_P.Height = WrapPanel_Frame_P_Height + 135
         Else
             Canvas_NaturalLeft_P.Height = 604
         End If
@@ -12095,10 +12130,8 @@ Public Class MainWindow
         For i = 0 To Num - 1
             NP_PictureArray(i) = Name & i + 1
         Next
-        For i = Num To Num_2 - 1
-            For j = 1 To Num_2
-                NP_PictureArray(i) = Name_2 & j
-            Next
+        For i = 0 To Num_2 - 1
+            NP_PictureArray(i + Num) = Name_2 & i + 1
         Next
     End Sub
 
@@ -12108,15 +12141,11 @@ Public Class MainWindow
         For i = 0 To Num - 1
             NP_PictureArray(i) = Name & i + 1
         Next
-        For i = Num To Num_2 - 1
-            For j = 1 To Num_2
-                NP_PictureArray(i) = Name_2 & j
-            Next
+        For i = 0 To Num_2 - 1
+            NP_PictureArray(i + Num) = Name_2 & i + 1
         Next
-        For i = Num_2 To Num_3 - 1
-            For j = 1 To Num_3
-                NP_PictureArray(i) = Name_3 & j
-            Next
+        For i = 0 To Num_3 - 1
+            NP_PictureArray(i + Num + Num_2) = Name_3 & i + 1
         Next
     End Sub
 
@@ -12198,7 +12227,11 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_NP_Resources_3_click(sender As Object, e As RoutedEventArgs) Handles button_NP_Resources_3.Click
-        ButtonJump(NP_ResourcesArray(NP_ArrayIndex, 4))
+        If NP_ResourcesArray(NP_ArrayIndex, 4) = "F_coconut" Then
+            ButtonJump(NP_ResourcesArray(NP_ArrayIndex, 4), "G")
+        Else
+            ButtonJump(NP_ResourcesArray(NP_ArrayIndex, 4))
+        End If
     End Sub
 
     Private Sub button_NP_Resources_4_click(sender As Object, e As RoutedEventArgs) Handles button_NP_Resources_4.Click
@@ -12476,119 +12509,152 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_evergreen_click(sender As Object, e As RoutedEventArgs) Handles button_N_evergreen.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("常青树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_evergreen_", 4)
+        ReDim NP_ResourcesArray(3, 11)
+        NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_log", "×2", "G_pine_cone", "×1", "", "", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_log", "×3", "G_pine_cone", "×2", "", "", "", "", "", "", "", ""})
+        N_Show_P("常青树", "Evergreen", "NoDLC", 1, 1, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_pine_cone", "×1(一定几率)", "", "", "N_grasslands", "N_forest", "生成", "A_treeguard", "", "", "", True, True)
     End Sub
 
     Private Sub button_N_lumpy_evergreen_click(sender As Object, e As RoutedEventArgs) Handles button_N_lumpy_evergreen.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("粗壮常青树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_lumpy_evergreen_", 3)
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_log", "×2", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_log", "×3", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("粗壮常青树", "Lumpy Evergreen", "NoDLC", 1, 1, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_forest", "", "生成", "A_treeguard", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_birchnut_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_birchnut_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("桦树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_birchnut_tree_", 3, "N_birchnut_tree_old_", 3)
+        ReDim NP_ResourcesArray(5, 11)
+        NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_log", "×2", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_log", "×3", "G_birchnut", "×2", "", "", "", "", "", "", "", ""})
+        NP_Resources(3, 3, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(4, 4, {"G_log", "×2", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(5, 5, {"G_log", "×3", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("桦树", "Birchnut Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_birchnut", "×1(极小几率)", "", "", "N_grasslands", "N_deciduous_forest", "生成", "A_poison_birchnut_trees", "", "", "", True, True)
     End Sub
 
     Private Sub button_N_totally_normal_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_totally_normal_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("完全正常的树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_totally_normal_tree"})
+        NP_Resources(1, {"G_living_log", "×2", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("完全正常的树", "Totally Normal Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_forest", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_spiky_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_spiky_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("针叶树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_spiky_tree")
+        NP_Resources(1, {"G_twigs", "×1", "G_log", "×1(20%)", "", "", "", "", "", "", "", ""})
+        N_Show_P("针叶树", "Spiky Tree", "NoDLC", 1, 0, 1, "Normal", "G_twigs", "×1", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_log", "×1(极小几率)", "N_marsh", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_blue_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_blue_mushtree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("蓝色蘑菇树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_blue_mushtree", "N_blue_mushtree_blooming"})
+        ReDim NP_ResourcesArray(1, 11)
+        NP_Resources(0, 1, {"G_log", "×1", "F_blue_cap", "×1", "", "", "", "", "", "", "", ""})
+        N_Show_P("蓝色蘑菇树", "Blue Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_green_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_green_mushtree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("绿色蘑菇树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_green_mushtree", "N_green_mushtree_blooming"})
+        ReDim NP_ResourcesArray(1, 11)
+        NP_Resources(0, 1, {"G_log", "×1", "F_green_cap", "×1", "", "", "", "", "", "", "", ""})
+        N_Show_P("绿色蘑菇树", "Green Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_red_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_red_mushtree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("红色蘑菇树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_red_mushtree", "N_red_mushtree_blooming"})
+        ReDim NP_ResourcesArray(1, 11)
+        NP_Resources(0, 1, {"G_log", "×1", "F_red_cap", "×1", "", "", "", "", "", "", "", ""})
+        N_Show_P("红色蘑菇树", "Red Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_webbed_blue_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_webbed_blue_mushtree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("长满网的蓝色蘑菇树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_webbed_blue_mushtree"})
+        NP_Resources(1, {"G_log", "×1", "G_silk", "×1", "G_silk", "×1(30%)", "G_silk", "×1(30%)", "", "", "", ""})
+        N_Show_P("长满网的蓝色蘑菇树", "Webbed Blue Mushtree", "DST", 0, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "生成", "A_dangling_depth_dweller", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_cave_banana_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_cave_banana_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("洞穴香蕉树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_cave_banana_tree"})
+        NP_Resources(1, {"F_banana", "×1", "G_log", "×1", "G_twigs", "×2", "", "", "", "", "", ""})
+        N_Show_P("洞穴香蕉树", "Cave Banana Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_village", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_palm_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_palm_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("椰子树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_palm_tree_", 3)
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_log", "×1", "G_palm_leaf", "×1", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_log", "×2", "G_palm_leaf", "×1", "", "", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_log", "×2", "G_palm_leaf", "×1", "F_coconut", "×1", "", "", "", "", "", ""})
+        N_Show_P("椰子树", "Palm Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_beach", "", "生成", "A_palm_treeguard", "", "", "", True, True)
     End Sub
 
     Private Sub button_N_jungle_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_jungle_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("丛林树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_jungle_tree_", 3)
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_log", "×2", "G_jungle_tree_seed", "×1", "F_egg", "×1(50%)", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_log", "×3", "G_jungle_tree_seed", "×2", "F_egg", "×1(25%)", "F_banana", "×1(25%)", "", "", "", ""})
+        N_Show_P("丛林树", "Jungle Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_jungle", "", "生成", "A_snake", "生成", "A_poison_snake", "", True, True)
     End Sub
 
     Private Sub button_N_mangrove_click(sender As Object, e As RoutedEventArgs) Handles button_N_mangrove.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("红树林", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_mangrove_", 3)
+        ReDim NP_ResourcesArray(2, 11)
+        NP_Resources(0, 0, {"G_log", "×1", "G_twigs", "×1", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_log", "×1", "G_twigs", "×2", "", "", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_log", "×2", "G_twigs", "×3", "", "", "", "", "", "", "", ""})
+        N_Show_P("红树林", "Mangrove", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_mangrove_bio", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_regular_jungle_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_regular_jungle_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("正常的丛林树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_regular_jungle_tree"})
+        NP_Resources(1, {"G_living_log", "×2", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("正常的丛林树", "Regular Jungle Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_jungle", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_burnt_ash_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_burnt_ash_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("烧焦的灰树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_burnt_ash_tree"})
+        NP_Resources(1, {"G_ash", "×1", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("烧焦的灰树", "Burnt Ash Tree", "SW", 0, 1, 0, "Normal", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "", False, False)
     End Sub
 
     Private Sub button_N_brainy_sprout_click(sender As Object, e As RoutedEventArgs) Handles button_N_brainy_sprout.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("聪明芽", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture({"N_brainy_sprout"})
+        NP_Resources(1, {"F_brainy_matter", "×1", "S_limestone", "×2(           )", "", "", "", "", "", "", "S_hammer", ""})
+        N_Show_P("聪明芽", "Brainy Sprout", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_coral_reef_bio", "", "+25精神/分", "", "发光", "", "", False, False)
     End Sub
 
     Private Sub button_N_twiggy_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_twiggy_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("多枝的树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_twiggy_tree_diseased_", 4)
+        ReDim NP_ResourcesArray(3, 11)
+        NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_twigs", "×1", "G_log", "×2", "G_twiggy_tree_cone", "×1", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_twigs", "×2", "G_log", "×3", "G_twiggy_tree_cone", "×2", "", "", "", "", "", ""})
+        N_Show_P("多枝的树", "Twiggy Tree", "DST", 0, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_twigs", "×1(一定几率)", "", "", "N_forest", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_twiggy_tree_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_twiggy_tree_diseased.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("患病的多枝的树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_twiggy_tree_", 4)
+        ReDim NP_ResourcesArray(3, 11)
+        NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_twigs", "×1", "G_log", "×2", "G_twiggy_tree_cone", "×1", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_twigs", "×2", "G_log", "×3", "G_twiggy_tree_cone", "×2", "", "", "", "", "", ""})
+        N_Show_P("患病的多枝的树", "Diseased Twiggy Tree", "DST", 0, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_twigs", "×1(一定几率)", "", "", "N_forest", "", "", "", "", "", "", False, True)
     End Sub
 
     Private Sub button_N_petrified_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_petrified_tree.Click
-        NP_Picture("N_flower_", 11)
-        NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("石化树", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", True, True)
+        NP_Picture("N_petrified_tree_", 4)
+        ReDim NP_ResourcesArray(3, 11)
+        NP_Resources(0, 3, {"G_flint", "×1", "G_nitre", "×1", "G_rocks", "×1", "", "", "", "", "", ""})
+        N_Show_P("石化树", "Petrified Tree", "DST", 0, 0, 1, "PetrifiedTree", "", "", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "", True, False)
     End Sub
+#End Region
 
+#Region "物品"
     REM ------------------左侧面板隐藏(物品)------------------
     Private Sub G_LeftPanel_Initialization()
         ScrollViewer_GoodsLeft_Material.Visibility = Visibility.Collapsed
@@ -16403,8 +16469,9 @@ Public Class MainWindow
         End If
         checkBox_G_DLC_DST_click(Nothing, Nothing)
     End Sub
+#End Region
 
-    REM --------------------设置面板--------------------
+#Region "设置"
     Private Sub Se_button_CreateShortCut_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Se_button_CreateShortCut.Click
         ' 使用COM导入库
         Dim wsh As New IWshShell_Class
@@ -16512,5 +16579,5 @@ Public Class MainWindow
             RightWrapPanel(i).Background.Opacity = PanelAlpha
         Next
     End Sub
-
+#End Region
 End Class

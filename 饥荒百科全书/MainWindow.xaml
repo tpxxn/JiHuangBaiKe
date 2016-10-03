@@ -7487,12 +7487,6 @@
                                                 <TextBlock Text="猪舍" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
-                                        <Button x:Name="button_N_pig_torch" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_pig_torch.png" Width="64" Height="64" />
-                                                <TextBlock Text="猪头火炬" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
                                         <Button x:Name="button_N_spider_den" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_spider_den.png" Width="64" Height="64" />
@@ -7737,6 +7731,12 @@
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_obelisk_1.png" Width="64" Height="64" />
                                                 <TextBlock Text="方尖碑" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_pig_torch" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_pig_torch.png" Width="64" Height="64" />
+                                                <TextBlock Text="猪头火炬" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_N_pig_head" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
@@ -8191,37 +8191,37 @@
                                             <TextBlock x:Name="NL_textBlock_Abundant_B" TextWrapping="Wrap" Text="富含" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="N_WrapPanel_AbundantButton_B" Height="44" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition">
-                                            <Button x:Name="button_NB_Abundant_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Abundant_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Abundant_1" Source="Resources/A_redbird.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Abundant_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Abundant_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Abundant_2" Source="Resources/N_flower_1.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Abundant_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_NB_Abundant_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Abundant_3" Source="Resources/S_healing_salve.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Abundant_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_NB_Abundant_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Abundant_4" Source="Resources/S_healing_salve.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Abundant_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_NB_Abundant_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Abundant_5" Source="Resources/S_healing_salve.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Abundant_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_NB_Abundant_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Abundant_6" Source="Resources/S_healing_salve.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Abundant_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_NB_Abundant_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Abundant_7" Source="Resources/S_healing_salve.png" Height="32"/>
                                                 </StackPanel>
@@ -8231,67 +8231,67 @@
                                             <TextBlock x:Name="NL_textBlock_Occasional_B" TextWrapping="Wrap" Text="偶尔" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="N_WrapPanel_OccasionalButton_B" Height="112" Width="180">
-                                            <Button x:Name="button_NB_Occasional_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_1" Source="Resources/G_flint.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_2" Source="Resources/F_carrot.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_3" Source="Resources/N_berry_bush_1.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_4" Source="Resources/N_evergreen_1.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_5" Source="Resources/N_grass.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_6" Source="Resources/N_sapling.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_7" Source="Resources/A_bee.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_8" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_8" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_8" Source="Resources/N_beehive.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_9" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_9" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_9" Source="Resources/A_butterfly.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_10" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_10" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_10" Source="Resources/A_fireflies.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_11" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_11" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_11" Source="Resources/N_pond.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_12" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_12" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_12" Source="Resources/A_rabbit.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Occasional_13" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Occasional_13" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Occasional_13" Source="Resources/N_rabbit_hole.png" Height="32"/>
                                                 </StackPanel>
@@ -8301,32 +8301,32 @@
                                             <TextBlock x:Name="NL_textBlock_Rare_B" TextWrapping="Wrap" Text="稀有" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="N_WrapPanel_RareButton_B" Height="44" Width="180">
-                                            <Button x:Name="button_NB_Rare_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Rare_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Rare_1" Source="Resources/A_spider.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Rare_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Rare_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Rare_2" Source="Resources/N_spider_den.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Rare_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Rare_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Rare_3" Source="Resources/N_red_mushroom.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Rare_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Rare_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Rare_4" Source="Resources/A_killer_bee.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Rare_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_NB_Rare_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Rare_5" Source="Resources/N_killer_bee_hive.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_NB_Rare_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_NB_Rare_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_NB_Rare_6" Source="Resources/S_healing_salve.png" Height="32"/>
                                                 </StackPanel>
@@ -8506,50 +8506,50 @@
                                         <WrapPanel x:Name="N_WrapPanel_Introduce_P" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
                                             <TextBlock x:Name="TextBlock_NP_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
-                                        <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="100" Width="180" Margin="0">
-                                            <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="9,30,0,0">
-                                                <Button.Style>
-                                                    <Style TargetType="{x:Type Button}">
-                                                        <Setter Property="Template">
-                                                            <Setter.Value>
-                                                                <ControlTemplate TargetType="{x:Type Button}">
-                                                                    <Image x:Name="TabItem" Source="Resources/B_SwitchLeft_1.png" />
-                                                                    <ControlTemplate.Triggers>
-                                                                        <Trigger Property="IsMouseOver" Value="True">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                        <Trigger Property="IsEnabled" Value="False">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                    </ControlTemplate.Triggers>
-                                                                </ControlTemplate>
-                                                            </Setter.Value>
-                                                        </Setter>
-                                                    </Style>
-                                                </Button.Style>
-                                            </Button>
-                                            <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="74,30,0,0">
-                                                <Button.Style>
-                                                    <Style TargetType="{x:Type Button}">
-                                                        <Setter Property="Template">
-                                                            <Setter.Value>
-                                                                <ControlTemplate TargetType="{x:Type Button}">
-                                                                    <Image x:Name="TabItem" Source="Resources/B_SwitchRight_1.png" />
-                                                                    <ControlTemplate.Triggers>
-                                                                        <Trigger Property="IsMouseOver" Value="True">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                        <Trigger Property="IsEnabled" Value="False">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                    </ControlTemplate.Triggers>
-                                                                </ControlTemplate>
-                                                            </Setter.Value>
-                                                        </Setter>
-                                                    </Style>
-                                                </Button.Style>
-                                            </Button>
-                                        </WrapPanel>
+                                    </WrapPanel>
+                                    <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="100" Width="180" Margin="0" Canvas.Left="0" Canvas.Top="0">
+                                        <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="9,30,0,0">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Image x:Name="TabItem" Source="Resources/B_SwitchLeft_1.png" />
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                        <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="74,30,0,0">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Image x:Name="TabItem" Source="Resources/B_SwitchRight_1.png" />
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
                                     </WrapPanel>
                                 </Canvas>
                             </ScrollViewer>
