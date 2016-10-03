@@ -10803,6 +10803,156 @@ Namespace My.Resources
         '''<summary>
         '''  查找 System.Drawing.Bitmap 类型的本地化资源。
         '''</summary>
+        Friend ReadOnly Property S_ico_ancient() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_ancient", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_books() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_books", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_dress() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_dress", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_fight() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_fight", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_food() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_food", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_light() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_light", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_magic() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_magic", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_nautical() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_nautical", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_refine() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_refine", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_science() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_science", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_shadow() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_shadow", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_structures() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_structures", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_survival() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_survival", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_tools() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_tools", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property S_ico_volcanic() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("S_ico_volcanic", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
         Friend ReadOnly Property S_improved_farm() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("S_improved_farm", resourceCulture)

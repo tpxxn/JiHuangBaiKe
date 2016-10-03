@@ -121,7 +121,7 @@
                             </Style>
                         </Button.Style>
                     </Button>
-                    <TextBlock x:Name="UI_Version" TextWrapping="Wrap" Text="v0.7.1.3" FontSize="20" Foreground="White" Canvas.Top="611" Canvas.Left="-160" />
+                    <TextBlock x:Name="UI_Version" TextWrapping="Wrap" Text="v0.0.0.0" FontSize="20" Foreground="White" Canvas.Top="611" Canvas.Left="-160" />
                 </Canvas>
                 <TabControl x:Name="LefttabControl" Height="658" Width="1080" TabStripPlacement="Left" BorderThickness="0" Background="{x:Null}" Margin="0" d:LayoutOverrides="Width, Height">
 
@@ -2067,22 +2067,22 @@
                                     <TextBlock x:Name="TextBlock_F_PriorityValue" TextWrapping="Wrap" Text="10" Margin="165,265,0,0" />
                                     <!--烹饪需求-->
                                     <TextBlock x:Name="TextBlock_F_CooKRequirements" TextWrapping="Wrap" Text="烹饪需求 :" Canvas.Left="10" Canvas.Top="310"/>
-                                    <Button x:Name="button_F_FoodNeed_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="299">
+                                    <Button x:Name="button_F_FoodNeed_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="299">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_FoodNeed_1" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_FoodNeed_or" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="117" Canvas.Top="299" Visibility="Collapsed">
+                                    <Button x:Name="button_F_FoodNeed_or" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="117" Canvas.Top="299" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_FoodNeed_or" Source="Resources/P_NULL.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_FoodNeed_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="331">
+                                    <Button x:Name="button_F_FoodNeed_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="331">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_FoodNeed_2" Source="Resources/FC_Eggs.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_FoodNeed_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="363" Visibility="Collapsed">
+                                    <Button x:Name="button_F_FoodNeed_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="363" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_FoodNeed_3" Source="Resources/P_NULL.png" Height="32"/>
                                         </StackPanel>
@@ -2098,42 +2098,42 @@
                                     <TextBlock x:Name="FL_TextBlock_Restrictions_LessThanOne_1" TextWrapping="Wrap" Text="最多一个" Canvas.Left="70" Canvas.Top="410" Visibility="Collapsed"/>
                                     <TextBlock x:Name="FL_TextBlock_Restrictions_LessThanOne_2" TextWrapping="Wrap" Text="最多一个" Canvas.Left="70" Canvas.Top="442" Visibility="Collapsed"/>
                                     <TextBlock x:Name="FL_TextBlock_Restrictions_Compare" TextWrapping="Wrap" Canvas.Left="107" Canvas.Top="442" Visibility="Collapsed"/>
-                                    <Button x:Name="button_F_Restrictions_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="82.6" Canvas.Top="400">
+                                    <Button x:Name="button_F_Restrictions_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="82.6" Canvas.Top="400">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_1" Source="Resources/FC_Vegetables.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_Restrictions_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="114.6" Canvas.Top="400" Visibility="Collapsed">
+                                    <Button x:Name="button_F_Restrictions_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="114.6" Canvas.Top="400" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_2" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_Restrictions_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="146.6" Canvas.Top="400" Visibility="Collapsed">
+                                    <Button x:Name="button_F_Restrictions_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="146.6" Canvas.Top="400" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_3" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_Restrictions_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="82.6" Canvas.Top="432" Visibility="Collapsed">
+                                    <Button x:Name="button_F_Restrictions_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="82.6" Canvas.Top="432" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_4" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_Restrictions_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="114.6" Canvas.Top="432" Visibility="Collapsed">
+                                    <Button x:Name="button_F_Restrictions_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="114.6" Canvas.Top="432" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_5" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_Restrictions_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="122" Canvas.Top="400" Visibility="Collapsed">
+                                    <Button x:Name="button_F_Restrictions_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="122" Canvas.Top="400" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_6" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_Restrictions_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="122" Canvas.Top="432" Visibility="Collapsed">
+                                    <Button x:Name="button_F_Restrictions_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="122" Canvas.Top="432" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_7" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_Restrictions_Compare" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="69" Canvas.Top="432" Visibility="Collapsed">
+                                    <Button x:Name="button_F_Restrictions_Compare" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="69" Canvas.Top="432" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_Restrictions_Compare" Source="Resources/FC_Meats.png" Height="32"/>
                                         </StackPanel>
@@ -2189,12 +2189,12 @@
                                     <Image x:Name="FL_image_FoodAttribute_2" Source="Resources/FC_Monster_Meats.png" Height="32" Width="32" Canvas.Left="69" Canvas.Top="282" Visibility="Collapsed"/>
                                     <TextBlock x:Name="FL_TextBlock_FoodAttribute_Fish" TextWrapping="Wrap" Canvas.Left="166" Canvas.Top="260" Text="×1" Visibility="Collapsed"/>
                                     <TextBlock x:Name="TextBlock_F_FoodValue" TextWrapping="Wrap" Text="食物属性 :" Canvas.Left="10" Canvas.Top="260" Visibility="Collapsed"/>
-                                    <Button x:Name="button_F_FoodAttribute_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="249" Visibility="Collapsed">
+                                    <Button x:Name="button_F_FoodAttribute_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="68" Canvas.Top="249" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_FoodAttribute_1" Source="Resources/P_NULL.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_F_FoodAttribute_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="132" Canvas.Top="249" Visibility="Collapsed">
+                                    <Button x:Name="button_F_FoodAttribute_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Left="132" Canvas.Top="249" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="FL_image_FoodAttribute_Fish" Source="Resources/FC_Fishes.png" Height="32"/>
                                         </StackPanel>
@@ -2248,8 +2248,9 @@
                             </WrapPanel>
                             <ScrollViewer x:Name="ScrollViewer_ScienceRight" Grid.Column="1" Width="700" Height="554" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,52,0,0" Template="{DynamicResource MyScrollViewer}">
                                 <WrapPanel x:Name="WrapPanel_Science" Height="3260" Width="680" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#99FFFFFF">
-                                    <TextBlock TextWrapping="Wrap" Text="工具" FontSize="20" Canvas.Left="10" Canvas.Top="10" Width="680"/>
-                                    <WrapPanel x:Name="WrapPanel_S_Tools" Height="170" Width="680" Margin="0,10,0,0">
+                                    <TextBlock TextWrapping="Wrap" Text="工具" FontSize="20" Canvas.Left="10" Canvas.Top="10" Margin="0" Height="25"/>
+                                    <Image Source="Resources/S_ico_tools.png" Width="640" Height="32" HorizontalAlignment="Left" />
+                                    <WrapPanel x:Name="WrapPanel_S_Tools" Height="170" Width="680" Margin="0">
                                         <Button x:Name="button_S_axe" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/S_axe.png" Width="48" Height="48" />
@@ -2354,7 +2355,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="照明" FontSize="20" Canvas.Left="10" Canvas.Top="440" Width="676" Margin="0,10,0,0"/>
+                                    <TextBlock TextWrapping="Wrap" Text="照明" FontSize="20" Canvas.Left="10" Canvas.Top="440" Margin="0" Height="25"/>
+                                    <Image Source="Resources/S_ico_light.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_light" Height="170" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_campfire" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -2449,7 +2451,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock x:Name="TextBlock_S_nautical" TextWrapping="Wrap" Text="航海" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock x:Name="TextBlock_S_nautical" TextWrapping="Wrap" Text="航海" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image x:Name="Image_S_nautical" Source="Resources/S_ico_nautical.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_nautical" Height="250" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_surfboard" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -2592,7 +2595,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="生存" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="生存" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_survival.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_survival" Height="250" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_chef_pouch" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -2799,7 +2803,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="食物" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="食物" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_food.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_food" Height="90" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_mussel_stick" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -2850,7 +2855,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="科学" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="科学" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_science.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_science" Height="90" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_science_machine" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -2923,7 +2929,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="战斗" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="战斗" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_fight.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_fight" Height="250" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_battle_spear" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3093,7 +3100,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="建筑" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="建筑" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_structures.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_structures" Height="250" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_spider_eggs" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3253,7 +3261,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="合成" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="合成" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_refine.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_refine" Height="170" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_rope" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3328,7 +3337,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="魔法" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="魔法" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_magic.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_magic" Height="170" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_abigails_flower" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3468,7 +3478,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="衣物" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="衣物" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_dress.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_dress" Height="250" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_sewing_kit" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3667,7 +3678,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock x:Name="TextBlock_S_ancient" TextWrapping="Wrap" Text="远古" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock x:Name="TextBlock_S_ancient" TextWrapping="Wrap" Text="远古" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image x:Name="Image_S_ancient" Source="Resources/S_ico_ancient.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_ancient" Height="170" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_thulecite" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3759,7 +3771,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="书" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock TextWrapping="Wrap" Text="书" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image Source="Resources/S_ico_books.png" Width="660" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_books" Height="90" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_birds_of_the_world" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3803,7 +3816,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock x:Name="TextBlock_S_shadow" TextWrapping="Wrap" Text="暗影巫术" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock x:Name="TextBlock_S_shadow" TextWrapping="Wrap" Text="暗影巫术" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image x:Name="Image_S_shadow" Source="Resources/S_ico_shadow.png" Width="600" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_shadow" Height="90" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_codex_umbra" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3838,7 +3852,8 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock x:Name="TextBlock_S_volcano" TextWrapping="Wrap" Text="火山" FontSize="20" Width="676" Margin="0,10,0,0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+                                    <TextBlock x:Name="TextBlock_S_volcano" TextWrapping="Wrap" Text="火山" FontSize="20" Margin="0" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Height="25"/>
+                                    <Image x:Name="Image_S_volcano" Source="Resources/S_ico_volcanic.png" Width="640" Height="32" HorizontalAlignment="Left" />
                                     <WrapPanel x:Name="WrapPanel_S_volcano" Height="90" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_S_obsidian_machete" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
@@ -3901,19 +3916,19 @@
                                 <TextBlock x:Name="SL_textBlock_ScienceName" TextWrapping="Wrap" Margin="84,80,0,0" FontSize="16" Text="斧头"/>
                                 <TextBlock x:Name="SL_textBlock_ScienceEnName" TextWrapping="Wrap" Margin="85.8,100,0,0" FontSize="16" Text="Axe"/>
                                 <Image x:Name="SL_image_S_DLC" Height="35" Width="32" Canvas.Left="158" Canvas.Top="10"/>
-                                <Button x:Name="button_S_Science_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,135,0,0">
+                                <Button x:Name="button_S_Science_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,135,0,0">
                                     <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                         <Image x:Name="SL_image_ScienceNeed_1" Source="Resources/G_twigs.png" Height="32"/>
                                     </StackPanel>
                                 </Button>
                                 <TextBlock x:Name="SL_TextBlock_ScienceNeed_1" TextWrapping="Wrap" Text="×1" Canvas.Left="43" Canvas.Top="145.333"/>
-                                <Button x:Name="button_S_Science_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="71,135,0,0">
+                                <Button x:Name="button_S_Science_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="71,135,0,0">
                                     <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                         <Image x:Name="SL_image_ScienceNeed_2" Source="Resources/G_flint.png" Height="32" HorizontalAlignment="Left" Width="32"/>
                                     </StackPanel>
                                 </Button>
                                 <TextBlock x:Name="SL_TextBlock_ScienceNeed_2" TextWrapping="Wrap" Text="×1" Canvas.Left="105" Canvas.Top="145.333"/>
-                                <Button x:Name="button_S_Science_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="133,135,0,0" Visibility="Collapsed">
+                                <Button x:Name="button_S_Science_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="133,135,0,0" Visibility="Collapsed">
                                     <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                         <Image x:Name="SL_image_ScienceNeed_3" Height="32"/>
                                     </StackPanel>
@@ -5809,97 +5824,97 @@
                                     <TextBlock x:Name="AL_textBlock_A_DLC_3" TextWrapping="Wrap" Text="DST" Margin="205,415,0,0"/>
                                     <!--战利品-->
                                     <TextBlock x:Name="TextBlock_A_Loot" TextWrapping="Wrap"  Width="240" Text="战利品：" Margin="10,440,0,0"/>
-                                    <Button x:Name="button_A_LootP_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,459,0,0">
+                                    <Button x:Name="button_A_LootP_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,459,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_1" Source="Resources/F_morsel.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_1" TextWrapping="Wrap" Text="×1" Margin="43,469,0,0"/>
                                     <TextBlock x:Name="LootTrapOrBugNet_1" TextWrapping="Wrap" Canvas.Left="43" Canvas.Top="469" Text="(            )" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootTrapOrBugNetP_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,459,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootTrapOrBugNetP_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,459,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootTrapOrBugNetP_1" Source="Resources/F_morsel.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_A_LootP_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,491,0,0">
+                                    <Button x:Name="button_A_LootP_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,491,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_2" Source="Resources/A_rabbit.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_2" TextWrapping="Wrap" Text="×1" Margin="43,501,0,0" Visibility="Collapsed"/>
                                     <TextBlock x:Name="LootTrapOrBugNet_2" TextWrapping="Wrap" Canvas.Left="43" Canvas.Top="501" Text="(            )"/>
-                                    <Button x:Name="button_A_LootTrapOrBugNetP_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,491,0,0">
+                                    <Button x:Name="button_A_LootTrapOrBugNetP_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,491,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootTrapOrBugNetP_2" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_A_LootP_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,523,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,523,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_3" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_3" TextWrapping="Wrap" Text="×1" Margin="43,533,0,0" Visibility="Collapsed"/>
                                     <TextBlock x:Name="LootTrapOrBugNet_3" TextWrapping="Wrap" Canvas.Left="43" Canvas.Top="533" Text="(            )" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootTrapOrBugNetP_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,523,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootTrapOrBugNetP_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,523,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootTrapOrBugNetP_3" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_A_LootP_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,555,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,555,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_4" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_4" TextWrapping="Wrap" Text="×1" Margin="43,565,0,0" Visibility="Collapsed"/>
                                     <TextBlock x:Name="LootTrapOrBugNet_4" TextWrapping="Wrap" Canvas.Left="43" Canvas.Top="565" Text="(            )" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootTrapOrBugNetP_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,555,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootTrapOrBugNetP_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,555,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootTrapOrBugNetP_4" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_A_LootP_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,587,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,587,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_5" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_5" TextWrapping="Wrap" Text="×1" Margin="43,597,0,0" Visibility="Collapsed"/>
                                     <TextBlock x:Name="LootTrapOrBugNet_5" TextWrapping="Wrap" Canvas.Left="43" Canvas.Top="597" Text="(            )" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootTrapOrBugNetP_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,587,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootTrapOrBugNetP_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="51,587,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootTrapOrBugNetP_5" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_A_LootP_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,619,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,619,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_6" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_6" TextWrapping="Wrap" Text="×1" Margin="43,629,0,0" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootP_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,651,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,651,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_7" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_7" TextWrapping="Wrap" Text="×1" Margin="43,661,0,0" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootP_8" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,683,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_8" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,683,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_8" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_8" TextWrapping="Wrap" Text="×1" Margin="43,693,0,0" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootP_9" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,715,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_9" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,715,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_9" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_9" TextWrapping="Wrap" Text="×1" Margin="43,725,0,0" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootP_10" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,747,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_10" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,747,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_10" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="LootNumT_10" TextWrapping="Wrap" Text="×1" Margin="43,757,0,0" Visibility="Collapsed"/>
-                                    <Button x:Name="button_A_LootP_11" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,779,0,0" Visibility="Collapsed">
+                                    <Button x:Name="button_A_LootP_11" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,779,0,0" Visibility="Collapsed">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="LootP_11" Source="Resources/S_trap.png" Height="32"/>
                                         </StackPanel>
@@ -6208,350 +6223,350 @@
                                     <TextBlock x:Name="TextBlock_A_PigKing_Title" TextWrapping="Wrap" Text="金块交换表" Margin="82,270,0,0" FontSize="20"/>
                                     <TextBlock x:Name="TextBlock_A_PigKing_1" TextWrapping="Wrap" Text="1" Canvas.Left="10" Canvas.Top="300" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_1" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="295"/>
-                                    <Button x:Name="button_AL_image_PigKing_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_1" Source="Resources/F_egg.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_2" Source="Resources/F_cooked_egg.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_3" Source="Resources/F_morsel.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_4" Source="Resources/F_cooked_morsel.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_5" Source="Resources/F_meat.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_6" Source="Resources/F_cooked_meat.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_7" Source="Resources/F_drumstick.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_8" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="233,324.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_8" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="233,324.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_8" Source="Resources/F_fried_drumstick.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_9" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_9" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_9" Source="Resources/F_leafy_meat.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_10" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_10" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_10" Source="Resources/F_cooked_leafy_meat.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_11" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_11" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_11" Source="Resources/F_fish.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_12" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_12" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_12" Source="Resources/F_cooked_fish.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_13" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_13" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_13" Source="Resources/F_batilisk_wing.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_14" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_14" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_14" Source="Resources/F_cooked_batilisk_wing.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_15" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_15" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_15" Source="Resources/F_koalefant_trunk.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_16" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="233,356.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_16" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="233,356.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_16" Source="Resources/F_winter_koalefant_trunk.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_17" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,388.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_17" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,388.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_17" Source="Resources/F_koalefant_trunk_steak.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_18" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,388.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_18" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,388.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_18" Source="Resources/F_small_jerky.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_19" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,388.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_19" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,388.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_19" Source="Resources/F_jerky.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_20" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,388.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_20" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,388.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_20" Source="Resources/F_monster_jerky.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_21" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,388.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_21" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,388.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_21" Source="Resources/G_pig_skin.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_22" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,388.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_22" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,388.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_22" Source="Resources/G_slurper_pelt.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_23" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,388.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_23" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,388.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_23" Source="Resources/T_sea_worther.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_2" TextWrapping="Wrap" Text="2" Canvas.Left="10" Canvas.Top="426.4" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_2" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="421.4"/>
-                                    <Button x:Name="button_AL_image_PigKing_24" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,450.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_24" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,450.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_24" Source="Resources/G_bunny_puff.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_25" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,450.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_25" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,450.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_25" Source="Resources/T_second_hand_dentures.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_26" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,450.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_26" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,450.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_26" Source="Resources/T_sextant.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_27" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,450.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_27" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,450.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_27" Source="Resources/T_toy_boat.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_28" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,450.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_28" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,450.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_28" Source="Resources/T_bent_spork.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_29" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,450.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_29" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,450.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_29" Source="Resources/T_air_unfreshener.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_3" TextWrapping="Wrap" Text="3" Canvas.Left="10" Canvas.Top="488.8" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_3" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="483.8"/>
-                                    <Button x:Name="button_AL_image_PigKing_30" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,513.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_30" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,513.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_30" Source="Resources/T_leaky_teacup.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_31" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,513.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_31" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,513.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_31" Source="Resources/T_shoe_horn.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_32" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,513.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_32" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,513.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_32" Source="Resources/T_one_true_earring.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_4" TextWrapping="Wrap" Text="4" Canvas.Left="10" Canvas.Top="551.2" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_4" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="546.2"/>
-                                    <Button x:Name="button_AL_image_PigKing_33" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_33" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_33" Source="Resources/T_ball_and_cup.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_34" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_34" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_34" Source="Resources/T_gord's_knot.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_35" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_35" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_35" Source="Resources/T_melty_marbles.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_36" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_36" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_36" Source="Resources/T_old_boot.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_37" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_37" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_37" Source="Resources/T_tiny_rocketship.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_38" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_38" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_38" Source="Resources/T_frayed_yarn.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_39" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_39" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_39" Source="Resources/T_wire_hanger.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_40" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="233,575.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_40" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="233,575.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_40" Source="Resources/T_white_bishop.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_41" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,607.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_41" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,607.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_41" Source="Resources/T_black_bishop.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_42" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,607.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_42" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,607.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_42" Source="Resources/T_wine_bottle_candle.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_5" TextWrapping="Wrap" Text="5" Canvas.Left="10" Canvas.Top="645.6" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_5" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="640.6"/>
-                                    <Button x:Name="button_AL_image_PigKing_43" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,670,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_43" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,670,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_43" Source="Resources/F_eel.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_44" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,670,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_44" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,670,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_44" Source="Resources/F_cooked_eel.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_45" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,670,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_45" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,670,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_45" Source="Resources/T_frazzled_wires.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_46" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,670,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_46" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,670,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_46" Source="Resources/T_gnome_1.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_47" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,670,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_47" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,670,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_47" Source="Resources/T_gnome_2.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_48" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,670,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_48" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,670,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_48" Source="Resources/T_lying_robot.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_49" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,670,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_49" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="201,670,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_49" Source="Resources/T_beaten_beater.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_6" TextWrapping="Wrap" Text="6" Canvas.Left="10" Canvas.Top="708" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_6" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="703"/>
-                                    <Button x:Name="button_AL_image_PigKing_50" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,732.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_50" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,732.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_50" Source="Resources/T_fake_kazoo.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_51" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,732.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_51" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,732.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_51" Source="Resources/T_toy_trojan_horse.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_52" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,732.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_52" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,732.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_52" Source="Resources/T_unbalanced_top.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_53" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,732.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_53" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,732.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_53" Source="Resources/T_brain_cloud_pill.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_54" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,732.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_54" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,732.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_54" Source="Resources/T_orange_soda.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_55" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,732.4,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_55" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="169,732.4,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_55" Source="Resources/T_ukulele.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_7" TextWrapping="Wrap" Text="7" Canvas.Left="10" Canvas.Top="770.4" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_7" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="765.4"/>
-                                    <Button x:Name="button_AL_image_PigKing_56" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,794.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_56" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,794.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_56" Source="Resources/T_mismatched_buttons.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_57" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,794.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_57" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,794.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_57" Source="Resources/T_soaked_candle.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_58" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,794.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_58" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,794.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_58" Source="Resources/T_back_scratcher.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_59" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,794.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_59" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,794.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_59" Source="Resources/T_license_plate.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_60" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,794.8,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_60" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="137,794.8,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_60" Source="Resources/T_ancient_vase.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_8" TextWrapping="Wrap" Text="8" Canvas.Left="10" Canvas.Top="832.8" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_8" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="827.8"/>
-                                    <Button x:Name="button_AL_image_PigKing_61" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,857.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_61" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,857.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_61" Source="Resources/T_dessicated_tentacle.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_62" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,857.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_62" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,857.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_62" Source="Resources/T_hardened_rubber_bung.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_63" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,857.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_63" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,857.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_63" Source="Resources/T_lucky_cat_jar.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_PigKing_64" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,857.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_64" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,857.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_64" Source="Resources/T_voodoo_doll.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_9" TextWrapping="Wrap" Text="9" Canvas.Left="10" Canvas.Top="895.2" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_9" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="890.2"/>
-                                    <Button x:Name="button_AL_image_PigKing_65" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,919.6,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_65" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,919.6,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_65" Source="Resources/T_potato_cup.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_PigKing_10" TextWrapping="Wrap" Text="10" Canvas.Left="10" Canvas.Top="957.6" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_10" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="35" Canvas.Top="952.6"/>
-                                    <Button x:Name="button_AL_image_PigKing_66" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,982.2,0,0">
+                                    <Button x:Name="button_AL_image_PigKing_66" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,982.2,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_PigKing_66" Source="Resources/T_broken_AAC_device.png" Height="32"/>
                                         </StackPanel>
@@ -6573,134 +6588,134 @@
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_Title" TextWrapping="Wrap" Text="交换表" FontSize="20" Canvas.Left="102" Canvas.Top="288.5"/>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_2" TextWrapping="Wrap" Text="5" Canvas.Left="10" Canvas.Top="318.5" FontSize="20"/>
                                     <Image x:Name="AL_Yaarctopus_DubloonsPicture_2" Source="Resources/G_dubloons.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="313.5"/>
-                                    <Button x:Name="button_AL_image_Yaarctopus_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,342.9,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,342.9,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_1" Source="Resources/T_old_boot.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,342.9,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,342.9,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_2" Source="Resources/T_license_plate.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,342.9,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,342.9,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_3" Source="Resources/T_wine_bottle_candle.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_3" TextWrapping="Wrap" Text="7" Canvas.Left="10" Canvas.Top="380.9" FontSize="20"/>
                                     <Image x:Name="AL_Yaarctopus_DubloonsPicture_3" Source="Resources/G_dubloons.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="375.9"/>
-                                    <Button x:Name="button_AL_image_Yaarctopus_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,405.3,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,405.3,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_4" Source="Resources/T_orange_soda.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,405.3,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,405.3,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_5" Source="Resources/T_voodoo_doll.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="74,405.3,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="74,405.3,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_6" Source="Resources/T_second_hand_dentures.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_4" TextWrapping="Wrap" Text="8" Canvas.Left="10" Canvas.Top="443.3" FontSize="20"/>
                                     <Image x:Name="AL_Yaarctopus_DubloonsPicture_4" Source="Resources/G_dubloons.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="438.3"/>
-                                    <Button x:Name="button_AL_image_Yaarctopus_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,467.7,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,467.7,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_7" Source="Resources/T_brain_cloud_pill.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_8" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,467.7,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_8" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,467.7,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_8" Source="Resources/T_toy_boat.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_9" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,467.7,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_9" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,467.7,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_9" Source="Resources/T_ukulele.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_5" TextWrapping="Wrap" Text="9" Canvas.Left="10" Canvas.Top="505.7" FontSize="20"/>
                                     <Image x:Name="AL_Yaarctopus_DubloonsPicture_5" Source="Resources/G_dubloons.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="500.7"/>
-                                    <Button x:Name="button_AL_image_Yaarctopus_10" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,530.1,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_10" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,530.1,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_10" Source="Resources/T_ball_and_cup.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_11" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,530.1,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_11" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,530.1,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_11" Source="Resources/T_gord's_knot.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_12" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,530.1,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_12" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,530.1,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_12" Source="Resources/T_melty_marbles.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_13" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,530.1,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_13" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,530.1,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_13" Source="Resources/T_tiny_rocketship.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_6" TextWrapping="Wrap" Text="10" Canvas.Left="10" Canvas.Top="568.1" FontSize="20"/>
                                     <Image x:Name="AL_Yaarctopus_DubloonsPicture_6" Source="Resources/G_dubloons.png" Height="32" Width="32" Canvas.Left="36" Canvas.Top="563.1"/>
-                                    <Button x:Name="button_AL_image_Yaarctopus_14" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,592.5,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_14" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,592.5,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_14" Source="Resources/T_frazzled_wires.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_15" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,592.5,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_15" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,592.5,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_15" Source="Resources/T_gnome_1.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_16" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,592.5,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_16" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,592.5,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_16" Source="Resources/T_lying_robot.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_7" TextWrapping="Wrap" Text="11" Canvas.Left="10" Canvas.Top="630.5" FontSize="20"/>
                                     <Image x:Name="AL_Yaarctopus_DubloonsPicture_7" Source="Resources/G_dubloons.png" Height="32" Width="32" Canvas.Left="36" Canvas.Top="625.5"/>
-                                    <Button x:Name="button_AL_image_Yaarctopus_17" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,654.9,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_17" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,654.9,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_17" Source="Resources/T_ancient_vase.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_18" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,654.9,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_18" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,654.9,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_18" Source="Resources/T_broken_AAC_device.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_19" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,654.9,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_19" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,654.9,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_19" Source="Resources/T_fake_kazoo.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_20" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,654.9,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_20" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,654.9,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_20" Source="Resources/T_sextant.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_8" TextWrapping="Wrap" Text="12" Canvas.Left="10" Canvas.Top="692.9" FontSize="20"/>
                                     <Image x:Name="AL_Yaarctopus_DubloonsPicture_8" Source="Resources/G_dubloons.png" Height="32" Width="32" Canvas.Left="36" Canvas.Top="687.9"/>
-                                    <Button x:Name="button_AL_image_Yaarctopus_21" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,717.3,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_21" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="9,717.3,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_21" Source="Resources/T_one_true_earring.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_22" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,717.3,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_22" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="41,717.3,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_22" Source="Resources/T_dessicated_tentacle.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_23" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,717.3,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_23" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="73,717.3,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_23" Source="Resources/T_hardened_rubber_bung.png" Height="32"/>
                                         </StackPanel>
                                     </Button>
-                                    <Button x:Name="button_AL_image_Yaarctopus_24" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,717.3,0,0">
+                                    <Button x:Name="button_AL_image_Yaarctopus_24" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Margin="105,717.3,0,0">
                                         <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                             <Image x:Name="AL_image_Yaarctopus_24" Source="Resources/T_mismatched_buttons.png" Height="32"/>
                                         </StackPanel>
@@ -10588,207 +10603,207 @@
                                             <TextBlock x:Name="GL_textBlock_Science_M" TextWrapping="Wrap" Text="可制作科技" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_ScienceButton_M" Height="44" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition">
-                                            <Button x:Name="button_GM_Science_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_GM_Science_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_1" Source="Resources/S_healing_salve.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_2" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_3" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_4" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_5" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_6" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_7" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_8" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_8" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_8" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_9" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_9" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_9" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_10" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_10" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_10" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_11" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_11" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_11" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_12" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_12" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_12" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_13" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_13" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_13" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_14" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_14" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_14" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_15" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_15" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_15" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_16" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_16" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_16" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_17" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_17" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_17" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_18" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_18" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_18" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_19" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_19" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_19" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_20" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_20" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_20" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_21" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_21" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_21" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_22" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_22" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_22" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_23" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_23" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_23" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_24" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_24" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_24" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_25" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_25" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_25" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_26" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_26" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_26" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_27" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_27" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_27" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_28" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_28" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_28" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_29" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_29" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_29" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_30" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_30" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_30" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_31" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_31" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_31" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_32" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_32" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_32" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_33" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_33" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_33" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_34" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_34" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_34" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_35" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_35" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_35" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_36" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_36" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_36" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_37" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_37" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_37" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_38" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_38" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_38" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_39" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_39" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_39" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_40" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_40" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_40" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Science_41" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Science_41" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Science_41" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
@@ -10798,147 +10813,147 @@
                                             <TextBlock x:Name="GL_textBlock_Animal_M" TextWrapping="Wrap" Text="来源于生物" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_AnimalButton_M" Height="49" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition">
-                                            <Button x:Name="button_GM_Animal_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_GM_Animal_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_1" Source="Resources/A_red_hound.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_2" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_3" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_4" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_4" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_4" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_5" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_5" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_5" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_6" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_6" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_6" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_7" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_7" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_7" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_8" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_8" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_8" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_9" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_9" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_9" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_10" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_10" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_10" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_11" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_11" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_11" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_12" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_12" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_12" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_13" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_13" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_13" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_14" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_14" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_14" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_15" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_15" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_15" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_16" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_16" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_16" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_17" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_17" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_17" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_18" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_18" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_18" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_19" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_19" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_19" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_20" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_20" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_20" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_21" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_21" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_21" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_22" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_22" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_22" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_23" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_23" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_23" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_24" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_24" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_24" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_25" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_25" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_25" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_26" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_26" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_26" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_27" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_27" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_27" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_28" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_28" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_28" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
-                                            <Button x:Name="button_GM_Animal_29" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
+                                            <Button x:Name="button_GM_Animal_29" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Visibility="Collapsed">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GM_Animal_29" Source="Resources/FC_Meats.png" Height="32"/>
                                                 </StackPanel>
@@ -11179,19 +11194,19 @@
                                             <TextBlock x:Name="GL_textBlock_Murder_A" TextWrapping="Wrap" Text="杀害后可得" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <Canvas x:Name="G_Canvas_MurderButton_A" Height="118" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition">
-                                            <Button x:Name="button_GA_MurderButton_1" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_GA_MurderButton_1" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GA_Murder_1" Source="Resources/A_red_hound.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
                                             <TextBlock x:Name="TextBlock_GA_Murder_1" TextWrapping="Wrap" Text="×1" Height="15.24" Canvas.Left="34" Canvas.Top="9.38"/>
-                                            <Button x:Name="button_GA_MurderButton_2" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Top="34">
+                                            <Button x:Name="button_GA_MurderButton_2" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Top="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GA_Murder_2" Source="Resources/A_red_hound.png" Height="32"/>
                                                 </StackPanel>
                                             </Button>
                                             <TextBlock x:Name="TextBlock_GA_Murder_2" TextWrapping="Wrap" Text="×1" Height="16" Canvas.Left="34" Canvas.Top="43"/>
-                                            <Button x:Name="button_GA_MurderButton_3" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Top="68">
+                                            <Button x:Name="button_GA_MurderButton_3" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34" Canvas.Top="68">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GA_Murder_3" Source="Resources/A_red_hound.png" Height="32"/>
                                                 </StackPanel>
@@ -11202,7 +11217,7 @@
                                             <TextBlock x:Name="GL_textBlock_Food_A" TextWrapping="Wrap" Text="详情请查看" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <Canvas x:Name="G_Canvas_FoodButton_A" Height="50" Width="180">
-                                            <Button x:Name="button_GA_FoodButton" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_GA_FoodButton" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <StackPanel Height="32" Width="32" Margin="-1,-1,0,0">
                                                     <Image x:Name="image_GA_Food" Source="Resources/A_red_hound.png" Height="32"/>
                                                 </StackPanel>
@@ -11230,7 +11245,7 @@
                                             <TextBlock x:Name="GL_textBlock_Craft_T" TextWrapping="Wrap" Text="制作科技" d:LayoutOverrides="LeftPosition, RightPosition"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_Canvas_CraftButton_T" Height="50" Width="180">
-                                            <Button x:Name="button_GT_CraftButton" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
+                                            <Button x:Name="button_GT_CraftButton" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Height="34">
                                                 <Image x:Name="image_GT_Craft" Source="Resources/S_cobblestones.png" Height="32" Width="32"/>
                                             </Button>
                                         </WrapPanel>

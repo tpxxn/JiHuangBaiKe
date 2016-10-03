@@ -4036,4 +4036,49 @@
   <data name="N_sapling_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_sapling_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="S_ico_ancient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_ancient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_books" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_books.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_dress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_dress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_fight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_fight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_magic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_magic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_nautical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_nautical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_refine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_refine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_science" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_science.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_shadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_structures" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_structures.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_survival" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_survival.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ico_volcanic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ico_volcanic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -4113,5 +4113,50 @@
   <ItemGroup>
     <Resource Include="Resources\N_sapling_diseased_empty.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_ancient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_dress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_fight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_magic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_nautical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_refine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_structures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_survival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\S_ico_volcanic.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

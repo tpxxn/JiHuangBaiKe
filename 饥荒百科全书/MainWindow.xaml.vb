@@ -222,7 +222,7 @@ Public Class MainWindow
                 WrapPanel_S_refine.Height = 90
                 WrapPanel_S_dress.Height = 250
                 WrapPanel_S_ancient.Height = 170
-                WrapPanel_Science.Height = 2223.8
+                WrapPanel_Science.Height = 2140
             Case 2
                 checkBox_S_DLC_ROG.IsChecked = False
                 checkBox_S_DLC_DST.IsChecked = False
@@ -236,7 +236,7 @@ Public Class MainWindow
                 WrapPanel_S_refine.Height = 90
                 WrapPanel_S_dress.Height = 170
                 WrapPanel_S_volcano.Height = 90
-                WrapPanel_Science.Height = 2409.2
+                WrapPanel_Science.Height = 2350
             Case 3
                 checkBox_S_DLC_DST.IsChecked = False
                 S_DLC_ROG_SHOW()
@@ -251,7 +251,7 @@ Public Class MainWindow
                 WrapPanel_S_dress.Height = 250
                 WrapPanel_S_ancient.Height = 170
                 WrapPanel_S_volcano.Height = 90
-                WrapPanel_Science.Height = 2889.6
+                WrapPanel_Science.Height = 2810
             Case 4
                 checkBox_S_DLC_ROG.IsChecked = False
                 checkBox_S_DLC_SW.IsChecked = False
@@ -265,7 +265,7 @@ Public Class MainWindow
                 WrapPanel_S_dress.Height = 250
                 WrapPanel_S_ancient.Height = 170
                 WrapPanel_S_shadow.Height = 90
-                WrapPanel_Science.Height = 2489.2
+                WrapPanel_Science.Height = 2420
             Case 5
                 checkBox_S_DLC_SW.IsChecked = False
                 S_DLC_ROG_SHOW()
@@ -279,7 +279,7 @@ Public Class MainWindow
                 WrapPanel_S_dress.Height = 250
                 WrapPanel_S_ancient.Height = 170
                 WrapPanel_S_shadow.Height = 90
-                WrapPanel_Science.Height = 2489.2
+                WrapPanel_Science.Height = 2420
             Case 6
                 checkBox_S_DLC_ROG.IsChecked = False
                 S_DLC_SW_SHOW()
@@ -295,7 +295,7 @@ Public Class MainWindow
                 WrapPanel_S_ancient.Height = 170
                 WrapPanel_S_shadow.Height = 90
                 WrapPanel_S_volcano.Height = 90
-                WrapPanel_Science.Height = 3260
+                WrapPanel_Science.Height = 3180
             Case 7
                 S_DLC_ROG_SHOW()
                 S_DLC_SW_SHOW()
@@ -311,7 +311,7 @@ Public Class MainWindow
                 WrapPanel_S_ancient.Height = 170
                 WrapPanel_S_shadow.Height = 90
                 WrapPanel_S_volcano.Height = 90
-                WrapPanel_Science.Height = 3260
+                WrapPanel_Science.Height = 3180
         End Select
 
         Select Case RegReadCS
@@ -5793,15 +5793,15 @@ Public Class MainWindow
 
     REM ------------------科技(战斗)-------------------
     Private Sub button_S_battle_spear_click(sender As Object, e As RoutedEventArgs) Handles button_S_battle_spear.Click
-        S_Show("战斗长矛", "Battle Spear", "S_battle_spear", "DST", 1, 1, 1, "G_twigs", "×2", "G_flint", "×2", "S_gold_nugget", "×2", 0, "维京女", "维京女出生自带的战斗长矛，攻击力比长矛要高一些，制作材料也比较简单，适合人手一把。")
+        S_Show("战斗长矛", "Battle Spear", "S_battle_spear", "DST", 1, 1, 1, "G_twigs", "×2", "G_flint", "×2", "S_gold_nugget", "×2", 0, "威戈芙瑞德", "威戈芙瑞德出生自带的战斗长矛，攻击力比长矛要高一些，制作材料也比较简单，适合人手一把。")
     End Sub
 
     Private Sub button_S_battle_helm_click(sender As Object, e As RoutedEventArgs) Handles button_S_battle_helm.Click
-        S_Show("战斗头盔", "Battle Helm", "S_battle_helm", "DST", 1, 1, 1, "S_gold_nugget", "×2", "G_rocks", "×2", "", "", 0, "维京女", "维京女出生自带的战斗头盔，防御力不错，野建议人手一个并多备一些，消耗得比较快。")
+        S_Show("战斗头盔", "Battle Helm", "S_battle_helm", "DST", 1, 1, 1, "S_gold_nugget", "×2", "G_rocks", "×2", "", "", 0, "威戈芙瑞德", "威戈芙瑞德出生自带的战斗头盔，防御力不错，建议人手一个并多备一些，消耗得比较快。")
     End Sub
 
     Private Sub button_S_spear_click(sender As Object, e As RoutedEventArgs) Handles button_S_spear.Click
-        S_Show("长矛", "Spear", "S_spear", "NoDLC", 1, 1, 1, "G_twigs", "×2", "S_rope", "×1", "G_flint", "×1", 1, "", "若小伙伴中没有维京女，就只能用长矛将就一下了，比较不错的前期武器。")
+        S_Show("长矛", "Spear", "S_spear", "NoDLC", 1, 1, 1, "G_twigs", "×2", "S_rope", "×1", "G_flint", "×1", 1, "", "若小伙伴中没有威戈芙瑞德，就只能用长矛将就一下了，比较不错的前期武器。")
     End Sub
 
     Private Sub button_S_poison_spear_click(sender As Object, e As RoutedEventArgs) Handles button_S_poison_spear.Click
@@ -5841,7 +5841,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_S_cactus_armour_click(sender As Object, e As RoutedEventArgs) Handles button_S_cactus_armour.Click
-        S_Show("象仙人掌盔甲", "Cactus Armour", "S_cactus_armour", "SW", 0, 1, 0, "G_cactus_spike", "×3", "S_log_suit", "×1", "", "", 2, "", "防御力很高，每次受到攻击都会反弹17点伤害，免疫火。")
+        S_Show("象仙人掌盔甲", "Cactus Armour", "S_cactus_armour", "SW", 0, 1, 0, "G_cactus_spike", "×3", "S_log_suit", "×1", "", "", 2, "", "防御力很高，每次受到攻击都会反弹17点伤害，使象仙人掌无视玩家并且免疫来自象仙人掌的攻击。")
     End Sub
 
     Private Sub button_S_football_helmet_click(sender As Object, e As RoutedEventArgs) Handles button_S_football_helmet.Click
@@ -5902,7 +5902,7 @@ Public Class MainWindow
 
     REM ------------------科技(建筑)-------------------
     Private Sub button_S_spider_eggs_click(sender As Object, e As RoutedEventArgs) Handles button_S_spider_eggs.Click
-        S_Show("蜘蛛卵", "Spider Eggs", "S_spider_eggs", "DST", 0, 0, 1, "G_silk", "×12", "G_spider_gland", "×6", "S_papyrus", "×6", 0, "韦伯", "韦伯出生自带的蜘蛛卵，需要的材料实在有点多，而且并没有什么用。")
+        S_Show("蜘蛛卵", "Spider Eggs", "S_spider_eggs", "NoDLC", 1, 0, 1, "G_silk", "×12", "G_spider_gland", "×6", "S_papyrus", "×6", 0, "韦伯", "韦伯出生自带的蜘蛛卵，需要的材料实在有点多，而且并没有什么用。")
     End Sub
 
     Private Sub button_S_chest_click(sender As Object, e As RoutedEventArgs) Handles button_S_chest.Click
@@ -6448,6 +6448,7 @@ Public Class MainWindow
         button_S_boat_lantern.Visibility = Visibility.Collapsed
         REM 航海
         TextBlock_S_nautical.Visibility = Visibility.Collapsed
+        Image_S_nautical.Visibility = Visibility.Collapsed
         WrapPanel_S_nautical.Visibility = Visibility.Collapsed
         REM 生存
         button_S_fur_roll.Visibility = Visibility.Collapsed
@@ -6551,12 +6552,15 @@ Public Class MainWindow
         button_S_joy_of_volcanology.Visibility = Visibility.Collapsed
         REM 远古
         TextBlock_S_ancient.Visibility = Visibility.Collapsed
+        Image_S_ancient.Visibility = Visibility.Collapsed
         WrapPanel_S_ancient.Visibility = Visibility.Collapsed
         REM 暗影巫术
         TextBlock_S_shadow.Visibility = Visibility.Collapsed
+        Image_S_shadow.Visibility = Visibility.Collapsed
         WrapPanel_S_shadow.Visibility = Visibility.Collapsed
         REM 火山
         TextBlock_S_volcano.Visibility = Visibility.Collapsed
+        Image_S_volcano.Visibility = Visibility.Collapsed
         WrapPanel_S_volcano.Visibility = Visibility.Collapsed
     End Sub
 
@@ -6606,6 +6610,7 @@ Public Class MainWindow
         button_S_on_tentacles.Visibility = Visibility.Visible
         REM 远古
         TextBlock_S_ancient.Visibility = Visibility.Visible
+        Image_S_ancient.Visibility = Visibility.Visible
         WrapPanel_S_ancient.Visibility = Visibility.Visible
     End Sub
 
@@ -6621,6 +6626,7 @@ Public Class MainWindow
         button_S_boat_lantern.Visibility = Visibility.Visible
         REM 航海
         TextBlock_S_nautical.Visibility = Visibility.Visible
+        Image_S_nautical.Visibility = Visibility.Visible
         WrapPanel_S_nautical.Visibility = Visibility.Visible
         REM 生存
         button_S_chef_pouch.Visibility = Visibility.Visible
@@ -6677,6 +6683,7 @@ Public Class MainWindow
         button_S_joy_of_volcanology.Visibility = Visibility.Visible
         REM 火山
         TextBlock_S_volcano.Visibility = Visibility.Visible
+        Image_S_volcano.Visibility = Visibility.Visible
         WrapPanel_S_volcano.Visibility = Visibility.Visible
     End Sub
 
@@ -6747,9 +6754,11 @@ Public Class MainWindow
         button_S_on_tentacles.Visibility = Visibility.Visible
         REM 远古
         TextBlock_S_ancient.Visibility = Visibility.Visible
+        Image_S_ancient.Visibility = Visibility.Visible
         WrapPanel_S_ancient.Visibility = Visibility.Visible
         REM 暗影巫术
         TextBlock_S_shadow.Visibility = Visibility.Visible
+        Image_S_shadow.Visibility = Visibility.Visible
         WrapPanel_S_shadow.Visibility = Visibility.Visible
     End Sub
 
@@ -6793,7 +6802,7 @@ Public Class MainWindow
                     WrapPanel_S_refine.Height = 90
                     WrapPanel_S_dress.Height = 250
                     WrapPanel_S_ancient.Height = 170
-                    WrapPanel_Science.Height = 2223.8
+                    WrapPanel_Science.Height = 2140
                     Reg_Write("Science", 1)
                 Case 2
                     S_DLC_SW_SHOW()
@@ -6806,7 +6815,7 @@ Public Class MainWindow
                     WrapPanel_S_refine.Height = 90
                     WrapPanel_S_dress.Height = 170
                     WrapPanel_S_volcano.Height = 90
-                    WrapPanel_Science.Height = 2409.2
+                    WrapPanel_Science.Height = 2350
                     Reg_Write("Science", 2)
                 Case 3
                     S_DLC_ROG_SHOW()
@@ -6821,7 +6830,7 @@ Public Class MainWindow
                     WrapPanel_S_dress.Height = 250
                     WrapPanel_S_ancient.Height = 170
                     WrapPanel_S_volcano.Height = 90
-                    WrapPanel_Science.Height = 2889.6
+                    WrapPanel_Science.Height = 2810
                     Reg_Write("Science", 3)
                 Case 4
                     S_DLC_DST_SHOW()
@@ -6834,7 +6843,7 @@ Public Class MainWindow
                     WrapPanel_S_dress.Height = 250
                     WrapPanel_S_ancient.Height = 170
                     WrapPanel_S_shadow.Height = 90
-                    WrapPanel_Science.Height = 2489.2
+                    WrapPanel_Science.Height = 2420
                     Reg_Write("Science", 4)
                 Case 5
                     S_DLC_ROG_SHOW()
@@ -6848,7 +6857,7 @@ Public Class MainWindow
                     WrapPanel_S_dress.Height = 250
                     WrapPanel_S_ancient.Height = 170
                     WrapPanel_S_shadow.Height = 90
-                    WrapPanel_Science.Height = 2489.2
+                    WrapPanel_Science.Height = 2420
                     Reg_Write("Science", 5)
                 Case 6
                     S_DLC_SW_SHOW()
@@ -6864,7 +6873,7 @@ Public Class MainWindow
                     WrapPanel_S_ancient.Height = 170
                     WrapPanel_S_shadow.Height = 90
                     WrapPanel_S_volcano.Height = 90
-                    WrapPanel_Science.Height = 3260
+                    WrapPanel_Science.Height = 3180
                     Reg_Write("Science", 6)
                 Case 7
                     S_DLC_ROG_SHOW()
@@ -6881,7 +6890,7 @@ Public Class MainWindow
                     WrapPanel_S_ancient.Height = 170
                     WrapPanel_S_shadow.Height = 90
                     WrapPanel_S_volcano.Height = 90
-                    WrapPanel_Science.Height = 3260
+                    WrapPanel_Science.Height = 3180
                     Reg_Write("Science", 7)
             End Select
         End If
