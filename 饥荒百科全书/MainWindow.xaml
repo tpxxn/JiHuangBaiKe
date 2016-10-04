@@ -7449,7 +7449,7 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="生物巢穴" FontSize="20" Width="680"/>
+                                    <TextBlock TextWrapping="Wrap" Text="生物巢穴(未完成)" FontSize="20" Width="680"/>
                                     <WrapPanel x:Name="WrapPanel_N_mobshousing" Height="440" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_N_rabbit_hole" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
@@ -7639,7 +7639,7 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock TextWrapping="Wrap" Text="无生命的" FontSize="20" Width="680"/>
+                                    <TextBlock TextWrapping="Wrap" Text="无生命的(未完成)" FontSize="20" Width="680"/>
                                     <WrapPanel x:Name="WrapPanel_N_inanimate" Height="1210" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_N_florid_postern" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
@@ -8507,8 +8507,8 @@
                                             <TextBlock x:Name="TextBlock_NP_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
-                                    <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="100" Width="180" Margin="0" Canvas.Left="0" Canvas.Top="0">
-                                        <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="9,30,0,0">
+                                    <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="80" Width="180" Margin="0" Canvas.Left="0" Canvas.Top="0">
+                                        <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="9,10,0,0">
                                             <Button.Style>
                                                 <Style TargetType="{x:Type Button}">
                                                     <Setter Property="Template">
@@ -8529,7 +8529,7 @@
                                                 </Style>
                                             </Button.Style>
                                         </Button>
-                                        <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="74,30,0,0">
+                                        <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="74,10,0,0">
                                             <Button.Style>
                                                 <Style TargetType="{x:Type Button}">
                                                     <Setter Property="Template">
@@ -10318,28 +10318,10 @@
                                                 <TextBlock Text="长草草皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
                                             </StackPanel>
                                         </Button>
-                                        <Button x:Name="button_G_jungle_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
-                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/G_jungle_turf.png" Width="48" Height="48" />
-                                                <TextBlock Text="丛林草皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_G_magma_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
-                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/G_magma_turf.png" Width="48" Height="48" />
-                                                <TextBlock Text="岩浆地皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
-                                            </StackPanel>
-                                        </Button>
                                         <Button x:Name="button_G_marsh_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/G_marsh_turf.png" Width="48" Height="48" />
                                                 <TextBlock Text="沼泽草皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_G_meadow_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
-                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/G_meadow_turf.png" Width="48" Height="48" />
-                                                <TextBlock Text="草甸地皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_G_rocky_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
@@ -10359,12 +10341,6 @@
                                                 <Image Source="Resources/G_savanna_turf.png" Width="48" Height="48" />
                                                 <TextBlock Text="热带草原" FontSize="12" HorizontalAlignment="Center" Margin="0,-4,0,0" />
                                                 <TextBlock Text="草皮" FontSize="12" HorizontalAlignment="Center" Margin="0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_G_tidal_marsh_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
-                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/G_tidal_marsh_turf.png" Width="48" Height="48" />
-                                                <TextBlock Text="潮滩地皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_G_cave_rock_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
@@ -10410,6 +10386,30 @@
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/G_slimey_turf.png" Width="48" Height="48" />
                                                 <TextBlock Text="粘滑草地" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_G_jungle_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
+                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/G_jungle_turf.png" Width="48" Height="48" />
+                                                <TextBlock Text="丛林草皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_G_meadow_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
+                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/G_meadow_turf.png" Width="48" Height="48" />
+                                                <TextBlock Text="草甸地皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_G_tidal_marsh_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
+                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/G_tidal_marsh_turf.png" Width="48" Height="48" />
+                                                <TextBlock Text="潮滩地皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_G_magma_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
+                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/G_magma_turf.png" Width="48" Height="48" />
+                                                <TextBlock Text="岩浆地皮" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_G_ashy_turf" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">

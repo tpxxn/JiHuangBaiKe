@@ -602,7 +602,7 @@ Public Class MainWindow
     End Sub
 #End Region
 
-    REM ------------------跳转选择------------------
+#Region "跳转选择"
     Private Sub ButtonJump(VariableName As String, Optional FirstChange As String = "")
         Dim FirstLetter As String = ""
         If VariableName <> "" Then
@@ -2591,6 +2591,7 @@ Public Class MainWindow
                 End Select
         End Select
     End Sub
+#End Region
 
 #Region "人物"
     REM ------------------左侧面板(人物)------------------
@@ -11307,6 +11308,7 @@ Public Class MainWindow
 
     End Sub
 
+#Region "自然_生物群落"
     REM ------------------左侧面板(自然_生物群落)------------------
     Private Sub N_Show_B(N_Name As String, N_EnName As String, N_picture As String, N_DLC As String, N_DLC_ROG As SByte, N_DLC_SW As SByte, N_DLC_DST As SByte, N_Introduce As String)
         REM ------------------初始化------------------
@@ -11817,7 +11819,9 @@ Public Class MainWindow
         NB_Rare({"N_obsidian_workbench", "N_woodlegs'_cage"})
         N_Show_B("火山", "Volcano", "N_volcano_bio", "NoDLC", 0, 1, 0, "围绕火山口的生物群落，中间是含有大量熔岩的区域，靠近会过热。在这里可以找到大量咖啡树、熔岩矿熔岩金矿、黑曜岩和煤矿，也有不少象仙人掌和龙人巢，必定有一个火山祭坛和黑曜石工作台。如果没有解锁伍德莱格那么在这里会发现伍德莱格的笼子。")
     End Sub
+#End Region
 
+#Region "自然_小型植物/树"
     REM ------------------左侧面板(自然_小型植物/树)------------------
     Private Sub N_Show_P(N_Name As String, N_EnName As String, N_DLC As String, N_DLC_ROG As SByte, N_DLC_SW As SByte, N_DLC_DST As SByte, N_Tools As String, N_ResourcesBurnt_1 As String, N_ResourcesBurntT_1 As String, N_ResourcesBurnt_2 As String, N_ResourcesBurntT_2 As String, N_ResourcesBurnt_3 As String, N_ResourcesBurntT_3 As String, N_ResourcesBurnt_4 As String, N_ResourcesBurntT_4 As String, N_Biome_1 As String, N_Biome_2 As String, N_SpecialAbility_1 As String, N_SpecialAbilityButton_1 As String, N_SpecialAbility_2 As String, N_SpecialAbilityButton_2 As String, N_Introduce As String, Optional N_ReGenerate As Boolean = True, Optional N_Combustible As Boolean = True)
         REM ------------------初始化------------------
@@ -12001,8 +12005,8 @@ Public Class MainWindow
         End If
         REM ------------------物品简介-------------------
         TextBlock_NP_Introduce.Text = N_Introduce
-        TextBlock_NP_Introduce.Height = SetTextBlockHeight(N_Introduce, 10)
-        N_WrapPanel_Introduce_P.Height = SetTextBlockHeight(N_Introduce, 10)
+        TextBlock_NP_Introduce.Height = SetTextBlockHeight(N_Introduce, 14)
+        N_WrapPanel_Introduce_P.Height = SetTextBlockHeight(N_Introduce, 14)
         REM ------------------图片及资源显示-------------------
         N_Show_P_Change(0)
         REM ------------------高度设置------------------- 
@@ -12311,7 +12315,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"G_cut_grass", "×1", "G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("草", "Grass", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_savanna", "", "", "", "", "树苗常见于稀树大草原和森林，洞穴里也有一些，特别是在沉没森林区域，它可以提供一个割下的草。草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的草需要施肥(便便、鸟屎、便便蓝)，生长需要3天时间(下雨会减少生长时间，冬天生长得很慢)。在夏天草会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后草会患病，并且无法治愈。", False, True)
+        N_Show_P("草", "Grass", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_savanna", "", "", "", "", "草常见于稀树大草原和森林，洞穴里也有一些，特别是在沉没森林区域，它可以提供一个割下的草。草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的草需要施肥(便便、鸟屎、便便蓝)，生长需要3天时间(下雨会减少生长时间，冬天生长得很慢)。在夏天草会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后草会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_berry_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush.Click
@@ -12353,27 +12357,27 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_spiky_bushes", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("尖刺灌木", "Spiky Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "", "", "", "", "", "", False, True)
+        N_Show_P("尖刺灌木", "Spiky Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "", "", "", "", "", "尖刺灌木常见于草原和森林，它可以提供一个树枝(采摘时受到3点伤害，可以直接铲起以避免伤害)。尖刺灌木可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。生长需要4天时间。", False, True)
     End Sub
 
     Private Sub button_N_cactus_click(sender As Object, e As RoutedEventArgs) Handles button_N_cactus.Click
         NP_Picture({"N_cactus", "N_cactus_flower", "N_cactus_empty"})
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"F_cactus_flesh", "×1", "", "", "", "", "", "", "", "", "", ""})
-        NP_Resources(1, 1, {"F_cactus_flower", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("仙人掌", "Cactus", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_desert", "", "", "", "", "", "", False, True)
+        NP_Resources(1, 1, {"F_cactus_flower", "×1(仅夏天)", "", "", "", "", "", "", "", "", "", ""})
+        N_Show_P("仙人掌", "Cactus", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_desert", "", "", "", "", "", "仙人掌只能在沙漠找到，采摘时受到6点伤害(可以穿防御型装备抵挡伤害)。不能移植。生长需要3天时间(冬天不受影响)，只有在夏天才能收获仙人掌花。", False, True)
     End Sub
 
     Private Sub button_N_plant_click(sender As Object, e As RoutedEventArgs) Handles button_N_plant.Click
         NP_Picture({"N_plant"})
         ReDim NP_ResourcesArray(0, 11)
-        N_Show_P("种植", "Plant", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_butterfly", "", "", "", False, True)
+        N_Show_P("种植", "Plant", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_butterfly", "", "", "随着池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", False, True)
     End Sub
 
     Private Sub button_N_algae_click(sender As Object, e As RoutedEventArgs) Handles button_N_algae.Click
         NP_Picture({"N_algae"})
         ReDim NP_ResourcesArray(0, 11)
-        N_Show_P("水藻", "Algae", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_village", "N_wilds", "生成", "A_butterfly", "", "", "", False, True)
+        N_Show_P("水藻", "Algae", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_village", "N_wilds", "生成", "A_butterfly", "", "", "随着洞穴池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", False, True)
     End Sub
 
     Private Sub button_N_blue_mushroom_click(sender As Object, e As RoutedEventArgs) Handles button_N_blue_mushroom.Click
@@ -12382,7 +12386,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_blue_cap", "×1", "F_blue_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"F_blue_cap", "×1", "F_blue_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(2, 2, {"F_blue_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("蓝蘑菇", "Blue Mushroom", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_forest", "N_blue_mushtree_forest", "", "", "", "", "", False, True)
+        N_Show_P("蓝蘑菇", "Blue Mushroom", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_forest", "N_blue_mushtree_forest", "", "", "", "", "蓝蘑菇晚上才会长出来，也可以砍蓝色蘑菇树获取。蓝蘑菇炒烤蓝蘑菇，味道一定不错！", False, True)
     End Sub
 
     Private Sub button_N_green_mushroom_click(sender As Object, e As RoutedEventArgs) Handles button_N_green_mushroom.Click
@@ -12391,7 +12395,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_green_cap", "×1", "F_green_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"F_green_cap", "×1", "F_green_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(2, 2, {"F_green_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("绿蘑菇", "Green Mushroom", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "N_green_mushtree_forest", "", "", "", "", "", False, True)
+        N_Show_P("绿蘑菇", "Green Mushroom", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "N_green_mushtree_forest", "", "", "", "", "绿蘑菇黄昏才会长出来，也可以砍绿色蘑菇树获取。直接食用降低50点精神，所以要烤了吃。", False, True)
     End Sub
 
     Private Sub button_N_red_mushroom_click(sender As Object, e As RoutedEventArgs) Handles button_N_red_mushroom.Click
@@ -12400,7 +12404,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_red_cap", "×1", "F_red_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"F_red_cap", "×1", "F_red_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(2, 2, {"F_red_cap", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("红蘑菇", "Red Mushroom", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_red_mushtree_forest", "", "", "", "", "", False, True)
+        N_Show_P("红蘑菇", "Red Mushroom", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_red_mushtree_forest", "", "", "", "", "红蘑菇白天才会长出来，也可以砍红色蘑菇树获取。放在地上可以间接地让怪物吃它而受到伤害。", False, True)
     End Sub
 
     Private Sub button_N_light_flower_1_click(sender As Object, e As RoutedEventArgs) Handles button_N_light_flower_1.Click
@@ -12410,20 +12414,20 @@ Public Class MainWindow
         NP_Resources(2, 2, {"G_light_bulb", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(4, 4, {"G_light_bulb", "×2", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(6, 6, {"G_light_bulb", "×3", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("荧光草", "Light Flower", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "N_light_flower_swamp", "", "", "", "", "", False, True)
+        N_Show_P("荧光草", "Light Flower", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "N_light_flower_swamp", "", "", "", "", "在荧光草沼泽可以找到大量荧光草，不能移植。荧光草的外貌暴露了它可以收获几个荧光果，荧光果可以给矿工帽、提灯、水瓶提灯、船灯添加燃料。荧光草会发光，采摘后3天长出一个荧光果，4-5天长出两个荧光果，6天长出三个荧光果。", False, True)
     End Sub
 
     Private Sub button_N_fern_1_click(sender As Object, e As RoutedEventArgs) Handles button_N_fern_1.Click
         NP_Picture("N_fern_", 10)
         NP_Resources(10, {"G_foliage", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("蕨类植物", "Fern", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "蕨类植物是长在洞穴里的“花”，捡起可以得到蕨叶，吃了回复1点生命。蕨叶还有一个用处是制作盆栽的蕨类植物。", False, True)
+        N_Show_P("蕨类植物", "Fern", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "蕨类植物是长在洞穴里的"“花"”，捡起可以得到蕨叶，吃了回复1点生命。蕨叶还有一个用处是制作盆栽的蕨类植物。", False, True)
     End Sub
 
     Private Sub button_N_cave_lichen_click(sender As Object, e As RoutedEventArgs) Handles button_N_cave_lichen.Click
         NP_Picture({"N_cave_lichen", "N_cave_lichen_empty"})
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 0, {"F_lichen", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("洞穴苔藓", "Cave Lichen", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "", False, True)
+        N_Show_P("洞穴苔藓", "Cave Lichen", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "洞穴苔藓通常可以在野外找到，不能移植。采摘后获得一个苔藓，5天后再次成熟。", False, True)
     End Sub
 
     Private Sub button_N_grass_sw_click(sender As Object, e As RoutedEventArgs) Handles button_N_grass_sw.Click
@@ -12431,7 +12435,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"G_cut_grass_SW", "×1", "G_grass_tuft_SW", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_grass_tuft_SW", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("船难草", "Grass(SW)", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_beach", "N_meadow", "", "", "", "", "", False, True)
+        N_Show_P("船难草", "Grass(SW)", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_beach", "N_meadow", "", "", "", "", "船难草常见于海滩，它可以提供一个干草。船难草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的船难草需要施肥(便便、鸟屎、便便蓝)，生长需要3天时间(下雨会减少生长时间。", False, True)
     End Sub
 
     Private Sub button_N_bamboo_patch_click(sender As Object, e As RoutedEventArgs) Handles button_N_bamboo_patch.Click
@@ -12439,7 +12443,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"G_bamboo_patch", "×1(           )", "G_bamboo_root", "×1(                      )", "", "", "", "", "S_machete", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_bamboo_root", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("竹子", "Bamboo Patch", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_jungle", "", "", "", "", "", "", False, True)
+        N_Show_P("竹子", "Bamboo Patch", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_jungle", "", "", "", "", "", "用砍刀砍可以得到竹子，可以移植，需要施肥。", False, True)
     End Sub
 
     Private Sub button_N_viney_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_viney_bush.Click
@@ -12447,14 +12451,14 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"G_vine", "×1(           )", "G_viney_bush_root", "×1(                      )", "", "", "", "", "S_machete", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_viney_bush_root", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("藤蔓丛", "Viney Bush", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_jungle", "", "生成", "A_snake", "生成", "A_poison_snake", "", False, True)
+        N_Show_P("藤蔓丛", "Viney Bush", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_jungle", "", "生成", "A_snake", "生成", "A_poison_snake", "用砍刀砍可以得到藤蔓，生长需要4天时间。一些藤蔓丛会有蛇出没(有蛇的藤蔓丛会发生声音和周期性震动)。蛇会在黄昏离开藤蔓丛，整个晚上在外面游荡，并且在白天回来。每个藤蔓丛最多含有三条蛇，击杀后每90秒重新生成一条。可以移植，移植的藤蔓丛不会产生蛇。", False, True)
     End Sub
 
     Private Sub button_N_seaweed_click(sender As Object, e As RoutedEventArgs) Handles button_N_seaweed.Click
         NP_Picture({"N_seaweed", "N_seaweed_empty"})
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 0, {"F_seaweed", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("海藻", "Seaweed", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_ocean_shallow", "", "", "", "", "", "", True, False)
+        N_Show_P("海藻", "Seaweed", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_ocean_shallow", "", "", "", "", "", "海藻可以在浅海中找到，有时候会成片出现。采集的海藻可以做一些食物。", True, False)
     End Sub
 
     Private Sub button_N_coffee_plant_click(sender As Object, e As RoutedEventArgs) Handles button_N_coffee_plant.Click
@@ -12462,7 +12466,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"F_coffee_beans", "×1", "G_coffee_plant", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_coffee_plant", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("咖啡树", "Coffee Plant", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "", False, False)
+        N_Show_P("咖啡树", "Coffee Plant", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "咖啡树只生长在火山里，采摘可以得到一个咖啡豆，生长需要4-5天(不受下雨影响)。咖啡树可以移植，但是只能种在火山地皮上，移植的咖啡树生长只需要3-5天。给咖啡树施肥需要灰烬而不是便便。那些没有移植的咖啡树只会在干燥季节生长。咖啡树不会被火烧，不会被雷劈。", False, False)
     End Sub
 
     Private Sub button_N_elephant_cactus_click(sender As Object, e As RoutedEventArgs) Handles button_N_elephant_cactus.Click
@@ -12471,7 +12475,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_cactus_spike", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_elephant_cactus_stump", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("象仙人掌", "Elephant Cactus", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "", False, False)
+        N_Show_P("象仙人掌", "Elephant Cactus", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "象仙人掌只生长在火山里，它们只在干燥季节活跃。靠近象仙人掌会受到20点AOE伤害，每次攻击象仙人掌，它将使攻击者受到10点伤害。穿着象仙人掌盔甲尽管可以免疫象仙人掌的AOE攻击，但是无法抵挡反击伤害。象仙人掌死亡后会掉落象仙人掌刺并且缩小，这时可以用铲子挖起移植，象仙人掌只能种植在岩浆地皮、灰色地皮和火山地皮上。象仙人掌不会被火烧。", False, False)
     End Sub
 
     Private Sub button_N_sapling_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_sapling_diseased.Click
@@ -12479,7 +12483,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 0, {"F_rot", "×1", "G_sapling", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_sapling", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的树苗", "Diseased Sapling", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "", False, True)
+        N_Show_P("患病的树苗", "Diseased Sapling", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的树苗。", False, True)
     End Sub
 
     Private Sub button_N_grass_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_grass_diseased.Click
@@ -12487,7 +12491,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"F_rot", "×1", "G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的草", "Diseased Grass", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_butterfly", "", "", "", False, True)
+        N_Show_P("患病的草", "Diseased Grass", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的长草簇。", False, True)
     End Sub
 
     Private Sub button_N_berry_bush_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush_diseased.Click
@@ -12496,7 +12500,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_rot", "×1", "G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的浆果灌木丛", "Diseased Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", False, True)
+        N_Show_P("患病的浆果灌木丛", "Diseased Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的浆果灌木丛。", False, True)
     End Sub
 
     Private Sub button_N_juicy_berry_bush_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_juicy_berry_bush_diseased.Click
@@ -12505,7 +12509,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_rot", "×1", "G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的蜜汁浆果丛", "Diseased Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "", False, True)
+        N_Show_P("患病的蜜汁浆果丛", "Diseased Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的蜜汁浆果丛", False, True)
     End Sub
 
     Private Sub button_N_evergreen_click(sender As Object, e As RoutedEventArgs) Handles button_N_evergreen.Click
@@ -12652,6 +12656,8 @@ Public Class MainWindow
         NP_Resources(0, 3, {"G_flint", "×1", "G_nitre", "×1", "G_rocks", "×1", "", "", "", "", "", ""})
         N_Show_P("石化树", "Petrified Tree", "DST", 0, 0, 1, "PetrifiedTree", "", "", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "", True, False)
     End Sub
+#End Region
+
 #End Region
 
 #Region "物品"
@@ -15016,22 +15022,10 @@ Public Class MainWindow
         G_Show_T("长草草皮", "Grass Turf", "G_grass_turf", "NoDLC", 1, 0, 1, "Texture_grass_turf", "出现在草原区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的长草草皮足够大时，附近只会出现红雀和雪雀。")
     End Sub
 
-    Private Sub button_G_jungle_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_jungle_turf.Click
-        G_Show_T("丛林草皮", "Jungle Turf", "G_jungle_turf", "SW", 0, 1, 0, "Texture_jungle_turf", "出现在热带雨林区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的丛林草皮足够大时，附近只会出现鹦鹉、海盗鹦鹉和海鸥。")
-    End Sub
-
-    Private Sub button_G_magma_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_magma_turf.Click
-        G_Show_T("岩浆地皮", "Magma Turf", "G_magma_turf", "SW", 0, 1, 0, "Texture_magma_turf", "出现在岩浆领域区域，不能在上面种植植物，但是可以种植食人花(眼球草不会生长)和咖啡树，当铺设的岩浆地皮足够大时，附近只会出现大嘴鸟。")
-    End Sub
-
     Private Sub button_G_marsh_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_marsh_turf.Click
         G_Show_T("沼泽草皮", "Marsh Turf", "G_marsh_turf", "NoDLC", 1, 0, 1, "Texture_marsh_turf", "出现在沼泽区域，不能在上面种植植物，阻止食人花和眼球草的生长，当铺设的沼泽草皮足够大时，附近只会出现乌鸦。")
     End Sub
-
-    Private Sub button_G_meadow_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_meadow_turf.Click
-        G_Show_T("草甸草皮", "Meadow Turf", "G_meadow_turf", "NoDLC", 1, 0, 1, "Texture_meadow_turf", "出现在草甸区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的草甸草皮足够大时，附近只会出现大嘴鸟。")
-    End Sub
-
+    
     Private Sub button_G_rocky_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_rocky_turf.Click
         G_Show_T("岩石草皮", "Rocky Turf", "G_rocky_turf", "NoDLC", 1, 0, 1, "Texture_rocky_turf", "出现在矿区区域，不能在上面种植植物，但是可以种植食人花(眼球草不会生长)，当铺设的岩石草皮足够大时，附近只会出现乌鸦。")
     End Sub
@@ -15042,10 +15036,6 @@ Public Class MainWindow
 
     Private Sub button_G_savanna_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_savanna_turf.Click
         G_Show_T("热带草原草皮", "Savanna Turf", "G_savanna_turf", "NoDLC", 1, 0, 1, "Texture_savanna_turf", "出现在稀树大草原区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的热带草原草皮足够大时，附近只会出现乌鸦、红雀和雪雀。")
-    End Sub
-
-    Private Sub button_G_tidal_marsh_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_tidal_marsh_turf.Click
-        G_Show_T("潮滩地皮", "Tidal Marsh", "G_tidal_marsh_turf", "SW", 0, 1, 0, "Texture_tidal_marsh_turf", "出现在潮汐沼泽区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的潮滩地皮足够大时，附近只会出现大嘴鸟。")
     End Sub
 
     Private Sub button_G_cave_rock_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_cave_rock_turf.Click
@@ -15074,6 +15064,22 @@ Public Class MainWindow
 
     Private Sub button_G_slimey_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_slimey_turf.Click
         G_Show_T("粘滑草地", "Slimey Turf", "G_slimey_turf", "NoDLC", 1, 0, 1, "Texture_slimey_turf", "出现在沉没森林区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的粘滑草地足够大时，附近只会出现乌鸦。")
+    End Sub
+    
+    Private Sub button_G_jungle_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_jungle_turf.Click
+        G_Show_T("丛林草皮", "Jungle Turf", "G_jungle_turf", "SW", 0, 1, 0, "Texture_jungle_turf", "出现在热带雨林区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的丛林草皮足够大时，附近只会出现鹦鹉、海盗鹦鹉和海鸥。")
+    End Sub
+
+    Private Sub button_G_meadow_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_meadow_turf.Click
+        G_Show_T("草甸草皮", "Meadow Turf", "G_meadow_turf", "SW", 0, 1, 0, "Texture_meadow_turf", "出现在草甸区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的草甸草皮足够大时，附近只会出现大嘴鸟。")
+    End Sub
+    
+    Private Sub button_G_tidal_marsh_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_tidal_marsh_turf.Click
+        G_Show_T("潮滩地皮", "Tidal Marsh", "G_tidal_marsh_turf", "SW", 0, 1, 0, "Texture_tidal_marsh_turf", "出现在潮汐沼泽区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的潮滩地皮足够大时，附近只会出现大嘴鸟。")
+    End Sub
+    
+    Private Sub button_G_magma_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_magma_turf.Click
+        G_Show_T("岩浆地皮", "Magma Turf", "G_magma_turf", "SW", 0, 1, 0, "Texture_magma_turf", "出现在岩浆领域区域，不能在上面种植植物，但是可以种植食人花(眼球草不会生长)和咖啡树，当铺设的岩浆地皮足够大时，附近只会出现大嘴鸟。")
     End Sub
 
     Private Sub button_G_ashy_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_ashy_turf.Click
