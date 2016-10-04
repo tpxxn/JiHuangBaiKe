@@ -12010,6 +12010,10 @@ Public Class MainWindow
         REM ------------------图片及资源显示-------------------
         N_Show_P_Change(0)
         REM ------------------高度设置------------------- 
+        N_GetHeight_P()
+    End Sub
+
+    Private Sub N_GetHeight_P()
         Dim WrapPanel_Frame_P_Height As Integer = 0
         If N_WrapPanel_ToolsButton_P.Visibility = Visibility.Visible Then
             WrapPanel_Frame_P_Height += N_WrapPanel_Tools_P.Height + N_WrapPanel_ToolsButton_P.Height
@@ -12026,15 +12030,13 @@ Public Class MainWindow
         If N_WrapPanel_BiomeButton_P.Visibility = Visibility.Visible Then
             WrapPanel_Frame_P_Height += N_WrapPanel_Biome_P.Height + N_WrapPanel_BiomeButton_P.Height
         End If
+        If N_WrapPanel_Switch_P.Visibility = Visibility.Visible Then
+            WrapPanel_Frame_P_Height += 100
+        Else
+            WrapPanel_Frame_P_Height += 20
+        End If
         WrapPanel_Frame_P_Height += N_WrapPanel_DLC_P.Height + N_Canvas_RegenerateAndCombustibleAttribite_P.Height + N_WrapPanel_Introduce_P.Height
         N_WrapPanel_Frame_P.Height = WrapPanel_Frame_P_Height
-        If N_WrapPanel_Switch_P.Visibility = Visibility.Visible Then
-            Dim N_Switch_T As New Thickness()
-            N_Switch_T.Top = WrapPanel_Frame_P_Height + 135
-            N_Switch_T.Left = 10
-            N_WrapPanel_Switch_P.Margin = N_Switch_T
-            WrapPanel_Frame_P_Height += 100
-        End If
         If WrapPanel_Frame_P_Height + 135 > 604 Then
             Canvas_NaturalLeft_P.Height = WrapPanel_Frame_P_Height + 135
         Else
@@ -12110,6 +12112,8 @@ Public Class MainWindow
                 image_NP_ResourcesTools_4.Source = Picture_Short_Name(Res_Short_Name(NP_RAExtract(11)))
             End If
         End If
+        REM ------------------高度设置------------------- 
+        N_GetHeight_P()
     End Sub
 
     Public Overloads Sub NP_Picture(ParamArray Picture() As String)
@@ -12509,7 +12513,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_rot", "×1", "G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的蜜汁浆果丛", "Diseased Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的蜜汁浆果丛", False, True)
+        N_Show_P("患病的蜜汁浆果丛", "Diseased Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的蜜汁浆果丛。", False, True)
     End Sub
 
     Private Sub button_N_evergreen_click(sender As Object, e As RoutedEventArgs) Handles button_N_evergreen.Click
@@ -12518,7 +12522,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_log", "×2", "G_pine_cone", "×1", "", "", "", "", "", "", "", ""})
         NP_Resources(2, 2, {"G_log", "×3", "G_pine_cone", "×2", "", "", "", "", "", "", "", ""})
-        N_Show_P("常青树", "Evergreen", "NoDLC", 1, 1, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_pine_cone", "×1(一定几率)", "", "", "N_grasslands", "N_forest", "生成", "A_treeguard", "", "", "", True, True)
+        N_Show_P("常青树", "Evergreen", "NoDLC", 1, 1, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_pine_cone", "×1(一定几率)", "", "", "N_grasslands", "N_forest", "生成", "A_treeguard", "", "", "常青树十分常见，除了稀树大草原和矿区，都能看到它的身影。常青树是松果和木材的主要来源，可以被猪人随从砍伐。砍伐常青树的次数为5(小)/10(中)/15(大)/1(老)次。常青树会随着时间变化在小、中、大、老这个生长周期中不断循环。一旦砍伐，树墩不会长成常青树。第四天开始，每次砍伐常青树都有1.3%的几率产生树精守卫(包括自己种的)，树精守卫的速度并不快，可以通过种植常青树平息树精守卫的愤怒。联机版中，常青树在一段时间后会变成石化树。", True, True)
     End Sub
 
     Private Sub button_N_lumpy_evergreen_click(sender As Object, e As RoutedEventArgs) Handles button_N_lumpy_evergreen.Click
@@ -12527,7 +12531,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_log", "×2", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(2, 2, {"G_log", "×3", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("粗壮常青树", "Lumpy Evergreen", "NoDLC", 1, 1, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_forest", "", "生成", "A_treeguard", "", "", "", False, True)
+        N_Show_P("粗壮常青树", "Lumpy Evergreen", "NoDLC", 1, 1, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_forest", "", "生成", "A_treeguard", "", "", "粗壮常青树是常青树的变种，不会掉落松果。在联机版中，粗壮常青树是会随时间再生的。", False, True)
     End Sub
 
     Private Sub button_N_birchnut_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_birchnut_tree.Click
@@ -12535,56 +12539,56 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(5, 11)
         NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_log", "×2", "", "", "", "", "", "", "", "", "", ""})
-        NP_Resources(2, 2, {"G_log", "×3", "G_birchnut", "×2", "", "", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_log", "×3", "G_birchnut", "×2(秋天)", "G_birchnut", "×1(春天和夏天)", "", "", "", "", "", ""})
         NP_Resources(3, 3, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(4, 4, {"G_log", "×2", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(5, 5, {"G_log", "×3", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("桦树", "Birchnut Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_birchnut", "×1(极小几率)", "", "", "N_grasslands", "N_deciduous_forest", "生成", "A_poison_birchnut_trees", "", "", "", True, True)
+        N_Show_P("桦树", "Birchnut Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_birchnut", "×1(极小几率)", "", "", "N_grasslands", "N_deciduous_forest", "生成", "A_poison_birchnut_trees", "", "", "桦树一年四季的形态各不相同，冬天的桦树不会掉咯坚果。站在树下可以避雨，还能减缓过热。桦树是坚果和木材的主要来源，可以被猪人随从砍伐。砍伐桦树的次数为5(小)/10(中)/15(大)次。桦树会随着时间变化在小、中、大这个生长周期中不断循环。一旦砍伐，树墩不会长成桦树。第四天开始，每次砍伐桦树都有几率产生桦树精，桦树精至少需要一天时间或者通过种植坚果平息。桦树精最多可以产生5个坚果怪来攻击，并且还有远程的树根攻击。消灭桦树精需要用斧子砍伐。", True, True)
     End Sub
 
     Private Sub button_N_totally_normal_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_totally_normal_tree.Click
         NP_Picture({"N_totally_normal_tree"})
         NP_Resources(1, {"G_living_log", "×2", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("完全正常的树", "Totally Normal Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_forest", "", "", "", "", "", "", False, True)
+        N_Show_P("完全正常的树", "Totally Normal Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_forest", "", "", "", "", "", "完全正常的树生长在森林生物群落，需要砍伐20次，可以获得两个活木，挖起树墩也可以获得一个活木。完全正常的树周围通常有一些恶魔之花。", False, True)
     End Sub
 
     Private Sub button_N_spiky_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_spiky_tree.Click
         NP_Picture("N_spiky_tree")
         NP_Resources(1, {"G_twigs", "×1", "G_log", "×1(20%)", "", "", "", "", "", "", "", ""})
-        N_Show_P("针叶树", "Spiky Tree", "NoDLC", 1, 0, 1, "Normal", "G_twigs", "×1", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_log", "×1(极小几率)", "N_marsh", "", "", "", "", "", "", False, True)
+        N_Show_P("针叶树", "Spiky Tree", "NoDLC", 1, 0, 1, "Normal", "G_twigs", "×1", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_log", "×1(极小几率)", "N_marsh", "", "", "", "", "", "出现在沼泽和沙漠的树，不会随着时间而变化。", False, True)
     End Sub
 
     Private Sub button_N_blue_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_blue_mushtree.Click
         NP_Picture({"N_blue_mushtree", "N_blue_mushtree_blooming"})
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 1, {"G_log", "×1", "F_blue_cap", "×1", "", "", "", "", "", "", "", ""})
-        N_Show_P("蓝色蘑菇树", "Blue Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "", "", "", "", "", False, True)
+        N_Show_P("蓝色蘑菇树", "Blue Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "生成", "A_blue_spore", "", "", "砍伐获得木材和蓝蘑菇，满月时，所有的蓝蘑菇都会变成蓝色蘑菇树(如果砍伐这种蓝色蘑菇树，那么满月结束后会变成采摘过的蓝蘑菇)。在联机版中，有额外的绽放阶段，会产生蓝色孢子。", False, True)
     End Sub
 
     Private Sub button_N_green_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_green_mushtree.Click
         NP_Picture({"N_green_mushtree", "N_green_mushtree_blooming"})
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 1, {"G_log", "×1", "F_green_cap", "×1", "", "", "", "", "", "", "", ""})
-        N_Show_P("绿色蘑菇树", "Green Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "", "", "", "", "", False, True)
+        N_Show_P("绿色蘑菇树", "Green Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "生成", "A_green_spore", "", "", "砍伐获得木材和绿蘑菇，满月时，所有的绿蘑菇都会变成绿色蘑菇树(如果砍伐这种绿色蘑菇树，那么满月结束后会变成采摘过的绿蘑菇)。在联机版中，有额外的绽放阶段，会产生绿色孢子。", False, True)
     End Sub
 
     Private Sub button_N_red_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_red_mushtree.Click
         NP_Picture({"N_red_mushtree", "N_red_mushtree_blooming"})
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 1, {"G_log", "×1", "F_red_cap", "×1", "", "", "", "", "", "", "", ""})
-        N_Show_P("红色蘑菇树", "Red Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "", "", "", "", "", False, True)
+        N_Show_P("红色蘑菇树", "Red Mushtree", "NoDLC", 1, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "生成", "A_red_spore", "", "", "砍伐获得木材和红蘑菇，满月时，所有的红蘑菇都会变成红色蘑菇树(如果砍伐这种红色蘑菇树，那么满月结束后会变成采摘过的红蘑菇)。在联机版中，有额外的绽放阶段，会产生红色孢子。", False, True)
     End Sub
 
     Private Sub button_N_webbed_blue_mushtree_click(sender As Object, e As RoutedEventArgs) Handles button_N_webbed_blue_mushtree.Click
         NP_Picture({"N_webbed_blue_mushtree"})
         NP_Resources(1, {"G_log", "×1", "G_silk", "×1", "G_silk", "×1(30%)", "G_silk", "×1(30%)", "", "", "", ""})
-        N_Show_P("长满网的蓝色蘑菇树", "Webbed Blue Mushtree", "DST", 0, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "生成", "A_dangling_depth_dweller", "", "", "", False, True)
+        N_Show_P("长满网的蓝色蘑菇树", "Webbed Blue Mushtree", "DST", 0, 0, 1, "Normal", "G_ash", "×1", "G_charcoal", "×1(一定几率)", "", "", "", "", "N_mushtree_forest", "", "生成", "A_dangling_depth_dweller", "", "", "蓝蘑菇树的变种，砍伐后会生成白蜘蛛。", False, True)
     End Sub
 
     Private Sub button_N_cave_banana_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_cave_banana_tree.Click
         NP_Picture({"N_cave_banana_tree"})
         NP_Resources(1, {"F_banana", "×1", "G_log", "×1", "G_twigs", "×2", "", "", "", "", "", ""})
-        N_Show_P("洞穴香蕉树", "Cave Banana Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_village", "", "", "", "", "", "", False, True)
+        N_Show_P("洞穴香蕉树", "Cave Banana Tree", "NoDLC", 1, 0, 1, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_village", "", "", "", "", "", "洞穴香蕉树通常出现在野外采摘可以获得香蕉，生长需要4天。", False, True)
     End Sub
 
     Private Sub button_N_palm_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_palm_tree.Click
@@ -12593,7 +12597,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_log", "×1", "G_palm_leaf", "×1", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_log", "×2", "G_palm_leaf", "×1", "", "", "", "", "", "", "", ""})
         NP_Resources(2, 2, {"G_log", "×2", "G_palm_leaf", "×1", "F_coconut", "×1", "", "", "", "", "", ""})
-        N_Show_P("椰子树", "Palm Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_beach", "", "生成", "A_palm_treeguard", "", "", "", True, True)
+        N_Show_P("椰子树", "Palm Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_beach", "", "生成", "A_palm_treeguard", "", "", "椰子树通常可以在海滩找到。椰子树是椰子和木材的主要来源，可以被猪人随从砍伐。砍伐椰子树的次数为5(小)/10(中)/15(大)次。椰子树会随着时间变化在小、中、大这个生长周期中不断循环。一旦砍伐，树墩不会长成椰子树。第四天开始，每次砍伐椰子树都有1/75的几率产生椰树守卫(包括自己种的)。每次砍伐椰子树都有1%的几率砸下一个椰子造成20点伤害，掉落的椰子可以收集。", True, True)
     End Sub
 
     Private Sub button_N_jungle_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_jungle_tree.Click
@@ -12602,7 +12606,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_log", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_log", "×2", "G_jungle_tree_seed", "×1", "F_egg", "×1(50%)", "", "", "", "", "", ""})
         NP_Resources(2, 2, {"G_log", "×3", "G_jungle_tree_seed", "×2", "F_egg", "×1(25%)", "F_banana", "×1(25%)", "", "", "", ""})
-        N_Show_P("丛林树", "Jungle Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_jungle", "", "生成", "A_snake", "生成", "A_poison_snake", "", True, True)
+        N_Show_P("丛林树", "Jungle Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_jungle", "", "生成", "A_snake", "生成", "A_poison_snake", "丛林树只能在热带雨林找到，它们是迄今为止最大的树。每次砍伐丛林树都有50%的几率产生蛇。", True, True)
     End Sub
 
     Private Sub button_N_mangrove_click(sender As Object, e As RoutedEventArgs) Handles button_N_mangrove.Click
@@ -12611,25 +12615,25 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_log", "×1", "G_twigs", "×1", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_log", "×1", "G_twigs", "×2", "", "", "", "", "", "", "", ""})
         NP_Resources(2, 2, {"G_log", "×2", "G_twigs", "×3", "", "", "", "", "", "", "", ""})
-        N_Show_P("红树林", "Mangrove", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_mangrove_bio", "", "", "", "", "", "", False, True)
+        N_Show_P("红树林", "Mangrove", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_mangrove_bio", "", "", "", "", "", "红树林生长在红树林生物群落，只能坐船拜访它们。截至目前，没有种植红树林的方法，但是只要没有完全摧毁它们，就会很快恢复。", False, True)
     End Sub
 
     Private Sub button_N_regular_jungle_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_regular_jungle_tree.Click
         NP_Picture({"N_regular_jungle_tree"})
         NP_Resources(1, {"G_living_log", "×2", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("正常的丛林树", "Regular Jungle Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_jungle", "", "", "", "", "", "", False, True)
+        N_Show_P("正常的丛林树", "Regular Jungle Tree", "SW", 0, 1, 0, "Normal", "G_charcoal", "×1", "", "", "", "", "", "", "N_jungle", "", "", "", "", "", "船难版的完全正常的树。需要砍伐20次，可以获得两个活木，挖起树墩也可以获得一个活木。正常的丛林树周围通常有一些恶魔之花。", False, True)
     End Sub
 
     Private Sub button_N_burnt_ash_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_burnt_ash_tree.Click
         NP_Picture({"N_burnt_ash_tree"})
         NP_Resources(1, {"G_ash", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("烧焦的灰树", "Burnt Ash Tree", "SW", 0, 1, 0, "Normal", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "", False, False)
+        N_Show_P("烧焦的灰树", "Burnt Ash Tree", "SW", 0, 1, 0, "Normal", "", "", "", "", "", "", "", "", "N_volcano_bio", "", "", "", "", "", "生长在火山的树，砍伐后获得一个灰烬。", False, False)
     End Sub
 
     Private Sub button_N_brainy_sprout_click(sender As Object, e As RoutedEventArgs) Handles button_N_brainy_sprout.Click
         NP_Picture({"N_brainy_sprout"})
         NP_Resources(1, {"F_brainy_matter", "×1", "S_limestone", "×2(           )", "", "", "", "", "", "", "S_hammer", ""})
-        N_Show_P("聪明芽", "Brainy Sprout", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_coral_reef_bio", "", "+25精神/分", "", "发光", "", "", False, False)
+        N_Show_P("聪明芽", "Brainy Sprout", "SW", 0, 1, 0, "NoTool", "", "", "", "", "", "", "", "", "N_coral_reef_bio", "", "+25精神/分", "", "发光", "", "聪明芽生长在珊瑚礁生物群落。采摘获得聪明豆，生长需要20天。如果没有采摘，在黄昏和夜晚会发光，发光的时候有25精神/分的光环存在。", False, False)
     End Sub
 
     Private Sub button_N_twiggy_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_twiggy_tree.Click
@@ -12638,7 +12642,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_twigs", "×1", "G_log", "×2", "G_twiggy_tree_cone", "×1", "", "", "", "", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2", "G_log", "×3", "G_twiggy_tree_cone", "×2", "", "", "", "", "", ""})
-        N_Show_P("多枝的树", "Twiggy Tree", "DST", 0, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_twigs", "×1(一定几率)", "", "", "N_forest", "", "", "", "", "", "", False, True)
+        N_Show_P("多枝的树", "Twiggy Tree", "DST", 0, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_twigs", "×1(一定几率)", "", "", "N_forest", "", "", "", "", "", "游戏开始两个季节之后，树苗逐渐变成多枝的树，多枝的树周围会随机掉落树枝。多枝的树会患病。", False, True)
     End Sub
 
     Private Sub button_N_twiggy_tree_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_twiggy_tree_diseased.Click
@@ -12647,14 +12651,17 @@ Public Class MainWindow
         NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_twigs", "×1", "G_log", "×2", "G_twiggy_tree_cone", "×1", "", "", "", "", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2", "G_log", "×3", "G_twiggy_tree_cone", "×2", "", "", "", "", "", ""})
-        N_Show_P("患病的多枝的树", "Diseased Twiggy Tree", "DST", 0, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_twigs", "×1(一定几率)", "", "", "N_forest", "", "", "", "", "", "", False, True)
+        N_Show_P("患病的多枝的树", "Diseased Twiggy Tree", "DST", 0, 0, 1, "Normal", "G_charcoal", "×1", "G_charcoal", "×1(一定几率)", "G_twigs", "×1(一定几率)", "", "", "N_forest", "", "", "", "", "", "患病后一段时间消失，患病无法治疗。", False, True)
     End Sub
 
     Private Sub button_N_petrified_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_petrified_tree.Click
         NP_Picture("N_petrified_tree_", 4)
         ReDim NP_ResourcesArray(3, 11)
-        NP_Resources(0, 3, {"G_flint", "×1", "G_nitre", "×1", "G_rocks", "×1", "", "", "", "", "", ""})
-        N_Show_P("石化树", "Petrified Tree", "DST", 0, 0, 1, "PetrifiedTree", "", "", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "", True, False)
+        NP_Resources(0, 0, {"G_flint", "×1(35%几率额外获得一个)", "G_nitre", "×1(25%)", "G_rocks", "×1(25%几率额外获得一个)", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_flint", "×1(75%几率额外获得一个)", "G_nitre", "×1(25%)", "G_rocks", "×1(40%)", "", "", "", "", "", ""})
+        NP_Resources(2, 2, {"G_flint", "×2(35%几率额外获得一个)", "G_nitre", "×1(75%)", "G_rocks", "×1(65%)", "", "", "", "", "", ""})
+        NP_Resources(3, 3, {"G_flint", "×1(50%)", "G_nitre", "×1(75%)", "G_rocks", "×1(25%)", "", "", "", "", "", ""})
+        N_Show_P("石化树", "Petrified Tree", "DST", 0, 0, 1, "PetrifiedTree", "", "", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "石化树由常青树变种而来，当常青树石化后，石化树就不会生长了。", True, False)
     End Sub
 #End Region
 
@@ -15025,7 +15032,7 @@ Public Class MainWindow
     Private Sub button_G_marsh_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_marsh_turf.Click
         G_Show_T("沼泽草皮", "Marsh Turf", "G_marsh_turf", "NoDLC", 1, 0, 1, "Texture_marsh_turf", "出现在沼泽区域，不能在上面种植植物，阻止食人花和眼球草的生长，当铺设的沼泽草皮足够大时，附近只会出现乌鸦。")
     End Sub
-    
+
     Private Sub button_G_rocky_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_rocky_turf.Click
         G_Show_T("岩石草皮", "Rocky Turf", "G_rocky_turf", "NoDLC", 1, 0, 1, "Texture_rocky_turf", "出现在矿区区域，不能在上面种植植物，但是可以种植食人花(眼球草不会生长)，当铺设的岩石草皮足够大时，附近只会出现乌鸦。")
     End Sub
@@ -15065,7 +15072,7 @@ Public Class MainWindow
     Private Sub button_G_slimey_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_slimey_turf.Click
         G_Show_T("粘滑草地", "Slimey Turf", "G_slimey_turf", "NoDLC", 1, 0, 1, "Texture_slimey_turf", "出现在沉没森林区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的粘滑草地足够大时，附近只会出现乌鸦。")
     End Sub
-    
+
     Private Sub button_G_jungle_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_jungle_turf.Click
         G_Show_T("丛林草皮", "Jungle Turf", "G_jungle_turf", "SW", 0, 1, 0, "Texture_jungle_turf", "出现在热带雨林区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的丛林草皮足够大时，附近只会出现鹦鹉、海盗鹦鹉和海鸥。")
     End Sub
@@ -15073,11 +15080,11 @@ Public Class MainWindow
     Private Sub button_G_meadow_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_meadow_turf.Click
         G_Show_T("草甸草皮", "Meadow Turf", "G_meadow_turf", "SW", 0, 1, 0, "Texture_meadow_turf", "出现在草甸区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的草甸草皮足够大时，附近只会出现大嘴鸟。")
     End Sub
-    
+
     Private Sub button_G_tidal_marsh_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_tidal_marsh_turf.Click
         G_Show_T("潮滩地皮", "Tidal Marsh", "G_tidal_marsh_turf", "SW", 0, 1, 0, "Texture_tidal_marsh_turf", "出现在潮汐沼泽区域，可以在上面种植植物，也不阻止食人花和眼球草的生长，当铺设的潮滩地皮足够大时，附近只会出现大嘴鸟。")
     End Sub
-    
+
     Private Sub button_G_magma_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_magma_turf.Click
         G_Show_T("岩浆地皮", "Magma Turf", "G_magma_turf", "SW", 0, 1, 0, "Texture_magma_turf", "出现在岩浆领域区域，不能在上面种植植物，但是可以种植食人花(眼球草不会生长)和咖啡树，当铺设的岩浆地皮足够大时，附近只会出现大嘴鸟。")
     End Sub

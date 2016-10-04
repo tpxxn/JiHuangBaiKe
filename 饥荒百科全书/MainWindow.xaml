@@ -8506,50 +8506,50 @@
                                         <WrapPanel x:Name="N_WrapPanel_Introduce_P" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
                                             <TextBlock x:Name="TextBlock_NP_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
-                                    </WrapPanel>
-                                    <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="80" Width="180" Margin="0" Canvas.Left="0" Canvas.Top="0">
-                                        <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="9,10,0,0">
-                                            <Button.Style>
-                                                <Style TargetType="{x:Type Button}">
-                                                    <Setter Property="Template">
-                                                        <Setter.Value>
-                                                            <ControlTemplate TargetType="{x:Type Button}">
-                                                                <Image x:Name="TabItem" Source="Resources/B_SwitchLeft_1.png" />
-                                                                <ControlTemplate.Triggers>
-                                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                                        <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
-                                                                    </Trigger>
-                                                                    <Trigger Property="IsEnabled" Value="False">
-                                                                        <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
-                                                                    </Trigger>
-                                                                </ControlTemplate.Triggers>
-                                                            </ControlTemplate>
-                                                        </Setter.Value>
-                                                    </Setter>
-                                                </Style>
-                                            </Button.Style>
-                                        </Button>
-                                        <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="74,10,0,0">
-                                            <Button.Style>
-                                                <Style TargetType="{x:Type Button}">
-                                                    <Setter Property="Template">
-                                                        <Setter.Value>
-                                                            <ControlTemplate TargetType="{x:Type Button}">
-                                                                <Image x:Name="TabItem" Source="Resources/B_SwitchRight_1.png" />
-                                                                <ControlTemplate.Triggers>
-                                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                                        <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
-                                                                    </Trigger>
-                                                                    <Trigger Property="IsEnabled" Value="False">
-                                                                        <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
-                                                                    </Trigger>
-                                                                </ControlTemplate.Triggers>
-                                                            </ControlTemplate>
-                                                        </Setter.Value>
-                                                    </Setter>
-                                                </Style>
-                                            </Button.Style>
-                                        </Button>
+                                        <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="80" Width="180" Margin="0">
+                                            <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="9,10,0,0">
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                                    <Image x:Name="TabItem" Source="Resources/B_SwitchLeft_1.png" />
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                                            <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
+                                                                        </Trigger>
+                                                                        <Trigger Property="IsEnabled" Value="False">
+                                                                            <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                            <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="74,10,0,0">
+                                                <Button.Style>
+                                                    <Style TargetType="{x:Type Button}">
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="{x:Type Button}">
+                                                                    <Image x:Name="TabItem" Source="Resources/B_SwitchRight_1.png" />
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                                            <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
+                                                                        </Trigger>
+                                                                        <Trigger Property="IsEnabled" Value="False">
+                                                                            <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
                             </ScrollViewer>
