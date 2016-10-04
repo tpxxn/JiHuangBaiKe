@@ -12303,7 +12303,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 0, {"G_twigs", "×1", "G_sapling", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_sapling", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("树苗", "Sapling", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "", False, True)
+        N_Show_P("树苗", "Sapling", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "树苗常见于草原和森林，它可以提供一个树枝。树苗可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。不像草和浆果灌木丛，它不需要施肥，生长需要4天时间(冬天不会生长)。尽管叫树苗，但是永远不会长成树。在夏天树苗会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后树苗会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_grass_click(sender As Object, e As RoutedEventArgs) Handles button_N_grass.Click
@@ -12311,7 +12311,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"G_cut_grass", "×1", "G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("草", "Grass", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_savanna", "", "", "", "", "", False, True)
+        N_Show_P("草", "Grass", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_savanna", "", "", "", "", "树苗常见于稀树大草原和森林，洞穴里也有一些，特别是在沉没森林区域，它可以提供一个割下的草。草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的草需要施肥(便便、鸟屎、便便蓝)，生长需要3天时间(下雨会减少生长时间，冬天生长得很慢)。在夏天草会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后草会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_berry_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush.Click
@@ -12320,7 +12320,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_berries", "×1", "G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_gobbler", "", "", "", False, True)
+        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_gobbler", "", "", "浆果灌木丛常见于草原，偶尔在森林里也可以发现它们，它可以提供一个浆果。浆果灌木丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的浆果灌木丛需要施肥(便便、鸟屎、便便蓝)，生长需要3-5天时间(下雨会减少生长时间，冬天不会生长)。采摘浆果的时候会出现火鸡，如果不击杀或驱逐它，它就会把周围可以收获的浆果全部吃光！在夏天浆果灌木丛会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后浆果灌木丛会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_berry_bush_2_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush_2.Click
@@ -12329,23 +12329,23 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_berries", "×1", "G_berry_bush_2", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_berry_bush_2", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_gobbler", "生成              (SW)", "A_snake", "", False, True)
+        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_gobbler", "生成              (SW)", "A_snake", "浆果灌木丛常见于草原，特别是猪村附近，它可以提供一个浆果。浆果灌木丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的浆果灌木丛需要施肥(便便、鸟屎、便便蓝)，生长需要3-5天时间(下雨会减少生长时间，冬天不会生长)。采摘浆果的时候会出现火鸡，如果不击杀或驱逐它，它就会把周围可以收获的浆果全部吃光！在夏天浆果灌木丛会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后浆果灌木丛会患病，并且无法治愈。注意！这种浆果灌木丛不能制作丛林帽！", False, True)
     End Sub
 
     Private Sub button_N_juicy_berry_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_juicy_berry_bush.Click
         NP_Picture({"N_juicy_berry_bush", "N_juicy_berry_bush_empty", "N_juicy_berry_bush_dead"})
         ReDim NP_ResourcesArray(2, 11)
-        NP_Resources(0, 0, {"F_juicy_berries", "×1", "G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
+        NP_Resources(0, 0, {"F_juicy_berries", "×3", "G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("蜜汁浆果丛", "Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "", False, True)
+        N_Show_P("蜜汁浆果丛", "Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "蜜汁浆果丛是联机版中浆果灌木丛的一个变种，常见于草原，偶尔在森林里也可以发现它们，它可以提供三个蜜汁浆果。蜜汁浆果丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的蜜汁浆果丛需要施肥(便便、鸟屎、便便蓝)，生长需要比浆果灌木丛更长的时间(下雨会减少生长时间，冬天不会生长)。蜜汁浆果丛会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_reeds_click(sender As Object, e As RoutedEventArgs) Handles button_N_reeds.Click
         NP_Picture({"N_reeds", "N_reeds_empty"})
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 0, {"G_cut_reeds", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("芦苇", "Reeds", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "", "", "", "", "", "", False, True)
+        N_Show_P("芦苇", "Reeds", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "", "", "", "", "", "芦苇常见于沼泽，它可以提供一个割好的芦苇。芦苇不能移植。生长需要3天时间(冬天不会生长)。有一种芦苇陷阱：沼泽地里一大片芦苇，并且伴随着一大片的触手，十分危险。", False, True)
     End Sub
 
     Private Sub button_N_spiky_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_spiky_bush.Click
