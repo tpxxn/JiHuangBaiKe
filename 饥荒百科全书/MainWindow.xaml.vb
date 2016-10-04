@@ -12289,13 +12289,13 @@ Public Class MainWindow
     Private Sub button_N_flower_click(sender As Object, e As RoutedEventArgs) Handles button_N_flower.Click
         NP_Picture("N_flower_", 11)
         NP_Resources(11, {"G_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("花", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "拾取时精神+5", "", "", True, True)
+        N_Show_P("花", "Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "拾取时精神+5", "", "花的用途多种多样。采集12朵花可以做花环，每次采集花都会增加5点精神，这在游戏前期十分有用。花还是产生蝴蝶的地方，捕捉的蝴蝶可以右键种植成花，这使得花可以重生。无家可归的蜜蜂也可以随着时间的推移产生新的花。许多花种在一起建立一个蝴蝶农场用以获取蝴蝶翅膀，也可以用来增加蜂蜜的产蜜速度。", True, True)
     End Sub
 
     Private Sub button_N_evil_flower_click(sender As Object, e As RoutedEventArgs) Handles button_N_evil_flower.Click
         NP_Picture("N_evil_flower_", 8)
         NP_Resources(11, {"G_dark_petals", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("恶魔之花", "Evil Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_chess", "N_forest", "生成", "A_butterfly", "拾取时精神-5", "", "", True, True)
+        N_Show_P("恶魔之花", "Evil Flower", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_chess", "N_forest", "生成", "A_butterfly", "拾取时精神-5", "", "恶魔之花通常存在于传送机零件、完全正常的树和麦斯威尔之门附近。拾取恶魔之花会减少5点精神。恶魔之花同样可以产生蝴蝶，并且吸引蝴蝶与蜜蜂。", True, True)
     End Sub
 
     Private Sub button_N_sapling_click(sender As Object, e As RoutedEventArgs) Handles button_N_sapling.Click
@@ -12416,7 +12416,7 @@ Public Class MainWindow
     Private Sub button_N_fern_1_click(sender As Object, e As RoutedEventArgs) Handles button_N_fern_1.Click
         NP_Picture("N_fern_", 10)
         NP_Resources(10, {"G_foliage", "×1", "", "", "", "", "", "", "", "", "", ""})
-        N_Show_P("蕨类植物", "Fern", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "", False, True)
+        N_Show_P("蕨类植物", "Fern", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_wilds", "", "", "", "", "", "蕨类植物是长在洞穴里的“花”，捡起可以得到蕨叶，吃了回复1点生命。蕨叶还有一个用处是制作盆栽的蕨类植物。", False, True)
     End Sub
 
     Private Sub button_N_cave_lichen_click(sender As Object, e As RoutedEventArgs) Handles button_N_cave_lichen.Click
