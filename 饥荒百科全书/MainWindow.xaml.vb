@@ -14230,7 +14230,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_G_umbrella_click(sender As Object, e As RoutedEventArgs) Handles button_G_umbrella.Click
-        G_Show_E("雨伞", "Umbrella", "S_umbrella", "NoDLC", 1, 1, 1, "", "", "", "", "不俗的防潮效果。", {17, 0, 0, 0, 20, 0, 0, 0, 50, 0, 2})
+        G_Show_E("雨伞", "Umbrella", "S_umbrella", "NoDLC", 1, 1, 1, "", "", "", "", "不俗的防潮效果。", {17, 0, 0, 0, 20, 0, 0, 0, 90, 0, 2})
     End Sub
 
     Private Sub button_G_straw_hat_click(sender As Object, e As RoutedEventArgs) Handles button_G_straw_hat.Click
@@ -14242,11 +14242,11 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_G_rain_hat_click(sender As Object, e As RoutedEventArgs) Handles button_G_rain_hat.Click
-        G_Show_E("雨帽", "Rain Hat", "S_rain_hat", "NoDLC", 1, 0, 1, "", "", "", "", "雨帽加雨衣，绝配！", {0, 0, 0, 0, 0, 0, 8, 0, 20, 0, 3.33})
+        G_Show_E("雨帽", "Rain Hat", "S_rain_hat", "NoDLC", 1, 0, 1, "", "", "", "", "雨帽加雨衣，绝配！", {0, 0, 0, 0, 0, 0, 8, 0, 70, 0, 3.33})
     End Sub
 
     Private Sub button_G_rain_coat_click(sender As Object, e As RoutedEventArgs) Handles button_G_rain_coat.Click
-        G_Show_E("雨衣", "Rain Coat", "S_rain_coat", "NoDLC", 1, 0, 1, "", "", "", "", "雨帽加雨衣，绝配！", {0, 0, 0, 0, 0, 0, 8, 0, 70, 60, 0})
+        G_Show_E("雨衣", "Rain Coat", "S_rain_coat", "NoDLC", 1, 0, 1, "", "", "", "", "雨帽加雨衣，绝配！", {0, 0, 0, 0, 0, 0, 8, 0, 100, 60, 0})
     End Sub
 
     Private Sub button_G_snakeskin_hat_click(sender As Object, e As RoutedEventArgs) Handles button_G_snakeskin_hat.Click
@@ -14522,7 +14522,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_G_spiderhat_click(sender As Object, e As RoutedEventArgs) Handles button_G_spiderhat.Click
-        G_Show_E("蜘蛛帽", "Spiderhat", "G_spiderhat", "NoDLC", 1, 0, 1, "控制蜘蛛", "", "A_spider_queen", "", "只能打蜘蛛女王掉落，可以控制蜘蛛。", {0, 0, 0, 0, 0, 120, 0, 0, 0, 0, -2})
+        G_Show_E("蜘蛛帽", "Spiderhat", "G_spiderhat", "NoDLC", 1, 0, 1, "控制蜘蛛", "", "A_spider_queen", "", "只能打蜘蛛女王掉落，可以控制蜘蛛。", {0, 0, 0, 0, 0, 120, 0, 0, 20, 0, -2})
     End Sub
 
     Private Sub button_G_slurper_click(sender As Object, e As RoutedEventArgs) Handles button_G_slurper.Click
