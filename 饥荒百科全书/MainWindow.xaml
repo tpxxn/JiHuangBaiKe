@@ -1546,75 +1546,85 @@
                             <Canvas x:Name="Canvas_FoodLeft_Meats" Margin="210,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="200" Background="#FFE4E4E4" Visibility="Collapsed">
                                 <Image Source="Resources/FC_Meats.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="64" Canvas.Top="16" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
                                 <TextBlock x:Name="TextBlock_F_Meats_Title" TextWrapping="Wrap" Text="肉类" FontSize="20" Canvas.Left="96" Canvas.Top="20"/>
-                                <Button x:Name="button_F_Meats_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" >
-                                    <Image Source="Resources/F_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="100" >
-                                    <Image Source="Resources/F_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="150" >
-                                    <Image Source="Resources/F_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" >
-                                    <Image Source="Resources/F_cooked_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="50" >
-                                    <Image Source="Resources/F_monster_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="100" >
-                                    <Image Source="Resources/F_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="150" >
-                                    <Image Source="Resources/F_cooked_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" >
-                                    <Image Source="Resources/F_small_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="50" >
-                                    <Image Source="Resources/F_drumstick.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="100" >
-                                    <Image Source="Resources/F_fried_drumstick.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="150" >
-                                    <Image Source="Resources/F_frog_legs.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" >
-                                    <Image Source="Resources/F_cooked_frog_legs.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="50" >
-                                    <Image Source="Resources/F_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="100" >
-                                    <Image Source="Resources/F_cooked_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="150" >
-                                    <Image Source="Resources/F_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" >
-                                    <Image Source="Resources/F_cooked_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="50" >
-                                    <Image Source="Resources/F_moleworm.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_19" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="100" >
-                                    <Image Source="Resources/F_tropical_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_20" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="150" >
-                                    <Image Source="Resources/F_dead_dogfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_21" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="302" >
-                                    <Image Source="Resources/F_raw_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_22" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="302" Canvas.Left="50" >
-                                    <Image Source="Resources/F_fish_steak.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Meats_23" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="302" Canvas.Left="100" >
-                                    <Image Source="Resources/F_shark_fin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
+                                <WrapPanel Height="552" Width="200" Canvas.Top="52">
+                                    <WrapPanel Width="200" Canvas.Top="52">
+                                        <Image Source="Resources/FC_Meats.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×0.5" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Meats_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_small_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_drumstick.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fried_drumstick.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_frog_legs.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_frog_legs.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_moleworm.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_19" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_tropical_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_20" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dead_dogfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_21" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_raw_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_22" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fish_steak.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_23" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_shark_fin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Meats.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Meats_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Meats_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_monster_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
                                 <Button x:Name="FL_btn_close_M" Cursor="Hand" Width="15" Height="15" ToolTip="关闭" Canvas.Right="2" HorizontalAlignment="Right" Canvas.Left="180" Canvas.Top="5">
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
@@ -1643,33 +1653,39 @@
                                 <Image Source="Resources/FC_Monster_Meats.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="54" Canvas.Top="16" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
                                 <!--食物名称-->
                                 <TextBlock x:Name="TextBlock_F_Monster_Meats_Title" TextWrapping="Wrap" Text="怪兽类" FontSize="20" Canvas.Left="86" Canvas.Top="20"/>
-                                <Button x:Name="button_F_Monster_Meats_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" >
-                                    <Image Source="Resources/F_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="100" >
-                                    <Image Source="Resources/F_monster_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="150" >
-                                    <Image Source="Resources/F_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" >
-                                    <Image Source="Resources/F_dead_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="100" >
-                                    <Image Source="Resources/F_dried_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="150" >
-                                    <Image Source="Resources/F_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Monster_Meats_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" >
-                                    <Image Source="Resources/F_extra_smelly_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
+                                <WrapPanel Height="552" Width="200" Canvas.Top="52">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Monster_Meats.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Monster_Meats_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_monster_meat.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_monster_jerky.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dead_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dried_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Monster_Meats_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_extra_smelly_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
                                 <Button x:Name="FL_btn_close_MM" Cursor="Hand" Width="15" Height="15" ToolTip="关闭" Canvas.Right="2" HorizontalAlignment="Right" Canvas.Left="180" Canvas.Top="5">
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
@@ -1697,66 +1713,80 @@
                                 <Image Source="Resources/FC_Fishes.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="64" Canvas.Top="16" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
                                 <!--食物名称-->
                                 <TextBlock x:Name="TextBlock_F_Fishes_Title" TextWrapping="Wrap" Text="鱼类" FontSize="20" Canvas.Left="96" Canvas.Top="20"/>
-                                <Button x:Name="button_F_Fishes_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" >
-                                    <Image Source="Resources/F_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="100" >
-                                    <Image Source="Resources/F_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="150" >
-                                    <Image Source="Resources/F_cooked_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" >
-                                    <Image Source="Resources/F_limpets.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_limpets.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="100" >
-                                    <Image Source="Resources/F_tropical_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="150" >
-                                    <Image Source="Resources/F_fish_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" >
-                                    <Image Source="Resources/F_cooked_fish_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="50" >
-                                    <Image Source="Resources/F_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="100" >
-                                    <Image Source="Resources/F_dead_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="150" >
-                                    <Image Source="Resources/F_cooked_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" >
-                                    <Image Source="Resources/F_dried_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="50" >
-                                    <Image Source="Resources/F_mussel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="100" >
-                                    <Image Source="Resources/F_cooked_mussel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="150" >
-                                    <Image Source="Resources/F_dead_dogfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" >
-                                    <Image Source="Resources/F_wobster.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="50" >
-                                    <Image Source="Resources/F_raw_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_19" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="100" >
-                                    <Image Source="Resources/F_fish_steak.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fishes_20" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="150" >
-                                    <Image Source="Resources/F_shark_fin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
+                                <WrapPanel Height="552" Width="200" Canvas.Top="52">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Fishes.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×0.5" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Fishes_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_limpets.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_limpets.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fish_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_fish_morsel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_mussel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_mussel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Fishes.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Fishes_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_eel.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_tropical_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dead_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dried_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dead_dogfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_raw_fish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_19" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fish_steak.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fishes_20" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_shark_fin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Fishes.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×2" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Fishes_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_wobster.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
                                 <Button x:Name="FL_btn_close_F" Cursor="Hand" Width="15" Height="15" ToolTip="关闭" Canvas.Right="2" HorizontalAlignment="Right" Canvas.Left="180" Canvas.Top="5">
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
@@ -1784,78 +1814,88 @@
                                 <Image Source="Resources/FC_Vegetables.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="54" Canvas.Top="16" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
                                 <!--食物名称-->
                                 <TextBlock x:Name="TextBlock_F_Vegetables_Title" TextWrapping="Wrap" Text="蔬菜类" FontSize="20" Canvas.Left="86" Canvas.Top="20"/>
-                                <Button x:Name="button_F_Vegetables_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" >
-                                    <Image Source="Resources/F_blue_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_blue_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="100" >
-                                    <Image Source="Resources/F_green_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="150" >
-                                    <Image Source="Resources/F_cooked_green_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" >
-                                    <Image Source="Resources/F_red_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_red_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="100" >
-                                    <Image Source="Resources/F_eggplant.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="150" >
-                                    <Image Source="Resources/F_braised_eggplant.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" >
-                                    <Image Source="Resources/F_carrot.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="50" >
-                                    <Image Source="Resources/F_roasted_carrot.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="100" >
-                                    <Image Source="Resources/F_corn.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="150" >
-                                    <Image Source="Resources/F_popcorn.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" >
-                                    <Image Source="Resources/F_pumpkin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="200.5" Canvas.Left="50" >
-                                    <Image Source="Resources/F_hot_pumpkin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="203.5" Canvas.Left="100" >
-                                    <Image Source="Resources/F_cactus_flesh.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="150" >
-                                    <Image Source="Resources/F_cooked_cactus_flesh.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" >
-                                    <Image Source="Resources/F_cactus_flower.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="50" >
-                                    <Image Source="Resources/F_sweet_potato.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_19" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="100" >
-                                    <Image Source="Resources/F_cooked_sweet_potato.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_20" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="150" >
-                                    <Image Source="Resources/F_seaweed.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_21" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="302" >
-                                    <Image Source="Resources/F_roasted_seaweed.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_22" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="302" Canvas.Left="50" >
-                                    <Image Source="Resources/F_dried_seaweed.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_23" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="302" Canvas.Left="100" >
-                                    <Image Source="Resources/F_lichen.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Vegetables_24" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="302" Canvas.Left="150" >
-                                    <Image Source="Resources/F_mandrake.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
+                                <WrapPanel Height="552" Width="200" Canvas.Top="52">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Vegetables.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×0.5" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Vegetables_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_blue_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_blue_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_green_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_green_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_red_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_red_cap.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_20" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_seaweed.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_21" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_roasted_seaweed.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_22" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dried_seaweed.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Vegetables.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Vegetables_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_eggplant.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_braised_eggplant.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_carrot.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_roasted_carrot.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_corn.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_popcorn.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_pumpkin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_hot_pumpkin.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cactus_flesh.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_cactus_flesh.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cactus_flower.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_sweet_potato.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_19" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_sweet_potato.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_23" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_lichen.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Vegetables_24" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_mandrake.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
                                 <Button x:Name="FL_btn_close_V" Cursor="Hand" Width="15" Height="15" ToolTip="关闭" Canvas.Right="2" HorizontalAlignment="Right" Canvas.Left="180" Canvas.Top="5">
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
@@ -1881,60 +1921,70 @@
                             <Canvas x:Name="Canvas_FoodLeft_Fruit" Margin="210,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="200" Background="#FFE4E4E4" Visibility="Collapsed">
                                 <Image Source="Resources/FC_Fruit.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="54" Canvas.Top="16" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
                                 <TextBlock x:Name="TextBlock_F_Fruit_Title" TextWrapping="Wrap" Text="水果类" FontSize="20" Canvas.Left="86" Canvas.Top="20"/>
-                                <Button x:Name="button_F_Fruit_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" >
-                                    <Image Source="Resources/F_juicy_berries.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="50" >
-                                    <Image Source="Resources/F_roasted_juicy_berries.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="100" >
-                                    <Image Source="Resources/F_berries.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="150" >
-                                    <Image Source="Resources/F_roasted_berrie.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" >
-                                    <Image Source="Resources/F_banana.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="50" >
-                                    <Image Source="Resources/F_cooked_banana.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="100" >
-                                    <Image Source="Resources/F_dragon_fruit.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="102" Canvas.Left="150" >
-                                    <Image Source="Resources/F_prepared_dragon_fruit.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" >
-                                    <Image Source="Resources/F_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="50" >
-                                    <Image Source="Resources/F_extra_smelly_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="100" >
-                                    <Image Source="Resources/F_pomegranate.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="152" Canvas.Left="150" >
-                                    <Image Source="Resources/F_sliced_pomegranate.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" >
-                                    <Image Source="Resources/F_watermelon.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="200.5" Canvas.Left="50" >
-                                    <Image Source="Resources/F_grilled_watermelon.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="203.5" Canvas.Left="100" >
-                                    <Image Source="Resources/F_halved_coconut.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="202" Canvas.Left="150" >
-                                    <Image Source="Resources/F_roasted_coconut.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" >
-                                    <Image Source="Resources/F_coffee_beans.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Fruit_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="252" Canvas.Left="50" >
-                                    <Image Source="Resources/F_roasted_coffee_beans.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
+                                <WrapPanel Height="552" Width="200" Canvas.Top="52">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Fruit.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×0.5" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Fruit_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_juicy_berries.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_roasted_juicy_berries.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_berries.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_roasted_berrie.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_17" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_coffee_beans.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Fruit.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Fruit_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_banana.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_banana.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dragon_fruit.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_prepared_dragon_fruit.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_extra_smelly_durian.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_pomegranate.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_sliced_pomegranate.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_watermelon.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_grilled_watermelon.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_15" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_halved_coconut.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_16" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_roasted_coconut.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Fruit_18" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_roasted_coffee_beans.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
                                 <Button x:Name="FL_btn_close_Fr" Cursor="Hand" Width="15" Height="15" ToolTip="关闭" Canvas.Right="2" HorizontalAlignment="Right" Canvas.Left="180" Canvas.Top="5">
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
@@ -1960,54 +2010,82 @@
                             <Canvas x:Name="Canvas_FoodLeft_Others" Margin="210,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="200" Background="#FFE4E4E4" Visibility="Collapsed">
                                 <Image Source="Resources/FC_Jellyfish.png" Width="32" Height="32" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" Canvas.Left="54" Canvas.Top="16" />
                                 <TextBlock x:Name="TextBlock_F_Others_Title_1" TextWrapping="Wrap" Text="水母类" FontSize="20" Canvas.Left="86" Canvas.Top="20"/>
-                                <Button x:Name="button_F_Others_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" >
-                                    <Image Source="Resources/F_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="50" >
-                                    <Image Source="Resources/F_dead_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="100" >
-                                    <Image Source="Resources/F_cooked_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="52" Canvas.Left="150" >
-                                    <Image Source="Resources/F_dried_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Image Source="Resources/FC_Eggs.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="64" Canvas.Top="103" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
-                                <TextBlock x:Name="TextBlock_F_Others_Title_2" TextWrapping="Wrap" Text="蛋类" FontSize="20" Canvas.Left="96" Canvas.Top="107"/>
-                                <Button x:Name="button_F_Others_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="139" Canvas.Left="1" >
-                                    <Image Source="Resources/F_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="139" Canvas.Left="51" >
-                                    <Image Source="Resources/F_cooked_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="139" Canvas.Left="101" >
-                                    <Image Source="Resources/F_tallbird_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="139" Canvas.Left="151" >
-                                    <Image Source="Resources/F_fried_tallbird_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="189" Canvas.Left="1" >
-                                    <Image Source="Resources/F_doydoy_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="189" Canvas.Left="51" >
-                                    <Image Source="Resources/F_fried_doydoy_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Image Source="Resources/FC_Dairy_product.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="44" Canvas.Top="240" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
-                                <TextBlock x:Name="TextBlock_F_Others_Title_3" TextWrapping="Wrap" Text="乳制品类" FontSize="20" Canvas.Left="76" Canvas.Top="244"/>
-                                <Button x:Name="button_F_Others_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="276">
-                                    <Image Source="Resources/F_butter.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="276" Canvas.Left="50" >
-                                    <Image Source="Resources/F_electric_milk.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Image Source="Resources/FC_Sweetener.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="44" Canvas.Top="327" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
-                                <TextBlock x:Name="TextBlock_F_Others_Title_4" TextWrapping="Wrap" Text="甜味剂类" FontSize="20" Canvas.Left="76" Canvas.Top="331"/>
-                                <Button x:Name="button_F_Others_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="363" >
-                                    <Image Source="Resources/F_honey.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
-                                <Button x:Name="button_F_Others_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Canvas.Top="363" Canvas.Left="50" >
-                                    <Image Source="Resources/F_honeycomb.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
-                                </Button>
+                                <WrapPanel Height="82" Width="200" Canvas.Top="52">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Jellyfish.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Others_1" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_2" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dead_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_3" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_4" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_dried_jellyfish.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
+                                <Image Source="Resources/FC_Eggs.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="64" Canvas.Top="135" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
+                                <TextBlock x:Name="TextBlock_F_Others_Title_2" TextWrapping="Wrap" Text="蛋类" FontSize="20" Canvas.Left="96" Canvas.Top="139"/>
+                                <WrapPanel Height="164" Width="200" Canvas.Top="171">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Eggs.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Others_5" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_6" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_cooked_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_9" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_doydoy_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_10" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fried_doydoy_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Eggs.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×4" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Others_7" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_tallbird_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_8" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_fried_tallbird_egg.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
+                                <Image Source="Resources/FC_Dairy_product.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="44" Canvas.Top="338" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
+                                <TextBlock x:Name="TextBlock_F_Others_Title_3" TextWrapping="Wrap" Text="乳制品类" FontSize="20" Canvas.Left="76" Canvas.Top="340"/>
+                                <WrapPanel Height="82" Width="200" Canvas.Top="372">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Dairy_product.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Others_11" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0">
+                                        <Image Source="Resources/F_butter.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_12" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_electric_milk.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
+                                <Image Source="Resources/FC_Sweetener.png" Width="32" Height="32" Stretch="UniformToFill" Canvas.Left="44" Canvas.Top="455" d:LayoutOverrides="Width, LeftMargin, RightMargin" />
+                                <TextBlock x:Name="TextBlock_F_Others_Title_4" TextWrapping="Wrap" Text="甜味剂类" FontSize="20" Canvas.Left="76" Canvas.Top="459"/>
+                                <WrapPanel Height="82" Width="200" Canvas.Top="491">
+                                    <WrapPanel Width="200">
+                                        <Image Source="Resources/FC_Sweetener.png" Width="32" Height="32" Stretch="UniformToFill" Margin="5,0,0,0" />
+                                        <TextBlock TextWrapping="Wrap" FontSize="16" Text="×1" Width="163" VerticalAlignment="Center"/>
+                                    </WrapPanel>
+                                    <Button x:Name="button_F_Others_13" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_honey.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                    <Button x:Name="button_F_Others_14" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" >
+                                        <Image Source="Resources/F_honeycomb.png" Width="48" Height="48" d:LayoutOverrides="Width, LeftMargin, RightMargin" Stretch="UniformToFill" />
+                                    </Button>
+                                </WrapPanel>
                                 <Button x:Name="FL_btn_close_O" Cursor="Hand" Width="15" Height="15" ToolTip="关闭" Canvas.Right="2" HorizontalAlignment="Right" Canvas.Left="180" Canvas.Top="5">
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
@@ -2183,7 +2261,7 @@
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
-                                    <TextBlock x:Name="TextBlock_F_Introduce" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="541" Width="176" Height="60.96"><Run Text="恢复能力比较中庸，其中蛋比较难找，如果有多的蛋还是做饺子比较划算。"/></TextBlock>
+                                    <TextBlock x:Name="TextBlock_F_Introduce" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="541" Width="176"><Run Text="恢复能力比较中庸，其中蛋比较难找，如果有多的蛋还是做饺子比较划算。"/></TextBlock>
                                     <TextBlock x:Name="TextBlock_F_FoodAttribute" TextWrapping="Wrap" Text="食物属性 :" Canvas.Left="10" Canvas.Top="260" Visibility="Collapsed"/>
                                     <TextBlock x:Name="FL_TextBlock_FoodAttribute" TextWrapping="Wrap" Canvas.Left="102" Canvas.Top="260" Visibility="Collapsed"/>
                                     <Image x:Name="FL_image_FoodAttribute_2" Source="Resources/FC_Monster_Meats.png" Height="32" Width="32" Canvas.Left="69" Canvas.Top="282" Visibility="Collapsed"/>
@@ -3934,7 +4012,7 @@
                                     </StackPanel>
                                 </Button>
                                 <TextBlock x:Name="SL_TextBlock_ScienceNeed_3" TextWrapping="Wrap" Text="×" Canvas.Left="167" Canvas.Top="145.333" Visibility="Collapsed"/>
-                                <TextBlock x:Name="TextBlock_S_Introduce" TextWrapping="Wrap" Height="110" Canvas.Left="10" Canvas.Top="240" Width="176" Text="前期伐木获取木头的重要工具，木材主要用于生火，后期建设也需要大量木板。" />
+                                <TextBlock x:Name="TextBlock_S_Introduce" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="240" Width="176" Text="前期伐木获取木头的重要工具，木材主要用于生火，后期建设也需要大量木板。" />
                                 <TextBlock x:Name="SL_TextBlock_ScienceDeblocking_Science" TextWrapping="Wrap" Text="科学机器解锁" Canvas.Left="10" Canvas.Top="345" Foreground="#FFF9A318" FontSize="14.667" Visibility="Collapsed"/>
                                 <TextBlock x:Name="SL_TextBlock_ScienceDeblocking_Character" TextWrapping="Wrap" Text="解锁" Canvas.Left="10" Canvas.Top="375" Foreground="#FF055786" FontSize="14.667" Visibility="Collapsed"/>
                                 <TextBlock x:Name="SL_textBlock_S_DLC_1" TextWrapping="Wrap" Text="ROG" Canvas.Left="20" Canvas.Top="202.013"/>
@@ -4171,8 +4249,11 @@
                                                             <Trigger Property="IsMouseOver" Value="True">
                                                                 <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
                                                             </Trigger>
-                                                            <Trigger Property="IsEnabled" Value="False">
+                                                            <Trigger Property="IsPressed" Value="True">
                                                                 <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
+                                                            </Trigger>
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Source" Value="/Resources/B_SwitchLeft_4.png" TargetName="TabItem" />
                                                             </Trigger>
                                                         </ControlTemplate.Triggers>
                                                     </ControlTemplate>
@@ -4195,8 +4276,11 @@
                                                             <Trigger Property="IsMouseOver" Value="True">
                                                                 <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
                                                             </Trigger>
-                                                            <Trigger Property="IsEnabled" Value="False">
+                                                            <Trigger Property="IsPressed" Value="True">
                                                                 <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
+                                                            </Trigger>
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Source" Value="/Resources/B_SwitchRight_4.png" TargetName="TabItem" />
                                                             </Trigger>
                                                         </ControlTemplate.Triggers>
                                                     </ControlTemplate>
@@ -5921,14 +6005,14 @@
                                     </Button>
                                     <TextBlock x:Name="LootNumT_11" TextWrapping="Wrap" Text="×1" Margin="43,789,0,0" Visibility="Collapsed"/>
                                     <TextBlock x:Name="TextBlock_A_Special_Ability" TextWrapping="Wrap"  Width="240" Text="特殊能力：" Margin="10,542,0,0" />
-                                    <TextBlock x:Name="TextBlock_A_Special_Ability_1" Text="吃地上的水果和蔬菜" TextWrapping="Wrap" Margin="10,557,0,0" Height="15.24" Width="240" />
-                                    <TextBlock x:Name="TextBlock_A_Special_Ability_2" TextWrapping="Wrap" Margin="10,540.24,0,0" Height="15.24" Width="240" />
-                                    <TextBlock x:Name="TextBlock_A_Special_Ability_3" TextWrapping="Wrap" Margin="10,555.48,0,0" Height="15.24" Width="240" />
-                                    <TextBlock x:Name="TextBlock_A_Special_Ability_4" TextWrapping="Wrap" Margin="10,570.72,0,0" Height="15.24" Width="240" />
-                                    <TextBlock x:Name="TextBlock_A_Special_Ability_5" TextWrapping="Wrap" Margin="10,585.96,0,0" Height="15.24" Width="240" />
-                                    <TextBlock x:Name="TextBlock_A_Special_Ability_6" TextWrapping="Wrap" Margin="10,601.2,0,0" Height="15.24" Width="240" />
+                                    <TextBlock x:Name="TextBlock_A_Special_Ability_1" Text="吃地上的水果和蔬菜" TextWrapping="Wrap" Margin="10,557,0,0" Width="240" />
+                                    <TextBlock x:Name="TextBlock_A_Special_Ability_2" TextWrapping="Wrap" Margin="10,540.24,0,0" Width="240" />
+                                    <TextBlock x:Name="TextBlock_A_Special_Ability_3" TextWrapping="Wrap" Margin="10,555.48,0,0" Width="240" />
+                                    <TextBlock x:Name="TextBlock_A_Special_Ability_4" TextWrapping="Wrap" Margin="10,570.72,0,0" Width="240" />
+                                    <TextBlock x:Name="TextBlock_A_Special_Ability_5" TextWrapping="Wrap" Margin="10,585.96,0,0" Width="240" />
+                                    <TextBlock x:Name="TextBlock_A_Special_Ability_6" TextWrapping="Wrap" Margin="10,601.2,0,0" Width="240" />
                                     <!--生物简介-->
-                                    <TextBlock x:Name="TextBlock_A_Introduce" TextWrapping="Wrap" Width="240" Height="60.96" Text="草原上常见的生物，靠近就会逃跑，可以利用这一点来捕捉它，也可以在陷阱里放水果和蔬菜吸引。若挖起兔子窝里面的兔子会跑出来，没有窝的兔子会睡在外面。" Margin="10,600.72,0,0"/>
+                                    <TextBlock x:Name="TextBlock_A_Introduce" TextWrapping="Wrap" Width="240" Text="草原上常见的生物，靠近就会逃跑，可以利用这一点来捕捉它，也可以在陷阱里放水果和蔬菜吸引。若挖起兔子窝里面的兔子会跑出来，没有窝的兔子会睡在外面。" Margin="10,600.72,0,0"/>
                                 </Canvas>
                             </ScrollViewer>
                             <ScrollViewer x:Name="ScrollViewer_AnimalLeft_Krampus" Grid.Column="0" Width="280" Height="604" HorizontalAlignment="Left" VerticalAlignment="Top" Template="{DynamicResource MyScrollViewer}" Visibility="Collapsed">
@@ -6219,7 +6303,7 @@
                                     <TextBlock x:Name="AL_textBlock_A_DLC_PigKing_2" TextWrapping="Wrap" Text="SW" Margin="115,165,0,0" Foreground="Silver"/>
                                     <TextBlock x:Name="AL_textBlock_A_DLC_PigKing_3" TextWrapping="Wrap" Text="DST" Margin="205,165,0,0"/>
                                     <!--生物简介-->
-                                    <TextBlock x:Name="TextBlock_A_Introduce_PigKing" TextWrapping="Wrap" Width="240" Height="60.96" Text="猪王通常可以在桦树林中的一小片草原上找到，它躺在木质地板上，被方尖碑包围着，交易生物之一。在白天和黄昏可以用部分肉类和玩具交换金块，晚上会睡觉。" Margin="10,200,0,0"/>
+                                    <TextBlock x:Name="TextBlock_A_Introduce_PigKing" TextWrapping="Wrap" Width="240" Text="猪王通常可以在桦树林中的一小片草原上找到，它躺在木质地板上，被方尖碑包围着，交易生物之一。在白天和黄昏可以用部分肉类和玩具交换金块，晚上会睡觉。" Margin="10,200,0,0"/>
                                     <TextBlock x:Name="TextBlock_A_PigKing_Title" TextWrapping="Wrap" Text="金块交换表" Margin="82,270,0,0" FontSize="20"/>
                                     <TextBlock x:Name="TextBlock_A_PigKing_1" TextWrapping="Wrap" Text="1" Canvas.Left="10" Canvas.Top="300" FontSize="20"/>
                                     <Image x:Name="AL_PigKing_Goldnugget_1" Source="Resources/S_gold_nugget.png" Height="32" Width="32" Canvas.Left="25" Canvas.Top="295"/>
@@ -6583,7 +6667,7 @@
                                     <TextBlock x:Name="AL_textBlock_A_DLC_Yaarctopus_1" TextWrapping="Wrap" Text="ROG" Margin="25,165,0,0" Foreground="Silver"/>
                                     <TextBlock x:Name="AL_textBlock_A_DLC_Yaarctopus_2" TextWrapping="Wrap" Text="SW" Margin="115,165,0,0"/>
                                     <TextBlock x:Name="AL_textBlock_A_DLC_Yaarctopus_3" TextWrapping="Wrap" Text="DST" Margin="205,165,0,0" Foreground="Silver"/>
-                                    <TextBlock x:Name="TextBlock_A_Introduce_Yaarctopus" TextWrapping="Wrap" Width="240" Height="76.2" Text="亚克章鱼通常可以在浅海的珊瑚礁附近找到，它躺在一个珊瑚礁上，交易生物之一。白天和黄昏可以用鱼类、玩具和部分食物交易，交易完或者到了晚上就会睡觉，到第二天才会醒来。" Margin="10,200,0,0"/>
+                                    <TextBlock x:Name="TextBlock_A_Introduce_Yaarctopus" TextWrapping="Wrap" Width="240" Text="亚克章鱼通常可以在浅海的珊瑚礁附近找到，它躺在一个珊瑚礁上，交易生物之一。白天和黄昏可以用鱼类、玩具和部分食物交易，交易完或者到了晚上就会睡觉，到第二天才会醒来。" Margin="10,200,0,0"/>
 
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_Title" TextWrapping="Wrap" Text="交换表" FontSize="20" Canvas.Left="102" Canvas.Top="288.5"/>
                                     <TextBlock x:Name="TextBlock_A_Yaarctopus_2" TextWrapping="Wrap" Text="5" Canvas.Left="10" Canvas.Top="318.5" FontSize="20"/>
@@ -7481,6 +7565,12 @@
                                                 <TextBlock Text="洞穴" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
+                                        <Button x:Name="button_N_pig_torch" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_pig_torch.png" Width="64" Height="64" />
+                                                <TextBlock Text="猪头火炬" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
                                         <Button x:Name="button_N_pig_house" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_pig_house.png" Width="64" Height="64" />
@@ -7731,12 +7821,6 @@
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_obelisk_1.png" Width="64" Height="64" />
                                                 <TextBlock Text="方尖碑" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_pig_torch" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_pig_torch.png" Width="64" Height="64" />
-                                                <TextBlock Text="猪头火炬" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_N_pig_head" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
@@ -8176,7 +8260,7 @@
                                 </WrapPanel>
                             </ScrollViewer>
                             <ScrollViewer x:Name="ScrollViewer_NaturalLeft_biome" Grid.Column="0" Width="217" Height="604" HorizontalAlignment="Left" VerticalAlignment="Top" Template="{DynamicResource MyScrollViewer}">
-                                <Canvas x:Name="Canvas_NaturalLeft_B" Margin="0,-4,0,4" Background="#FFFAFAFA" HorizontalAlignment="Left" Width="200">
+                                <Canvas x:Name="Canvas_NaturalLeft_B" Margin="0,-4,0,4" HorizontalAlignment="Left" Width="200" Background="#FFFAFAFA">
                                     <Image x:Name="NL_image_NaturalPicture_B" Source="Resources/N_grasslands.png" Height="96" Width="96" Margin="52,10,0,0"/>
                                     <TextBlock x:Name="NL_textBlock_NaturalName_B" TextWrapping="Wrap" Margin="84,120,0,0" FontSize="16" Text="草原"/>
                                     <TextBlock x:Name="NL_textBlock_NaturalEnName_B" TextWrapping="Wrap" Margin="59,140,0,0" FontSize="16" Text="Grasslands"/>
@@ -8333,13 +8417,63 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="N_WrapPanel_Introduce_B" Height="106.68" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0,10,0,0">
-                                            <TextBlock x:Name="TextBlock_NB_Introduce" TextWrapping="Wrap" Height="106.68" Width="176" Margin="0" Text="草原是常见的生物群落之一，它们一般有多种类型的资源。玩家进入世界总会出生在草原(除了船难版)，无论是小的或是大片的草原。草原主要的危险是蜘蛛巢和杀人蜂巢，有时候也会出现海象巢穴。" />
+                                            <TextBlock x:Name="TextBlock_NB_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="草原是常见的生物群落之一，它们一般有多种类型的资源。玩家进入世界总会出生在草原(除了船难版)，无论是小的或是大片的草原。草原主要的危险是蜘蛛巢和杀人蜂巢，有时候也会出现海象巢穴。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
                             </ScrollViewer>
                             <ScrollViewer x:Name="ScrollViewer_NaturalLeft_Plant" Grid.Column="0" Width="217" Height="604" HorizontalAlignment="Left" VerticalAlignment="Top" Template="{DynamicResource MyScrollViewer}" Visibility="Collapsed">
                                 <Canvas x:Name="Canvas_NaturalLeft_P" Margin="0,-4,0,4" Background="#FFFAFAFA" HorizontalAlignment="Left" Width="200">
+                                    <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="80" Width="200">
+                                        <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="29,10,0,0">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Image x:Name="TabItem" Source="Resources/B_SwitchLeft_1.png" />
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsPressed" Value="True">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchLeft_4.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                        <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="54,10,0,0">
+                                            <Button.Style>
+                                                <Style TargetType="{x:Type Button}">
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                                <Image x:Name="TabItem" Source="Resources/B_SwitchRight_1.png" />
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsPressed" Value="True">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsEnabled" Value="False">
+                                                                        <Setter Property="Source" Value="/Resources/B_SwitchRight_4.png" TargetName="TabItem" />
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                    </WrapPanel>
                                     <Image x:Name="NL_image_NaturalPicture_P" Source="Resources/N_flower_1.png" Height="64" Width="64" Margin="68,10,0,0"/>
                                     <TextBlock x:Name="NL_textBlock_NaturalName_P" TextWrapping="Wrap" Margin="92,80,0,0" FontSize="16" Text="花"/>
                                     <TextBlock x:Name="NL_textBlock_NaturalEnName_P" TextWrapping="Wrap" Margin="75.5,100,0,0" FontSize="16" Text="Flower"/>
@@ -8504,51 +8638,7 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="N_WrapPanel_Introduce_P" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_NP_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
-                                        </WrapPanel>
-                                        <WrapPanel x:Name="N_WrapPanel_Switch_P" Height="80" Width="180" Margin="0">
-                                            <Button x:Name="button_NP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="9,10,0,0">
-                                                <Button.Style>
-                                                    <Style TargetType="{x:Type Button}">
-                                                        <Setter Property="Template">
-                                                            <Setter.Value>
-                                                                <ControlTemplate TargetType="{x:Type Button}">
-                                                                    <Image x:Name="TabItem" Source="Resources/B_SwitchLeft_1.png" />
-                                                                    <ControlTemplate.Triggers>
-                                                                        <Trigger Property="IsMouseOver" Value="True">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                        <Trigger Property="IsEnabled" Value="False">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                    </ControlTemplate.Triggers>
-                                                                </ControlTemplate>
-                                                            </Setter.Value>
-                                                        </Setter>
-                                                    </Style>
-                                                </Button.Style>
-                                            </Button>
-                                            <Button x:Name="button_NP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Height="61" Margin="74,10,0,0">
-                                                <Button.Style>
-                                                    <Style TargetType="{x:Type Button}">
-                                                        <Setter Property="Template">
-                                                            <Setter.Value>
-                                                                <ControlTemplate TargetType="{x:Type Button}">
-                                                                    <Image x:Name="TabItem" Source="Resources/B_SwitchRight_1.png" />
-                                                                    <ControlTemplate.Triggers>
-                                                                        <Trigger Property="IsMouseOver" Value="True">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                        <Trigger Property="IsEnabled" Value="False">
-                                                                            <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
-                                                                        </Trigger>
-                                                                    </ControlTemplate.Triggers>
-                                                                </ControlTemplate>
-                                                            </Setter.Value>
-                                                        </Setter>
-                                                    </Style>
-                                                </Button.Style>
-                                            </Button>
+                                            <TextBlock x:Name="TextBlock_NP_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -10971,7 +11061,7 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_M" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GM_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
+                                            <TextBlock x:Name="TextBlock_GM_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11133,7 +11223,7 @@
                                                 </Button>
                                             </WrapPanel>
                                             <WrapPanel x:Name="G_WrapPanel_Introduce_E" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                                <TextBlock x:Name="TextBlock_GE_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
+                                                <TextBlock x:Name="TextBlock_GE_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                             </WrapPanel>
                                         </WrapPanel>
                                     </WrapPanel>
@@ -11167,7 +11257,7 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_S" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GS_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
+                                            <TextBlock x:Name="TextBlock_GS_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11224,7 +11314,7 @@
                                             </Button>
                                         </Canvas>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_A" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GA_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
+                                            <TextBlock x:Name="TextBlock_GA_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11256,7 +11346,7 @@
                                             <Image x:Name="image_GT_TurfTexture" Source="Resources/Texture_cobblestone.png" Height="128" Width="128" Margin="26,5,0,0"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_T" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GT_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="唯一加速的草皮。" />
+                                            <TextBlock x:Name="TextBlock_GT_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="唯一加速的草皮。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11294,7 +11384,7 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_P" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GP_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
+                                            <TextBlock x:Name="TextBlock_GP_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                     <Button x:Name="button_GP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="19" Canvas.Top="529" Height="61" Visibility="Collapsed">
@@ -11308,8 +11398,11 @@
                                                                 <Trigger Property="IsMouseOver" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
                                                                 </Trigger>
-                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                <Trigger Property="IsPressed" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
+                                                                </Trigger>
+                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                    <Setter Property="Source" Value="/Resources/B_SwitchLeft_4.png" TargetName="TabItem" />
                                                                 </Trigger>
                                                             </ControlTemplate.Triggers>
                                                         </ControlTemplate>
@@ -11329,8 +11422,11 @@
                                                                 <Trigger Property="IsMouseOver" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
                                                                 </Trigger>
-                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                <Trigger Property="IsPressed" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
+                                                                </Trigger>
+                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                    <Setter Property="Source" Value="/Resources/B_SwitchRight_4.png" TargetName="TabItem" />
                                                                 </Trigger>
                                                             </ControlTemplate.Triggers>
                                                         </ControlTemplate>
@@ -11375,7 +11471,7 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_PL" Height="45.72" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GPL_Introduce" TextWrapping="Wrap" Height="45.72" Width="176" Margin="0" Text="击杀龙蝇有33%几率获得熔岩虫卵，经过2天左右孵化可以得到超可爱的熔岩虫和熔岩虫牙。" />
+                                            <TextBlock x:Name="TextBlock_GPL_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="击杀龙蝇有33%几率获得熔岩虫卵，经过2天左右孵化可以得到超可爱的熔岩虫和熔岩虫牙。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11448,7 +11544,7 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_U" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GU_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
+                                            <TextBlock x:Name="TextBlock_GU_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11466,7 +11562,7 @@
                                             <TextBlock x:Name="GL_textBlock_GC_DLC_3" TextWrapping="Wrap" Text="DST" Width="60" TextAlignment="Center" Margin="0,15,0,0"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_C" Height="15.24" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GC_Introduce" TextWrapping="Wrap" Height="15.24" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
+                                            <TextBlock x:Name="TextBlock_GC_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                     <Button x:Name="button_GC_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="19" Canvas.Top="529" Height="61" Visibility="Collapsed">
@@ -11480,8 +11576,11 @@
                                                                 <Trigger Property="IsMouseOver" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchLeft_2.png" TargetName="TabItem" />
                                                                 </Trigger>
-                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                <Trigger Property="IsPressed" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchLeft_3.png" TargetName="TabItem" />
+                                                                </Trigger>
+                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                    <Setter Property="Source" Value="/Resources/B_SwitchLeft_4.png" TargetName="TabItem" />
                                                                 </Trigger>
                                                             </ControlTemplate.Triggers>
                                                         </ControlTemplate>
@@ -11501,8 +11600,11 @@
                                                                 <Trigger Property="IsMouseOver" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchRight_2.png" TargetName="TabItem" />
                                                                 </Trigger>
-                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                <Trigger Property="IsPressed" Value="True">
                                                                     <Setter Property="Source" Value="/Resources/B_SwitchRight_3.png" TargetName="TabItem" />
+                                                                </Trigger>
+                                                                <Trigger Property="IsEnabled" Value="False">
+                                                                    <Setter Property="Source" Value="/Resources/B_SwitchRight_4.png" TargetName="TabItem" />
                                                                 </Trigger>
                                                             </ControlTemplate.Triggers>
                                                         </ControlTemplate>
@@ -11526,7 +11628,7 @@
                                             <TextBlock x:Name="GL_textBlock_GB_DLC_3" TextWrapping="Wrap" Text="DST" Width="60" TextAlignment="Center" Margin="0,15,0,0"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_B" Height="91.44" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GB_Introduce" TextWrapping="Wrap" Height="91.44" Width="176" Margin="0" Text="蓝图通常可以在风滚草和X标记点找到，冒险模式的开始也可以找到一些。使用蓝图将会恢复15点精神，并且解锁某个科技，旧钟科技只能通过蓝图解锁。(以上规律不适用于远古科技)" />
+                                            <TextBlock x:Name="TextBlock_GB_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="蓝图通常可以在风滚草和X标记点找到，冒险模式的开始也可以找到一些。使用蓝图将会恢复15点精神，并且解锁某个科技，旧钟科技只能通过蓝图解锁。(以上规律不适用于远古科技)" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11554,7 +11656,7 @@
                                             </Button>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_BFT" Height="45.72" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GBFT_Introduce" TextWrapping="Wrap" Height="45.72" Width="176" Margin="0" Text="金枪鱼罐头可以在瓶中信指向的宝箱或者用锤子敲坏木箱获得，打开后得到鱼排，无限耐久。" />
+                                            <TextBlock x:Name="TextBlock_GBFT_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="金枪鱼罐头可以在瓶中信指向的宝箱或者用锤子敲坏木箱获得，打开后得到鱼排，无限耐久。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>
@@ -11572,7 +11674,7 @@
                                             <TextBlock x:Name="GL_textBlock_GMIAB_DLC_3" TextWrapping="Wrap" Text="DST" Width="60" TextAlignment="Center" Margin="0,15,0,0" Foreground="Silver"/>
                                         </WrapPanel>
                                         <WrapPanel x:Name="G_WrapPanel_Introduce_MIAB" Height="106.68" Width="180" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="0">
-                                            <TextBlock x:Name="TextBlock_GMIAB_Introduce" TextWrapping="Wrap" Height="106.68" Width="176" Margin="0" Text="瓶中信可以在沙滩上或者海洋中找到，使用后会变成空瓶子，阅读信会开放地图上某个区域并标记上红色的X记号。前往该地点会发现X标记点，用铲子可以挖出箱子和两个骨片，有时候也会挖出蛇。箱子里通常有贵重物品。" />
+                                            <TextBlock x:Name="TextBlock_GMIAB_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="瓶中信可以在沙滩上或者海洋中找到，使用后会变成空瓶子，阅读信会开放地图上某个区域并标记上红色的X记号。前往该地点会发现X标记点，用铲子可以挖出箱子和两个骨片，有时候也会挖出蛇。箱子里通常有贵重物品。" />
                                         </WrapPanel>
                                     </WrapPanel>
                                 </Canvas>

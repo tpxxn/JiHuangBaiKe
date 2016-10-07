@@ -2936,24 +2936,6 @@
     <Resource Include="Resources\A_krampus_sw.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\B_SwitchLeft_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\B_SwitchLeft_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\B_SwitchLeft_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\B_SwitchRight_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\B_SwitchRight_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\B_SwitchRight_3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\N_algae.png" />
   </ItemGroup>
   <ItemGroup>
@@ -4157,6 +4139,30 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\S_ico_volcanic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchLeft_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchLeft_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchLeft_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchLeft_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchRight_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchRight_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchRight_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_SwitchRight_4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

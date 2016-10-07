@@ -1613,6 +1613,16 @@ Namespace My.Resources
         '''<summary>
         '''  查找 System.Drawing.Bitmap 类型的本地化资源。
         '''</summary>
+        Friend ReadOnly Property B_SwitchLeft_4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("B_SwitchLeft_4", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
         Friend ReadOnly Property B_SwitchRight_1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("B_SwitchRight_1", resourceCulture)
@@ -1636,6 +1646,16 @@ Namespace My.Resources
         Friend ReadOnly Property B_SwitchRight_3() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("B_SwitchRight_3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  查找 System.Drawing.Bitmap 类型的本地化资源。
+        '''</summary>
+        Friend ReadOnly Property B_SwitchRight_4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("B_SwitchRight_4", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

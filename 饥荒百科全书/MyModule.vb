@@ -177,13 +177,6 @@
         Return GetValue
     End Function
 
-    REM ------根据字符串长度返回TextBlock高度------
-    Public Function SetTextBlockHeight(Text As String, colLen As Integer)
-        Dim TextBlockHeight As Double
-        TextBlockHeight = ((Len(Text) - 1) \ colLen + 1) * 15.24
-        Return TextBlockHeight
-    End Function
-
     REM ------------------资源短名------------------
     Public Function Res_Short_Name(R_URL As String)
         R_URL = "Resources/" & R_URL & ".png"

@@ -34,6 +34,23 @@ Public Class MainWindow
     End Sub
 #End Region
 
+#Region "返回TextBlock高度"
+    REM ------根据字符串长度返回TextBlock高度------
+    Public Function ReturnTextBlockHeight(Text As String, colLen As Integer)
+        Dim TextBlockHeight As Double
+        TextBlockHeight = ((Len(Text) - 1) \ colLen + 1) * 15.24
+        Return TextBlockHeight
+    End Function
+
+    REM 函数重载
+    Public Function ReturnTextBlockHeight(canvas As Canvas, textBlock As TextBlock)
+        canvas.UpdateLayout()
+        Return textBlock.ActualHeight
+    End Function
+
+#End Region
+
+#Region "窗口加载"
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         REM 版本号
         UI_Version.Text = "v" & My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Build & "." & My.Application.Info.Version.Revision
@@ -83,7 +100,6 @@ Public Class MainWindow
 
         Dim LeftCanvas() As Canvas = {Canvas_CharacterLeft, Canvas_CharacterLeft_Wolfgang, Canvas_FoodLeft, Canvas_ScienceLeft, Canvas_CookingSimulatorLeft, Canvas_AnimalLeft, Canvas_AnimalLeft_Krampus, Canvas_AnimalLeft_Apackim_baggims, Canvas_AnimalLeft_PigKing, Canvas_AnimalLeft_Yaarctopus, Canvas_NaturalLeft_B, Canvas_NaturalLeft_P, Canvas_GoodsLeft_M, Canvas_GoodsLeft_E, Canvas_GoodsLeft_S, Canvas_GoodsLeft_A, Canvas_GoodsLeft_T, Canvas_GoodsLeft_P, Canvas_GoodsLeft_PL, Canvas_GoodsLeft_U, Canvas_GoodsLeft_C, Canvas_GoodsLeft_B, Canvas_GoodsLeft_BFT, Canvas_GoodsLeft_MIAB, Canvas_Setting}
         Dim RightWrapPanel() As WrapPanel = {WrapPanel_Character, WrapPanel_Food, WrapPanel_Science, WrapPanel_CookingSimulator, WrapPanel_Animal, WrapPanel_Natural, WrapPanel_Goods}
-#Region "背景及初始化开始"
         If RegReadBG <> "" Then
             Dim brush As New ImageBrush
             brush.ImageSource = New BitmapImage(New Uri(RegReadBG))
@@ -562,8 +578,8 @@ Public Class MainWindow
                 WrapPanel_G_component.Visibility = Visibility.Visible
                 WrapPanel_Goods.Height = 3270
         End Select
-#End Region
     End Sub
+#End Region
 
 #Region "主窗口按钮"
     REM ------------------最小化/关闭按钮------------------
@@ -1947,7 +1963,240 @@ Public Class MainWindow
                         button_N_twiggy_tree_diseased_click(Nothing, Nothing)
                     Case "N_petrified_tree"
                         button_N_petrified_tree_click(Nothing, Nothing)
-
+                        'Case "N_rabbit_hole"
+                        '    button_N_rabbit_hole_click(Nothing, Nothing)
+                        'Case "N_beehive"
+                        '    button_N_beehive_click(Nothing, Nothing)
+                        'Case "N_killer_bee_hive"
+                        '    button_N_killer_bee_hive_click(Nothing, Nothing)
+                        'Case "N_hollow_stump"
+                        '    button_N_hollow_stump_click(Nothing, Nothing)
+                        'Case "N_burrow"
+                        '    button_N_burrow_click(Nothing, Nothing)
+                        'Case "N_pig_torch"
+                        '    button_N_pig_torch_click(Nothing, Nothing)
+                        'Case "N_pig_house"
+                        '    button_N_pig_house_click(Nothing, Nothing)
+                        'Case "N_spider_den"
+                        '    button_N_spider_den_click(Nothing, Nothing)
+                        'Case "N_pond"
+                        '    button_N_pond_click(Nothing, Nothing)
+                        'Case "N_pond_mos"
+                        '    button_N_pond_mos_click(Nothing, Nothing)
+                        'Case "N_rundown_house"
+                        '    button_N_rundown_house_click(Nothing, Nothing)
+                        'Case "N_pond_frozen"
+                        '    button_N_pond_frozen_click(Nothing, Nothing)
+                        'Case "N_tallbird_nest"
+                        '    button_N_tallbird_nest_click(Nothing, Nothing)
+                        'Case "N_hound_mound"
+                        '    button_N_hound_mound_click(Nothing, Nothing)
+                        'Case "N_walrus_camp"
+                        '    button_N_walrus_camp_click(Nothing, Nothing)
+                        'Case "N_Magma"
+                        '    button_N_Magma_click(Nothing, Nothing)
+                        'Case "N_rabbit_hutch"
+                        '    button_N_rabbit_hutch_click(Nothing, Nothing)
+                        'Case "N_spilagmite"
+                        '    button_N_spilagmite_click(Nothing, Nothing)
+                        'Case "N_pond_cave"
+                        '    button_N_pond_cave_click(Nothing, Nothing)
+                        'Case "N_slurtle_mound"
+                        '    button_N_slurtle_mound_click(Nothing, Nothing)
+                        'Case "N_splumonkey_pod"
+                        '    button_N_splumonkey_pod_click(Nothing, Nothing)
+                        'Case "N_crabbit_den"
+                        '    button_N_crabbit_den_click(Nothing, Nothing)
+                        'Case "N_merm_hut"
+                        '    button_N_merm_hut_click(Nothing, Nothing)
+                        'Case "N_prime_ape_hut"
+                        '    button_N_prime_ape_hut_click(Nothing, Nothing)
+                        'Case "N_dragoon_den"
+                        '    button_N_dragoon_den_click(Nothing, Nothing)
+                        'Case "N_dragoon_egg"
+                        '    button_N_dragoon_egg_click(Nothing, Nothing)
+                        'Case "N_fishermerm's_hut"
+                        '    button_N_fishermerms_hut_click(Nothing, Nothing)
+                        'Case "N_sharkitten_den"
+                        '    button_N_sharkitten_den_click(Nothing, Nothing)
+                        'Case "N_shoal"
+                        '    button_N_shoal_click(Nothing, Nothing)
+                        'Case "N_tidal_pool"
+                        '    button_N_tidal_pool_click(Nothing, Nothing)
+                        'Case "N_wildbore_house"
+                        '    button_N_wildbore_house_click(Nothing, Nothing)
+                        'Case "N_wobster_den"
+                        '    button_N_wobster_den_click(Nothing, Nothing)
+                        'Case "N_florid_postern"
+                        '    button_N_florid_postern_click(Nothing, Nothing)
+                        'Case "N_sunken_boat"
+                        '    button_N_sunken_boat_click(Nothing, Nothing)
+                        'Case "N_flotsam_1"
+                        '    button_N_flotsam_1_click(Nothing, Nothing)
+                        'Case "N_boulder_1"
+                        '    button_N_boulder_1_click(Nothing, Nothing)
+                        'Case "N_boulder_2"
+                        '    button_N_boulder_2_click(Nothing, Nothing)
+                        'Case "N_boulder_3"
+                        '    button_N_boulder_3_click(Nothing, Nothing)
+                        'Case "N_boulder_4"
+                        '    button_N_boulder_4_click(Nothing, Nothing)
+                        'Case "N_basalt_1"
+                        '    button_N_basalt_1_click(Nothing, Nothing)
+                        'Case "N_mini_glacier_1"
+                        '    button_N_mini_glacier_1_click(Nothing, Nothing)
+                        'Case "N_marble_pillar"
+                        '    button_N_marble_pillar_click(Nothing, Nothing)
+                        'Case "N_marble_tree_1"
+                        '    button_N_marble_tree_1_click(Nothing, Nothing)
+                        'Case "N_maxwell_statue"
+                        '    button_N_maxwell_statue_click(Nothing, Nothing)
+                        'Case "N_harp_statue"
+                        '    button_N_harp_statue_click(Nothing, Nothing)
+                        'Case "N_glommer's_statue"
+                        '    button_N_glommers_statue_click(Nothing, Nothing)
+                        'Case "N_obelisk_1"
+                        '    button_N_obelisk_1_click(Nothing, Nothing)
+                        'Case "N_pig_head"
+                        '    button_N_pig_head_click(Nothing, Nothing)
+                        'Case "N_tumbleweed"
+                        '    button_N_tumbleweed_click(Nothing, Nothing)
+                        'Case "N_skeleton_1"
+                        '    button_N_skeleton_1_click(Nothing, Nothing)
+                        'Case "N_bones_1"
+                        '    button_N_bones_1_click(Nothing, Nothing)
+                        'Case "N_suspicious_dirt_pile"
+                        '    button_N_suspicious_dirt_pile_click(Nothing, Nothing)
+                        'Case "N_animal_track"
+                        '    button_N_animal_track_click(Nothing, Nothing)
+                        'Case "N_grave"
+                        '    button_N_grave_click(Nothing, Nothing)
+                        'Case "N_headstone_1"
+                        '    button_N_headstone_1_click(Nothing, Nothing)
+                        'Case "N_touch_stone"
+                        '    button_N_touch_stone_click(Nothing, Nothing)
+                        'Case "N_lava_pool"
+                        '    button_N_lava_pool_click(Nothing, Nothing)
+                        'Case "N_worm_hole"
+                        '    button_N_worm_hole_click(Nothing, Nothing)
+                        'Case "N_sick_worm_hole"
+                        '    button_N_sick_worm_hole_click(Nothing, Nothing)
+                        'Case "N_plugged_sinkhole"
+                        '    button_N_plugged_sinkhole_click(Nothing, Nothing)
+                        'Case "N_sinkhole"
+                        '    button_N_sinkhole_click(Nothing, Nothing)
+                        'Case "N_plugged_hole"
+                        '    button_N_plugged_hole_click(Nothing, Nothing)
+                        'Case "N_deeper"
+                        '    button_N_deeper_click(Nothing, Nothing)
+                        'Case "N_stalagmite"
+                        '    button_N_stalagmite_click(Nothing, Nothing)
+                        'Case "N_stalagmite_tall"
+                        '    button_N_stalagmite_tall_click(Nothing, Nothing)
+                        'Case "N_relic_bowl"
+                        '    button_N_relic_bowl_click(Nothing, Nothing)
+                        'Case "N_broken_clockworks_1"
+                        '    button_N_broken_clockworks_1_click(Nothing, Nothing)
+                        'Case "N_cave_pillar"
+                        '    button_N_cave_pillar_click(Nothing, Nothing)
+                        'Case "N_slimy_pillar"
+                        '    button_N_slimy_pillar_click(Nothing, Nothing)
+                        'Case "N_ruins_pillar"
+                        '    button_N_ruins_pillar_click(Nothing, Nothing)
+                        'Case "N_ornate_chest"
+                        '    button_N_ornate_chest_click(Nothing, Nothing)
+                        'Case "N_ornate_chest"
+                        '    button_N_ornate_chest_click(Nothing, Nothing)
+                        'Case "N_thulecite_wall_1"
+                        '    button_N_thulecite_wall_1_click(Nothing, Nothing)
+                        'Case "N_broken_ancient_pseudoscience_station"
+                        '    button_N_broken_ancient_pseudoscience_station_click(Nothing, Nothing)
+                        'Case "N_ancient_pseudoscience_station"
+                        '    button_N_ancient_pseudoscience_station_click(Nothing, Nothing)
+                        'Case "N_nightmare_fissure"
+                        '    button_N_nightmare_fissure_click(Nothing, Nothing)
+                        'Case "N_nightmare_light"
+                        '    button_N_nightmare_light_click(Nothing, Nothing)
+                        'Case "N_ancient_statue_head"
+                        '    button_N_ancient_statue_head_click(Nothing, Nothing)
+                        'Case "N_ancient_statue_mage_nogem"
+                        '    button_N_ancient_statue_mage_nogem_click(Nothing, Nothing)
+                        'Case "N_diving_rod_holder"
+                        '    button_N_diving_rod_holder_click(Nothing, Nothing)
+                        'Case "N_wooden_thing"
+                        '    button_N_wooden_thing_click(Nothing, Nothing)
+                        'Case "N_maxwell's_door"
+                        '    button_N_maxwells_door_click(Nothing, Nothing)
+                        'Case "N_maxwell's_light"
+                        '    button_N_maxwells_light_click(Nothing, Nothing)
+                        'Case "N_wooden_thing_advanture"
+                        '    button_N_wooden_thing_advanture_click(Nothing, Nothing)
+                        'Case "N_nightmare_lock"
+                        '    button_N_nightmare_lock_click(Nothing, Nothing)
+                        'Case "N_maxwell's_phonograph"
+                        '    button_N_maxwells_phonograph_click(Nothing, Nothing)
+                        'Case "N_nightmare_throne"
+                        '    button_N_nightmare_throne_click(Nothing, Nothing)
+                        'Case "N_sandy_pile"
+                        '    button_N_sandy_pile_click(Nothing, Nothing)
+                        'Case "N_limpet_rock"
+                        '    button_N_limpet_rock_click(Nothing, Nothing)
+                        'Case "N_wildbore_head"
+                        '    button_N_wildbore_head_click(Nothing, Nothing)
+                        'Case "N_merm_head"
+                        '    button_N_merm_head_click(Nothing, Nothing)
+                        'Case "N_waves"
+                        '    button_N_waves_click(Nothing, Nothing)
+                        'Case "N_suspicious_bubbles"
+                        '    button_N_suspicious_bubbles_click(Nothing, Nothing)
+                        'Case "N_coral_reef"
+                        '    button_N_coral_reef_click(Nothing, Nothing)
+                        'Case "N_mussel"
+                        '    button_N_mussel_click(Nothing, Nothing)
+                        'Case "N_gunpowder_barrel"
+                        '    button_N_gunpowder_barrel_click(Nothing, Nothing)
+                        'Case "N_crate_1"
+                        '    button_N_crate_1_click(Nothing, Nothing)
+                        'Case "N_steamer_trunk"
+                        '    button_N_steamer_trunk_click(Nothing, Nothing)
+                        'Case "N_wreck_1"
+                        '    button_N_wreck_1_click(Nothing, Nothing)
+                        'Case "N_watery_grave_1"
+                        '    button_N_watery_grave_1_click(Nothing, Nothing)
+                        'Case "N_slot_machine"
+                        '    button_N_slot_machine_click(Nothing, Nothing)
+                        'Case "N_x_marks_the_spot"
+                        '    button_N_x_marks_the_spot_click(Nothing, Nothing)
+                        'Case "N_chest_of_the_depths"
+                        '    button_N_chest_of_the_depths_click(Nothing, Nothing)
+                        'Case "N_booty_bag_1"
+                        '    button_N_booty_bag_1_click(Nothing, Nothing)
+                        'Case "N_krissure"
+                        '    button_N_krissure_click(Nothing, Nothing)
+                        'Case "N_poisonous_hole"
+                        '    button_N_poisonous_hole_click(Nothing, Nothing)
+                        'Case "N_electric_isosceles"
+                        '    button_N_electric_isosceles_click(Nothing, Nothing)
+                        'Case "N_wooden_thing_sw"
+                        '    button_N_wooden_thing_sw_click(Nothing, Nothing)
+                        'Case "N_volcano"
+                        '    button_N_volcano_click(Nothing, Nothing)
+                        'Case "N_volcano_altar_of_snackrifice"
+                        '    button_N_volcano_altar_of_snackrifice_click(Nothing, Nothing)
+                        'Case "N_volcano_exit"
+                        '    button_N_volcano_exit_click(Nothing, Nothing)
+                        'Case "N_charcoal_boulder"
+                        '    button_N_charcoal_boulder_click(Nothing, Nothing)
+                        'Case "N_obsidian_boulder"
+                        '    button_N_obsidian_boulder_click(Nothing, Nothing)
+                        'Case "N_magma_pile"
+                        '    button_N_magma_pile_click(Nothing, Nothing)
+                        'Case "N_magma_pile_gold"
+                        '    button_N_magma_pile_gold_click(Nothing, Nothing)
+                        'Case "N_obsidian_workbench"
+                        '    button_N_obsidian_workbench_click(Nothing, Nothing)
+                        'Case "N_woodlegs'_cage"
+                        '    button_N_woodlegs_cage_click(Nothing, Nothing)
                 End Select
             Case "G"
                 LeftTabItem_Goods.IsSelected = True
@@ -2821,7 +3070,8 @@ Public Class MainWindow
 #End Region
 
 #Region "食物"
-    REM ------------------左侧面板(食谱)------------------
+
+#Region "食物_食谱"
     Private Sub F_Show(F_Name As String, F_EnName As String, F_picture As String, F_HealthValue As Single, F_HungerValue As Single, F_SanityValue As Single, F_PerishValue As Single, F_CooktimeValue As Single, F_PriorityValue As Single, F_DLC As String, F_Image_FN_1 As String, F_TextBlock_FN_1 As String, F_Image_FN_OR As String, F_TextBlock_FN_OR As String, F_Image_FN_2 As String, F_TextBlock_FN_2 As String, F_Image_FN_3 As String, F_TextBlock_FN_3 As String, F_Restrictions_State As Short, F_Restrictions_image_1 As String, F_Restrictions_image_2 As String, F_Restrictions_image_3 As String, F_Restrictions_image_4 As String, F_Restrictions_image_5 As String, F_Restrictions_image_6 As String, F_Restrictions_image_7 As String, F_Restrictions_image_Compare As String, F_Restrictions_TextBlock_Compare As String, F_Introduce As String, ParamArray Recommend() As String)
         REM ------------------初始化------------------
         FL_image_F_DLC.Visibility = Visibility.Collapsed
@@ -3134,7 +3384,6 @@ Public Class MainWindow
         End If
         REM ------------------食物简介-------------------
         TextBlock_F_Introduce.Text = F_Introduce
-        TextBlock_F_Introduce.Height = SetTextBlockHeight(F_Introduce, 14)
         If RecommendLength = 4 Then
             TextBlock_F_Introduce.SetValue(Canvas.TopProperty, CDbl(541))
         Else
@@ -3150,15 +3399,20 @@ Public Class MainWindow
         End If
         REM ------------------高度设置-------------------
         If RecommendLength = 4 Then
-            Canvas_FoodLeft.Height = 541 + TextBlock_F_Introduce.Height + 20
+            Canvas_FoodLeft.Height = 551 + ReturnTextBlockHeight(Canvas_FoodLeft, TextBlock_F_Introduce)
         Else
-            Canvas_FoodLeft.Height = 575 + TextBlock_F_Introduce.Height + 20
+            Canvas_FoodLeft.Height = 586 + ReturnTextBlockHeight(Canvas_FoodLeft, TextBlock_F_Introduce)
         End If
         If Canvas_FoodLeft.Height < 604 Then
             Canvas_FoodLeft.Height = 604
         End If
+        If F_Name = "湿腻焦糊" Then
+            Canvas_FoodLeft.Height = 604
+        End If
         REM ------------------关闭食物种类-------------------
         FL_CLOSE()
+        REM ------------------滚动条回到最顶端-------------------
+        ScrollViewer_FoodLeft.ScrollToVerticalOffset(0)
     End Sub
 
     Private Sub button_F_Recommend_11_click(sender As Object, e As RoutedEventArgs) Handles button_F_Recommend_11.Click
@@ -3382,7 +3636,9 @@ Public Class MainWindow
     Private Sub button_F_wet_goop_click(sender As Object, e As RoutedEventArgs) Handles button_F_wet_goop.Click
         F_Show("湿腻焦糊", "Wet Goop", "F_wet_goop", 0, 0, 0, 6, 5, -2, "NoDLC", "", "任何无效菜谱", "", "", "", "", "", "", 3, "", "", "", "", "", "", "", "", "", "你到底放了些什么！", {})
     End Sub
+#End Region
 
+#Region "食物_食材"
     REM ------------------左侧面板(食材)------------------
     Private Sub F_Show_Ingredients(F_Name As String, F_EnName As String, F_picture As String, F_HealthValue As Single, F_HungerValue As Single, F_SanityValue As Single, F_PerishValue As Single, F_DLC As String, F_Image_A As String, F_TextBlock_A As String, F_Introduce As String)
         REM ------------------初始化------------------
@@ -3512,7 +3768,6 @@ Public Class MainWindow
         FL_image_FoodAttribute_Fish.Source = Picture_Short_Name(Res_Short_Name("FC_Fishes"))
         REM ------------------食物简介-------------------
         TextBlock_F_Introduce.Text = F_Introduce
-        TextBlock_F_Introduce.Height = SetTextBlockHeight(F_Introduce, 14)
         TextBlock_F_Introduce.SetValue(Canvas.TopProperty, CDbl(335))
         REM ------------------关闭食物种类-------------------
         FL_CLOSE()
@@ -3934,7 +4189,9 @@ Public Class MainWindow
     Private Sub button_F_roasted_coffee_beans_click(sender As Object, e As RoutedEventArgs) Handles button_F_roasted_coffee_beans.Click
         F_Show_Ingredients("烘咖啡豆", "Roasted Coffee Beans", "F_roasted_coffee_beans", 0, 9.375, -5, 15, "SW", "FC_Fruit", "×1", "把咖啡豆放在篝火上烤制。")
     End Sub
+#End Region
 
+#Region "食物_非食材"
     REM ------------------左侧面板(非食材)------------------
     Private Sub F_Show_Uningredients(F_Name As String, F_EnName As String, F_picture As String, F_HealthValue As Single, F_HungerValue As Single, F_SanityValue As Single, F_PerishValue As Single, F_FoodValue As String, F_DLC As String, F_Introduce As String)
         REM ------------------初始化------------------
@@ -4054,7 +4311,6 @@ Public Class MainWindow
         End If
         REM ------------------食物简介-------------------
         TextBlock_F_Introduce.Text = F_Introduce
-        TextBlock_F_Introduce.Height = SetTextBlockHeight(F_Introduce, 14)
         TextBlock_F_Introduce.SetValue(Canvas.TopProperty, CDbl(335))
         REM ------------------关闭食物种类-------------------
         FL_CLOSE()
@@ -4232,7 +4488,9 @@ Public Class MainWindow
     Private Sub button_F_eye_of_the_tiger_shark_click(sender As Object, e As RoutedEventArgs) Handles button_F_eye_of_the_tiger_shark.Click
         F_Show_Uningredients("虎鲨之眼", "Eye of the Tiger Shark", "F_eye_of_the_tiger_shark", 60, 75, -15, 1000, "荤", "SW", "击杀虎鲨获得。")
     End Sub
+#End Region
 
+#Region "食物_DLC"
     REM 食物DLC检测初始化
     Private Sub F_DLC_Check_initialization()
         REM 食谱
@@ -5078,6 +5336,8 @@ Public Class MainWindow
     Private Sub button_button_F_Others_14_click(sender As Object, e As RoutedEventArgs) Handles button_F_Others_14.Click
         button_F_honeycomb_click(Nothing, Nothing)
     End Sub
+#End Region
+
 #End Region
 
 #Region "科技"
@@ -8737,7 +8997,6 @@ Public Class MainWindow
         End If
         REM ------------------生物简介-------------------
         TextBlock_A_Introduce.Text = A_Introduce
-        TextBlock_A_Introduce.Height = SetTextBlockHeight(A_Introduce, 20)
         Dim A_IntroduceTop As New Thickness()
         A_IntroduceTop.Left = 10
         Select Case A_SpecialAbilityHeight
@@ -8763,21 +9022,21 @@ Public Class MainWindow
                         A_IntroduceTop.Top = 825
                 End Select
             Case 1
-                A_IntroduceTop.Top = TextBlock_A_Special_Ability_1.Margin.Top + SetTextBlockHeight(TextBlock_A_Special_Ability_1.Text, 20) + 30
+                A_IntroduceTop.Top = TextBlock_A_Special_Ability_1.Margin.Top + ReturnTextBlockHeight(Canvas_AnimalLeft, TextBlock_A_Special_Ability_1) + 30
             Case 2
-                A_IntroduceTop.Top = TextBlock_A_Special_Ability_2.Margin.Top + SetTextBlockHeight(TextBlock_A_Special_Ability_2.Text, 20) + 30
+                A_IntroduceTop.Top = TextBlock_A_Special_Ability_2.Margin.Top + ReturnTextBlockHeight(Canvas_AnimalLeft, TextBlock_A_Special_Ability_2) + 30
             Case 3
-                A_IntroduceTop.Top = TextBlock_A_Special_Ability_3.Margin.Top + SetTextBlockHeight(TextBlock_A_Special_Ability_3.Text, 20) + 30
+                A_IntroduceTop.Top = TextBlock_A_Special_Ability_3.Margin.Top + ReturnTextBlockHeight(Canvas_AnimalLeft, TextBlock_A_Special_Ability_3) + 30
             Case 4
-                A_IntroduceTop.Top = TextBlock_A_Special_Ability_4.Margin.Top + SetTextBlockHeight(TextBlock_A_Special_Ability_4.Text, 20) + 30
+                A_IntroduceTop.Top = TextBlock_A_Special_Ability_4.Margin.Top + ReturnTextBlockHeight(Canvas_AnimalLeft, TextBlock_A_Special_Ability_4) + 30
             Case 5
-                A_IntroduceTop.Top = TextBlock_A_Special_Ability_5.Margin.Top + SetTextBlockHeight(TextBlock_A_Special_Ability_5.Text, 20) + 30
+                A_IntroduceTop.Top = TextBlock_A_Special_Ability_5.Margin.Top + ReturnTextBlockHeight(Canvas_AnimalLeft, TextBlock_A_Special_Ability_5) + 30
             Case 6
-                A_IntroduceTop.Top = TextBlock_A_Special_Ability_6.Margin.Top + SetTextBlockHeight(TextBlock_A_Special_Ability_6.Text, 20) + 30
+                A_IntroduceTop.Top = TextBlock_A_Special_Ability_6.Margin.Top + ReturnTextBlockHeight(Canvas_AnimalLeft, TextBlock_A_Special_Ability_6) + 30
         End Select
         TextBlock_A_Introduce.Margin = A_IntroduceTop
         REM ------------------生物左侧面板高度最终确定-------------------
-        Canvas_AnimalLeft.Height = TextBlock_A_Introduce.Margin.Top + TextBlock_A_Introduce.Height + 30
+        Canvas_AnimalLeft.Height = TextBlock_A_Introduce.Margin.Top + ReturnTextBlockHeight(Canvas_ScienceLeft, TextBlock_A_Introduce) + 30
         REM ------------------滚动条回到最顶端-------------------
         ScrollViewer_AnimalLeft.ScrollToVerticalOffset(0)
     End Sub
@@ -9093,7 +9352,7 @@ Public Class MainWindow
 
     Public Function A_SATextBlock(TextBlockName As Object, Text As String)
         TextBlockName.Visibility = Visibility.Visible
-        Dim TextBlockHeight As Double = SetTextBlockHeight(Text, 20)
+        Dim TextBlockHeight As Double = ReturnTextBlockHeight(Text, 20)
         TextBlockName.height = TextBlockHeight
         TextBlockName.text = Text
         Return TextBlockHeight
@@ -11359,8 +11618,7 @@ Public Class MainWindow
         End If
         REM ------------------物品简介-------------------
         TextBlock_NB_Introduce.Text = N_Introduce
-        TextBlock_NB_Introduce.Height = SetTextBlockHeight(N_Introduce, 10)
-        N_WrapPanel_Introduce_B.Height = SetTextBlockHeight(N_Introduce, 10)
+        N_WrapPanel_Introduce_B.Height = ReturnTextBlockHeight(Canvas_NaturalLeft_B, TextBlock_NB_Introduce)
         REM ------------------高度设置------------------- 
         Dim WrapPanel_Frame_B_Height As Integer = 0
         If N_WrapPanel_Abundant_B.Visibility = Visibility.Visible Then
@@ -11373,7 +11631,7 @@ Public Class MainWindow
             WrapPanel_Frame_B_Height += N_WrapPanel_Rare_B.Height + N_WrapPanel_RareButton_B.Height
         End If
         WrapPanel_Frame_B_Height += N_WrapPanel_DLC_B.Height + N_WrapPanel_Introduce_B.Height
-        N_WrapPanel_Frame_B.Height = WrapPanel_Frame_B_Height
+        N_WrapPanel_Frame_B.Height = WrapPanel_Frame_B_Height + 10
         If N_WrapPanel_Frame_B.Height + 175 > 604 Then
             Canvas_GoodsLeft_B.Height = N_WrapPanel_Frame_B.Height + 175
         Else
@@ -11751,7 +12009,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_mangrove_bio_click(sender As Object, e As RoutedEventArgs) Handles button_N_mangrove_bio.Click
-        NB_Abundant({"N_mangrove_bio", "N_grass_sw"})
+        NB_Abundant({"N_mangrove", "N_grass_sw"})
         NB_Occasional({"N_shoal"})
         NB_Rare({"A_water_beefalo"})
         N_Show_B("红树林", "Mangrove", "N_mangrove_bio", "NoDLC", 0, 1, 0, "这里虽然只能乘船通行，然而一般还是认为是一个岛屿，这里生活着水牛，草不会枯萎。")
@@ -12005,12 +12263,13 @@ Public Class MainWindow
         End If
         REM ------------------物品简介-------------------
         TextBlock_NP_Introduce.Text = N_Introduce
-        TextBlock_NP_Introduce.Height = SetTextBlockHeight(N_Introduce, 14)
-        N_WrapPanel_Introduce_P.Height = SetTextBlockHeight(N_Introduce, 14)
+        N_WrapPanel_Introduce_P.Height = ReturnTextBlockHeight(Canvas_NaturalLeft_P, TextBlock_NP_Introduce)
         REM ------------------图片及资源显示-------------------
         N_Show_P_Change(0)
         REM ------------------高度设置------------------- 
         N_GetHeight_P()
+        REM ------------------滚动条回到最顶端-------------------
+        ScrollViewer_NaturalLeft_Plant.ScrollToVerticalOffset(0)
     End Sub
 
     Private Sub N_GetHeight_P()
@@ -12030,12 +12289,7 @@ Public Class MainWindow
         If N_WrapPanel_BiomeButton_P.Visibility = Visibility.Visible Then
             WrapPanel_Frame_P_Height += N_WrapPanel_Biome_P.Height + N_WrapPanel_BiomeButton_P.Height
         End If
-        If N_WrapPanel_Switch_P.Visibility = Visibility.Visible Then
-            WrapPanel_Frame_P_Height += 100
-        Else
-            WrapPanel_Frame_P_Height += 20
-        End If
-        WrapPanel_Frame_P_Height += N_WrapPanel_DLC_P.Height + N_Canvas_RegenerateAndCombustibleAttribite_P.Height + N_WrapPanel_Introduce_P.Height
+        WrapPanel_Frame_P_Height += N_WrapPanel_DLC_P.Height + N_Canvas_RegenerateAndCombustibleAttribite_P.Height + N_WrapPanel_Introduce_P.Height + 20
         N_WrapPanel_Frame_P.Height = WrapPanel_Frame_P_Height
         If WrapPanel_Frame_P_Height + 135 > 604 Then
             Canvas_NaturalLeft_P.Height = WrapPanel_Frame_P_Height + 135
@@ -12360,7 +12614,7 @@ Public Class MainWindow
         NP_Picture({"N_spiky_bush", "N_spiky_bush_empty"})
         ReDim NP_ResourcesArray(1, 11)
         NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
-        NP_Resources(1, 1, {"G_spiky_bushes", "×1", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"G_spiky_bushes", "×1", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         N_Show_P("尖刺灌木", "Spiky Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "", "", "", "", "", "尖刺灌木常见于草原和森林，它可以提供一个树枝(采摘时受到3点伤害，可以直接铲起以避免伤害)。尖刺灌木可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。生长需要4天时间。", False, True)
     End Sub
 
@@ -12368,20 +12622,20 @@ Public Class MainWindow
         NP_Picture({"N_cactus", "N_cactus_flower", "N_cactus_empty"})
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"F_cactus_flesh", "×1", "", "", "", "", "", "", "", "", "", ""})
-        NP_Resources(1, 1, {"F_cactus_flower", "×1(仅夏天)", "", "", "", "", "", "", "", "", "", ""})
+        NP_Resources(1, 1, {"F_cactus_flesh", "×1", "F_cactus_flower", "×1(仅夏天)", "", "", "", "", "", "", "", ""})
         N_Show_P("仙人掌", "Cactus", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_desert", "", "", "", "", "", "仙人掌只能在沙漠找到，采摘时受到6点伤害(可以穿防御型装备抵挡伤害)。不能移植。生长需要3天时间(冬天不受影响)，只有在夏天才能收获仙人掌花。", False, True)
     End Sub
 
     Private Sub button_N_plant_click(sender As Object, e As RoutedEventArgs) Handles button_N_plant.Click
         NP_Picture({"N_plant"})
         ReDim NP_ResourcesArray(0, 11)
-        N_Show_P("种植", "Plant", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_butterfly", "", "", "随着池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", False, True)
+        N_Show_P("种植", "Plant", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "", "", "", "", "随着池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", True, True)
     End Sub
 
     Private Sub button_N_algae_click(sender As Object, e As RoutedEventArgs) Handles button_N_algae.Click
         NP_Picture({"N_algae"})
         ReDim NP_ResourcesArray(0, 11)
-        N_Show_P("水藻", "Algae", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_village", "N_wilds", "生成", "A_butterfly", "", "", "随着洞穴池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", False, True)
+        N_Show_P("水藻", "Algae", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_village", "N_wilds", "", "", "", "", "随着洞穴池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", True, True)
     End Sub
 
     Private Sub button_N_blue_mushroom_click(sender As Object, e As RoutedEventArgs) Handles button_N_blue_mushroom.Click
@@ -12495,7 +12749,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"F_rot", "×1", "G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的草", "Diseased Grass", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的长草簇。", False, True)
+        N_Show_P("患病的草", "Diseased Grass", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "", "", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的长草簇。", False, True)
     End Sub
 
     Private Sub button_N_berry_bush_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush_diseased.Click
@@ -12504,7 +12758,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_rot", "×1", "G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的浆果灌木丛", "Diseased Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的浆果灌木丛。", False, True)
+        N_Show_P("患病的浆果灌木丛", "Diseased Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的浆果灌木丛。", False, True)
     End Sub
 
     Private Sub button_N_juicy_berry_bush_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_juicy_berry_bush_diseased.Click
@@ -12513,7 +12767,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_rot", "×1", "G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("患病的蜜汁浆果丛", "Diseased Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_butterfly", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的蜜汁浆果丛。", False, True)
+        N_Show_P("患病的蜜汁浆果丛", "Diseased Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "患病后一段时间消失，患病无法治疗，但是用铲子铲起可以得到全新的蜜汁浆果丛。", False, True)
     End Sub
 
     Private Sub button_N_evergreen_click(sender As Object, e As RoutedEventArgs) Handles button_N_evergreen.Click
@@ -12637,7 +12891,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_twiggy_tree_click(sender As Object, e As RoutedEventArgs) Handles button_N_twiggy_tree.Click
-        NP_Picture("N_twiggy_tree_diseased_", 4)
+        NP_Picture("N_twiggy_tree_", 4)
         ReDim NP_ResourcesArray(3, 11)
         NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_twigs", "×1", "G_log", "×2", "G_twiggy_tree_cone", "×1", "", "", "", "", "", ""})
@@ -12646,7 +12900,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_twiggy_tree_diseased_click(sender As Object, e As RoutedEventArgs) Handles button_N_twiggy_tree_diseased.Click
-        NP_Picture("N_twiggy_tree_", 4)
+        NP_Picture("N_twiggy_tree_diseased_", 4)
         ReDim NP_ResourcesArray(3, 11)
         NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
         NP_Resources(1, 1, {"G_twigs", "×1", "G_log", "×2", "G_twiggy_tree_cone", "×1", "", "", "", "", "", ""})
@@ -12684,6 +12938,7 @@ Public Class MainWindow
         ScrollViewer_GoodsLeft_MessageInABottle.Visibility = Visibility.Collapsed
     End Sub
 
+#Region "物品_材料/玩具"
     REM ------------------左侧面板(物品_材料)------------------
     Private Sub G_Show_M(G_Name As String, G_EnName As String, G_picture As String, G_DLC As String, G_DLC_ROG As SByte, G_DLC_SW As SByte, G_DLC_DST As SByte, G_Introduce As String, Optional PigKing As Boolean = False, Optional Yaarctopus As Boolean = False)
         REM ------------------初始化------------------
@@ -12738,8 +12993,7 @@ Public Class MainWindow
         G_Gift(PigKing, Yaarctopus)
         REM ------------------物品简介-------------------
         TextBlock_GM_Introduce.Text = G_Introduce
-        TextBlock_GM_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_M.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_M.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_M, TextBlock_GM_Introduce)
         REM ------------------高度设置------------------- 
         Dim WrapPanel_Frame_M_Height As Integer = 0
         If G_WrapPanel_Science_M.Visibility = Visibility.Visible Then
@@ -12758,6 +13012,8 @@ Public Class MainWindow
         Else
             Canvas_GoodsLeft_M.Height = 604
         End If
+        REM ------------------滚动条回到最顶端-------------------
+        ScrollViewer_GoodsLeft_Material.ScrollToVerticalOffset(0)
     End Sub
 
     Public Sub G_Science(ScienceNum As Byte, ParamArray Science() As String)
@@ -13829,7 +14085,9 @@ Public Class MainWindow
         G_Animal(0, {})
         G_Show_M("酒瓶蜡烛", "Wine Bottle Candle", "T_wine_bottle_candle", "SW", 0, 1, 0, "", True, True)
     End Sub
+#End Region
 
+#Region "物品_装备"
     REM ------------------左侧面板(物品_装备)------------------
     Private Sub G_Show_E(G_Name As String, G_EnName As String, G_picture As String, G_DLC As String, G_DLC_ROG As SByte, G_DLC_SW As SByte, G_DLC_DST As SByte, G_SpecialAbility_1 As String, G_SpecialAbility_2 As String, G_FromAnimal_1 As String, G_FromAnimal_2 As String, G_Introduce As String, ParamArray EquipmentAttribute() As Double)
         REM ------------------初始化------------------
@@ -14082,8 +14340,7 @@ Public Class MainWindow
         End If
         REM ------------------物品简介-------------------
         TextBlock_GE_Introduce.Text = G_Introduce
-        TextBlock_GE_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_E.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_E.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_E, TextBlock_GE_Introduce)
         REM ------------------面板高度-------------------
         Canvas_GoodsLeft_E.Height = 135 + G_WrapPanel_Frame_E_Attribute.Height
         If G_WrapPanel_SpecialAbilityText_E.Visibility = Visibility.Visible Then
@@ -14536,7 +14793,9 @@ Public Class MainWindow
     Private Sub button_G_portable_crock_pot_click(sender As Object, e As RoutedEventArgs) Handles button_G_portable_crock_pot.Click
         G_Show_E("便携式烹饪锅", "Portable Crock Pot", "G_portable_crock_pot", "SW", 0, 1, 0, "沃利专属，可以额外制作四种食谱", "可移动", "", "", "在潮水中会失效。", {0, 0, 0, 0, 0, 1000, 0, 0, 0, 0, 0})
     End Sub
+#End Region
 
+#Region "物品_树苗"
     REM ------------------左侧面板(物品_树苗)------------------
     Private Sub G_Show_S(G_Name As String, G_EnName As String, G_picture As String, G_DLC As String, G_DLC_ROG As SByte, G_DLC_SW As SByte, G_DLC_DST As SByte, G_Introduce As String, ParamArray FromPlant() As String)
         REM ------------------初始化------------------
@@ -14587,8 +14846,7 @@ Public Class MainWindow
         End If
         REM ------------------物品简介-------------------
         TextBlock_GS_Introduce.Text = G_Introduce
-        TextBlock_GS_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_S.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_S.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_S, TextBlock_GS_Introduce)
         REM -----------来源于植物按钮位置调整------------
         image_GS_Science_1.Source = Picture_Short_Name(Res_Short_Name(FromPlant(0)))
         GS_Sapling_Select_1 = FromPlant(0)
@@ -14680,7 +14938,9 @@ Public Class MainWindow
     Private Sub button_G_twiggy_tree_cone_click(sender As Object, e As RoutedEventArgs) Handles button_G_twiggy_tree_cone.Click
         G_Show_S("多枝的树的果实", "Twiggy Tree Cone", "G_twiggy_tree_cone", "DST", 0, 0, 1, "砍伐多枝的树或患病的多枝的树获得。", {"N_twiggy_tree_1", "N_twiggy_tree_diseased_1"})
     End Sub
+#End Region
 
+#Region "物品_生物"
     Private GS_Animal_Select_1 As String
     Private GS_Animal_Select_2 As String
     Private GS_Animal_Select_3 As String
@@ -14788,8 +15048,7 @@ Public Class MainWindow
         End If
         REM ------------------物品简介-------------------
         TextBlock_GA_Introduce.Text = G_Introduce
-        TextBlock_GA_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_A.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_A.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_A, TextBlock_GA_Introduce)
     End Sub
 
     Private Sub button_GA_MurderButton_1_click(sender As Object, e As RoutedEventArgs) Handles button_GA_MurderButton_1.Click
@@ -14923,7 +15182,9 @@ Public Class MainWindow
     Private Sub button_G_red_spore_click(sender As Object, e As RoutedEventArgs) Handles button_G_red_spore.Click
         G_Show_A("红色孢子", "Red Spore", "A_red_spore", "DST", 0, 0, 1, "", "可以重新释放以获得微量的光。", {})
     End Sub
+#End Region
 
+#Region "物品_草皮"
     REM ------------------左侧面板(物品_草皮)------------------
     Private Sub G_Show_T(G_Name As String, G_EnName As String, G_picture As String, G_DLC As String, G_DLC_ROG As SByte, G_DLC_SW As SByte, G_DLC_DST As SByte, G_Texture As String, G_Introduce As String, Optional G_Craft As String = "")
         REM ------------------初始化------------------
@@ -14985,8 +15246,7 @@ Public Class MainWindow
         image_GT_TurfTexture.Source = Picture_Short_Name(Res_Short_Name(G_Texture))
         REM ------------------物品简介-------------------
         TextBlock_GT_Introduce.Text = G_Introduce
-        TextBlock_GT_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_T.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_T.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_T, TextBlock_GT_Introduce)
     End Sub
 
     Private Sub button_GT_CraftButton_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_GT_CraftButton.Click
@@ -15104,7 +15364,9 @@ Public Class MainWindow
     Private Sub button_G_beach_turf_click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_beach_turf.Click
         G_Show_T("海滩地皮", "Beach Turf", "G_beach_turf", "SW", 0, 1, 0, "Texture_beach_turf", "不可以挖出(可以用控制台调出)！出现在海滩区域，可以在上面种植植物，也不阻止食人花和眼球草的生长。")
     End Sub
+#End Region
 
+#Region "物品_宠物"
     REM ------------------左侧面板(物品_宠物)------------------
     Private Sub G_Show_P(G_Name As String, G_EnName As String, G_picture As String, G_DLC As String, G_DLC_ROG As SByte, G_DLC_SW As SByte, G_DLC_DST As SByte, G_Introduce As String, ParamArray Pet() As String)
         REM ------------------初始化------------------
@@ -15174,8 +15436,7 @@ Public Class MainWindow
         button_GP_PetButton_1.Margin = G_Pet_T
         REM ------------------物品简介-------------------
         TextBlock_GP_Introduce.Text = G_Introduce
-        TextBlock_GP_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_P.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_P.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_P, TextBlock_GP_Introduce)
     End Sub
 
     Private Sub button_GP_PetButton_1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button_GP_PetButton_1.Click
@@ -15321,7 +15582,9 @@ Public Class MainWindow
         G_PetListIndex = 0
         G_Show_P("星-空", "Star-Sky", "G_star_sky", "DST", 0, 0, 1, "星-空是联机版的眼骨，只在洞穴里，会召唤哈奇。", {"A_hutch", "A_fugu_hutch", "A_music_box_hutch"})
     End Sub
+#End Region
 
+#Region "物品_解锁"
     REM ------------------左侧面板(物品_解锁)------------------
     Private Sub G_Show_U(G_Name As String, G_EnName As String, G_picture As String, G_DLC As String, G_DLC_ROG As SByte, G_DLC_SW As SByte, G_DLC_DST As SByte, G_UnlockCharacter As String, G_Introduce As String, ParamArray Drop() As String)
         REM ------------------初始化------------------
@@ -15415,8 +15678,7 @@ Public Class MainWindow
         image_GU_UnlockCharacter.Source = Picture_Short_Name(Res_Short_Name(G_UnlockCharacter))
         REM ------------------物品简介-------------------
         TextBlock_GU_Introduce.Text = G_Introduce
-        TextBlock_GU_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_U.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_U.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_U, TextBlock_GU_Introduce)
     End Sub
 
     Private Sub button_GU_UnlockCharacter_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button_GU_UnlockCharacter.Click
@@ -15474,8 +15736,9 @@ Public Class MainWindow
     Private Sub button_G_tarnished_crown_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_tarnished_crown.Click
         G_Show_U("旧王冠", "Tarnished Crown", "G_tarnished_crown", "SW", 0, 1, 0, "C_wilbur", "每次击杀猿猴或摧毁猿猴小屋都有10%的几率掉落旧王冠，把旧王冠给在浅海的竹筏上的威尔伯即可解锁威尔伯人物。", {"A_prime_ape", "N_Prime_ape_hut"})
     End Sub
+#End Region
 
-
+#Region "物品_零件"
     REM ------------------左侧面板(物品_零件)------------------
     Private Sub G_Show_C(G_Name As String, G_EnName As String, G_picture As String, G_DLC As String, G_DLC_ROG As SByte, G_DLC_SW As SByte, G_DLC_DST As SByte, G_Introduce As String)
         REM ------------------初始化------------------
@@ -15526,8 +15789,7 @@ Public Class MainWindow
         End If
         REM ------------------物品简介-------------------
         TextBlock_GC_Introduce.Text = G_Introduce
-        TextBlock_GC_Introduce.Height = SetTextBlockHeight(G_Introduce, 13)
-        G_WrapPanel_Introduce_C.Height = SetTextBlockHeight(G_Introduce, 13)
+        G_WrapPanel_Introduce_C.Height = ReturnTextBlockHeight(Canvas_GoodsLeft_C, TextBlock_GC_Introduce)
     End Sub
 
     Private Sub button_GC_Switch_Left_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button_GC_Switch_Left.Click
@@ -15661,7 +15923,9 @@ Public Class MainWindow
         button_GC_Switch_Left.Visibility = Visibility.Collapsed
         button_GC_Switch_Right.Visibility = Visibility.Collapsed
     End Sub
+#End Region
 
+#Region "物品_其他"
     REM ------------------左侧面板(物品_其他)------------------
     Private Sub button_G_blueprint_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button_G_blueprint.Click
         G_LeftPanel_Initialization()
@@ -15681,8 +15945,10 @@ Public Class MainWindow
         G_LeftPanel_Initialization()
         ScrollViewer_GoodsLeft_MessageInABottle.Visibility = Visibility.Visible
     End Sub
+#End Region
 
-    REM 生物DLC检测初始化
+#Region "物品_DLC"
+    REM 物品DLC检测初始化
     Private Sub G_DLC_Check_initialization()
         REM 材料
         button_G_marble.Visibility = Visibility.Collapsed
@@ -16484,6 +16750,8 @@ Public Class MainWindow
     End Sub
 #End Region
 
+#End Region
+
 #Region "设置"
     Private Sub Se_button_CreateShortCut_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Se_button_CreateShortCut.Click
         ' 使用COM导入库
@@ -16593,4 +16861,5 @@ Public Class MainWindow
         Next
     End Sub
 #End Region
+
 End Class
