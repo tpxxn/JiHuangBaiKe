@@ -3557,9 +3557,6 @@
     <Resource Include="Resources\N_electric_isosceles.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\N_fishermerm%27s_hut.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\N_florid_postern.png" />
   </ItemGroup>
   <ItemGroup>
@@ -3663,9 +3660,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\N_merm_head.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\N_merm_hut.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\N_mini_glacier_1.png" />
@@ -4163,6 +4157,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\B_SwitchRight_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\N_fishermerm%27s_hut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\N_merm_hut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

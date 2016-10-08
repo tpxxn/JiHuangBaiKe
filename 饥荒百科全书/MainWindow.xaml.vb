@@ -1869,15 +1869,15 @@ Public Class MainWindow
                         button_N_ship_graveyard_click(Nothing, Nothing)
                     Case "N_volcano_bio"
                         button_N_volcano_bio_click(Nothing, Nothing)
-                    Case "N_flower"
+                    Case "N_flower_1"
                         button_N_flower_click(Nothing, Nothing)
-                    Case "N_evil_flower"
+                    Case "N_evil_flower_1"
                         button_N_evil_flower_click(Nothing, Nothing)
                     Case "N_sapling"
                         button_N_sapling_click(Nothing, Nothing)
                     Case "N_grass"
                         button_N_grass_click(Nothing, Nothing)
-                    Case "N_berry_bush"
+                    Case "N_berry_bush_1"
                         button_N_berry_bush_click(Nothing, Nothing)
                     Case "N_berry_bush_2"
                         button_N_berry_bush_2_click(Nothing, Nothing)
@@ -1925,11 +1925,11 @@ Public Class MainWindow
                         button_N_berry_bush_diseased_click(Nothing, Nothing)
                     Case "N_juicy_berry_bush_diseased"
                         button_N_juicy_berry_bush_diseased_click(Nothing, Nothing)
-                    Case "N_evergreen"
+                    Case "N_evergreen_1"
                         button_N_evergreen_click(Nothing, Nothing)
-                    Case "N_lumpy_evergreen"
+                    Case "N_lumpy_evergreen_1"
                         button_N_lumpy_evergreen_click(Nothing, Nothing)
-                    Case "N_birchnut_tree"
+                    Case "N_birchnut_tree_1"
                         button_N_birchnut_tree_click(Nothing, Nothing)
                     Case "N_totally_normal_tree"
                         button_N_totally_normal_tree_click(Nothing, Nothing)
@@ -1945,11 +1945,11 @@ Public Class MainWindow
                         button_N_webbed_blue_mushtree_click(Nothing, Nothing)
                     Case "N_cave_banana_tree"
                         button_N_cave_banana_tree_click(Nothing, Nothing)
-                    Case "N_palm_tree"
+                    Case "N_palm_tree_1"
                         button_N_palm_tree_click(Nothing, Nothing)
-                    Case "N_jungle_tree"
+                    Case "N_jungle_tree_1"
                         button_N_jungle_tree_click(Nothing, Nothing)
-                    Case "N_mangrove"
+                    Case "N_mangrove_1"
                         button_N_mangrove_click(Nothing, Nothing)
                     Case "N_regular_jungle_tree"
                         button_N_regular_jungle_tree_click(Nothing, Nothing)
@@ -1957,11 +1957,11 @@ Public Class MainWindow
                         button_N_burnt_ash_tree_click(Nothing, Nothing)
                     Case "N_brainy_sprout"
                         button_N_brainy_sprout_click(Nothing, Nothing)
-                    Case "N_twiggy_tree"
+                    Case "N_twiggy_tree_1"
                         button_N_twiggy_tree_click(Nothing, Nothing)
-                    Case "N_twiggy_tree_diseased"
+                    Case "N_twiggy_tree_diseased_1"
                         button_N_twiggy_tree_diseased_click(Nothing, Nothing)
-                    Case "N_petrified_tree"
+                    Case "N_petrified_tree_1"
                         button_N_petrified_tree_click(Nothing, Nothing)
                         'Case "N_rabbit_hole"
                         '    button_N_rabbit_hole_click(Nothing, Nothing)
@@ -10491,8 +10491,8 @@ Public Class MainWindow
 
     Private Sub button_A_water_beefalo_click(sender As Object, e As RoutedEventArgs) Handles button_A_water_beefalo.Click
         Dim LootHeight As Integer = A_Loot("F_meat", "4", "G_horn", "1", "G_manure", "1(周期产生)")
-        Dim SpecialAbilityHeight As Integer = A_SpecialAbility(LootHeight, "春天生水牛，变成敌对")
-        A_Show("水牛", "Water Beefalo", "A_water_beefalo", "SW", 0, 1, 0, 500, 0, 34, 4, 3, 1.5, 7.5, 3, 0, False, True, "和皮弗娄牛类似，不过无法对其使用剃刀，即没有牛毛，而且掉落的是角而不是牛角。它们通常生活在红树林，虽然一般都在水里，但也可以上岸。", LootHeight, SpecialAbilityHeight)
+        Dim SpecialAbilityHeight As Integer = A_SpecialAbility(LootHeight, "春天生水牛", "上岸变成敌对")
+        A_Show("水牛", "Water Beefalo", "A_water_beefalo", "SW", 0, 1, 0, 500, 0, 34, 4, 3, 1.5, 7.5, 3, 0, False, True, "和皮弗娄牛类似，不过无法对其使用剃刀，即没有牛毛，而且掉落的是角而不是牛角。它们通常生活在红树林，虽然一般都在水里，但也可以上岸，上岸后会主动攻击。", LootHeight, SpecialAbilityHeight)
     End Sub
 
     REM ------------------生物(飞行生物)-------------------
@@ -10650,7 +10650,7 @@ Public Class MainWindow
     Private Sub button_A_batilisk_click(sender As Object, e As RoutedEventArgs) Handles button_A_batilisk.Click
         Dim LootHeight As Integer = A_Loot("F_batilisk_wing", "1(15%)", "G_guano", "1(15%)", "F_monster_meat", "1(10%)")
         Dim SpecialAbilityHeight As Integer = A_SpecialAbility(LootHeight)
-        A_Show("黑蝙蝠", "Batilisk", "A_batilisk", "NoDLC", 1, 0, 1, 50, 50, 20, 1, 1.5, 8, 8, 2, 0, True, True, "黑蝙蝠生活在石笋附近的蝙蝠洞里，除了冬天，挖开落水洞也会飞出几只黑蝙蝠。黑蝙蝠白天回蝙蝠洞(若无法回洞则站立睡觉)，黄昏和晚上出来活动，会定期掉落鸟粪，具有不俗的施肥能力。击杀后获得的黑蝙蝠翅膀更是能制作武器——蝙蝠蝙蝠。", LootHeight, SpecialAbilityHeight)
+        A_Show("黑蝙蝠", "Batilisk", "A_batilisk", "NoDLC", 1, 0, 1, 50, 50, 20, 1, 1.5, 8, 8, 2, 0, True, True, "黑蝙蝠生活在石笋附近的蝙蝠洞里，除了冬天，挖开落水洞也会飞出几只黑蝙蝠。黑蝙蝠白天回蝙蝠洞(若无法回洞则站立睡觉)，黄昏和晚上出来活动，会定期掉落鸟粪，具有不俗的施肥能力。击杀后获得的黑蝙蝠翅膀更是能制作武器——蝙蝠斧棍。", LootHeight, SpecialAbilityHeight)
     End Sub
 
     Private Sub button_A_slurtles_click(sender As Object, e As RoutedEventArgs) Handles button_A_slurtles.Click
@@ -12009,7 +12009,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_N_mangrove_bio_click(sender As Object, e As RoutedEventArgs) Handles button_N_mangrove_bio.Click
-        NB_Abundant({"N_mangrove", "N_grass_sw"})
+        NB_Abundant({"N_mangrove_1", "N_grass_sw"})
         NB_Occasional({"N_shoal"})
         NB_Rare({"A_water_beefalo"})
         N_Show_B("红树林", "Mangrove", "N_mangrove_bio", "NoDLC", 0, 1, 0, "这里虽然只能乘船通行，然而一般还是认为是一个岛屿，这里生活着水牛，草不会枯萎。")
@@ -12573,7 +12573,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"G_cut_grass", "×1", "G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_grass_tuft", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("草", "Grass", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_savanna", "", "", "", "", "草常见于稀树大草原和森林，洞穴里也有一些，特别是在沉没森林区域，它可以提供一个割下的草。草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的草需要施肥(便便、鸟屎、便便蓝)，生长需要3天时间(下雨会减少生长时间，冬天生长得很慢)。在夏天草会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后草会患病，并且无法治愈。", False, True)
+        N_Show_P("草", "Grass", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_savanna", "", "", "", "", "草常见于稀树大草原和森林，洞穴里也有一些，特别是在沉没森林区域，它可以提供一个割下的草。草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的草需要施肥(便便、鸟屎、便便篮)，生长需要3天时间(下雨会减少生长时间，冬天生长得很慢)。在夏天草会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后草会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_berry_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush.Click
@@ -12582,7 +12582,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_berries", "×1", "G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_gobbler", "", "", "浆果灌木丛常见于草原，偶尔在森林里也可以发现它们，它可以提供一个浆果。浆果灌木丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的浆果灌木丛需要施肥(便便、鸟屎、便便蓝)，生长需要3-5天时间(下雨会减少生长时间，冬天不会生长)。采摘浆果的时候会出现火鸡，如果不击杀或驱逐它，它就会把周围可以收获的浆果全部吃光！在夏天浆果灌木丛会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后浆果灌木丛会患病，并且无法治愈。", False, True)
+        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "生成", "A_gobbler", "", "", "浆果灌木丛常见于草原，偶尔在森林里也可以发现它们，它可以提供一个浆果。浆果灌木丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的浆果灌木丛需要施肥(便便、鸟屎、便便篮)，生长需要3-5天时间(下雨会减少生长时间，冬天不会生长)。采摘浆果的时候会出现火鸡，如果不击杀或驱逐它，它就会把周围可以收获的浆果全部吃光！在夏天浆果灌木丛会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后浆果灌木丛会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_berry_bush_2_click(sender As Object, e As RoutedEventArgs) Handles button_N_berry_bush_2.Click
@@ -12591,7 +12591,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_berries", "×1", "G_berry_bush_2", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_berry_bush_2", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_gobbler", "生成              (SW)", "A_snake", "浆果灌木丛常见于草原，特别是猪村附近，它可以提供一个浆果。浆果灌木丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的浆果灌木丛需要施肥(便便、鸟屎、便便蓝)，生长需要3-5天时间(下雨会减少生长时间，冬天不会生长)。采摘浆果的时候会出现火鸡，如果不击杀或驱逐它，它就会把周围可以收获的浆果全部吃光！在夏天浆果灌木丛会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后浆果灌木丛会患病，并且无法治愈。注意！这种浆果灌木丛不能制作丛林帽！", False, True)
+        N_Show_P("浆果灌木丛", "Berry Bush", "NoDLC", 1, 1, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "生成", "A_gobbler", "生成              (SW)", "A_snake", "浆果灌木丛常见于草原，特别是猪村附近，它可以提供一个浆果。浆果灌木丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的浆果灌木丛需要施肥(便便、鸟屎、便便篮)，生长需要3-5天时间(下雨会减少生长时间，冬天不会生长)。采摘浆果的时候会出现火鸡，如果不击杀或驱逐它，它就会把周围可以收获的浆果全部吃光！在夏天浆果灌木丛会枯萎，需要施肥或者在旁边建造雪球发射器防止这一情况的发生。在联机版里，开局两个季节之后浆果灌木丛会患病，并且无法治愈。注意！这种浆果灌木丛不能制作丛林帽！", False, True)
     End Sub
 
     Private Sub button_N_juicy_berry_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_juicy_berry_bush.Click
@@ -12600,7 +12600,7 @@ Public Class MainWindow
         NP_Resources(0, 0, {"F_juicy_berries", "×3", "G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 1, {"G_juicy_berry_bush", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         NP_Resources(2, 2, {"G_twigs", "×2(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("蜜汁浆果丛", "Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "蜜汁浆果丛是联机版中浆果灌木丛的一个变种，常见于草原，偶尔在森林里也可以发现它们，它可以提供三个蜜汁浆果。蜜汁浆果丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的蜜汁浆果丛需要施肥(便便、鸟屎、便便蓝)，生长需要比浆果灌木丛更长的时间(下雨会减少生长时间，冬天不会生长)。蜜汁浆果丛会患病，并且无法治愈。", False, True)
+        N_Show_P("蜜汁浆果丛", "Juicy Berry Bush", "DST", 0, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_forest", "", "", "", "", "蜜汁浆果丛是联机版中浆果灌木丛的一个变种，常见于草原，偶尔在森林里也可以发现它们，它可以提供三个蜜汁浆果。蜜汁浆果丛可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的蜜汁浆果丛需要施肥(便便、鸟屎、便便篮)，生长需要比浆果灌木丛更长的时间(下雨会减少生长时间，冬天不会生长)。蜜汁浆果丛会患病，并且无法治愈。", False, True)
     End Sub
 
     Private Sub button_N_reeds_click(sender As Object, e As RoutedEventArgs) Handles button_N_reeds.Click
@@ -12613,8 +12613,8 @@ Public Class MainWindow
     Private Sub button_N_spiky_bush_click(sender As Object, e As RoutedEventArgs) Handles button_N_spiky_bush.Click
         NP_Picture({"N_spiky_bush", "N_spiky_bush_empty"})
         ReDim NP_ResourcesArray(1, 11)
-        NP_Resources(0, 0, {"G_twigs", "×1", "", "", "", "", "", "", "", "", "", ""})
-        NP_Resources(1, 1, {"G_spiky_bushes", "×1", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
+        NP_Resources(0, 0, {"G_twigs", "×1", "G_spiky_bushes", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
+        NP_Resources(1, 1, {"G_spiky_bushes", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
         N_Show_P("尖刺灌木", "Spiky Bush", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_marsh", "", "", "", "", "", "尖刺灌木常见于草原和森林，它可以提供一个树枝(采摘时受到3点伤害，可以直接铲起以避免伤害)。尖刺灌木可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。生长需要4天时间。", False, True)
     End Sub
 
@@ -12629,7 +12629,7 @@ Public Class MainWindow
     Private Sub button_N_plant_click(sender As Object, e As RoutedEventArgs) Handles button_N_plant.Click
         NP_Picture({"N_plant"})
         ReDim NP_ResourcesArray(0, 11)
-        N_Show_P("种植", "Plant", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "", "", "", "", "", "随着池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", True, True)
+        N_Show_P("种植", "Plant", "NoDLC", 1, 0, 1, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_grasslands", "N_tidal_marsh", "", "", "", "", "随着池塘的生成而生成2-4株，不能捡起，但是会被火烧，每到夏天就会长回来。", True, True)
     End Sub
 
     Private Sub button_N_algae_click(sender As Object, e As RoutedEventArgs) Handles button_N_algae.Click
@@ -12693,7 +12693,7 @@ Public Class MainWindow
         ReDim NP_ResourcesArray(2, 11)
         NP_Resources(0, 0, {"G_cut_grass_SW", "×1", "G_grass_tuft_SW", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel"})
         NP_Resources(1, 2, {"G_grass_tuft_SW", "×1(                      )", "", "", "", "", "", "", "S_shovel", "S_goldenshovel", "", ""})
-        N_Show_P("船难草", "Grass(SW)", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_beach", "N_meadow", "", "", "", "", "船难草常见于海滩，它可以提供一个干草。船难草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的船难草需要施肥(便便、鸟屎、便便蓝)，生长需要3天时间(下雨会减少生长时间。", False, True)
+        N_Show_P("船难草", "Grass(SW)", "SW", 0, 1, 0, "NoTool", "G_ash", "×1", "", "", "", "", "", "", "N_beach", "N_meadow", "", "", "", "", "船难草常见于海滩，它可以提供一个干草。船难草可以移植，但是不能种植在方格地板、木质地板、卵石路、地毯地板、岩石草皮、沙地、洞穴石地上。移植的船难草需要施肥(便便、鸟屎、便便篮)，生长需要3天时间(下雨会减少生长时间。", False, True)
     End Sub
 
     Private Sub button_N_bamboo_patch_click(sender As Object, e As RoutedEventArgs) Handles button_N_bamboo_patch.Click
@@ -14462,6 +14462,10 @@ Public Class MainWindow
         G_Show_E("步行手杖", "Walking Cane", "S_walking_cane", "NoDLC", 1, 0, 1, "", "", "", "", "用海象牙制作的加速工具。", {17, 0, 0, 0, 0, 1000, 0, 0, 0, 0, 0})
     End Sub
 
+    Private Sub button_G_sleek_hat_click(sender As Object, e As RoutedEventArgs) Handles button_G_sleek_hat.Click
+        G_Show_E("星芒头盔", "Sleek Hat", "S_sleek_hat", "SW", 0, 1, 0, "", "", "", "", "增加25%的移动速度，还能抵御些寒风。", {0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0})
+    End Sub
+	
     Private Sub button_G_rawling_click(sender As Object, e As RoutedEventArgs) Handles button_G_rawling.Click
         G_Show_E("罗林", "Rawling", "G_rawling", "SW", 0, 1, 0, "", "", "", "", "可以在深海发现它，带在身上有精神光环，每抛一次也会加1点精神。", {0, 0, 0, 0, 0, 1000, 0, 0, 0, 0, 2})
     End Sub
@@ -15997,6 +16001,7 @@ Public Class MainWindow
         REM 装备
         button_G_pickaxe_1.Visibility = Visibility.Collapsed
         button_G_walking_cane.Visibility = Visibility.Collapsed
+		button_G_sleek_hat.Visibility = Visibility.Collapsed
         button_G_pretty_parasol.Visibility = Visibility.Collapsed
         button_G_rain_hat.Visibility = Visibility.Collapsed
         button_G_rain_coat.Visibility = Visibility.Collapsed
@@ -16342,6 +16347,7 @@ Public Class MainWindow
         button_G_luxury_machete.Visibility = Visibility.Visible
         button_G_obsidian_machete.Visibility = Visibility.Visible
         button_G_obsidian_axe.Visibility = Visibility.Visible
+		button_G_sleek_hat.Visibility = Visibility.Visible
         button_G_rawling.Visibility = Visibility.Visible
         button_G_pirate_hat.Visibility = Visibility.Visible
         button_G_tropical_parasol.Visibility = Visibility.Visible

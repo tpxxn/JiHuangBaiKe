@@ -3514,9 +3514,6 @@
   <data name="N_electric_isosceles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_electric_isosceles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="N_fishermerm_s_hut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\N_fishermerm's_hut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="N_florid_postern" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_florid_postern.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -3621,9 +3618,6 @@
   </data>
   <data name="N_merm_head" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_merm_head.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="N_merm_hut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\N_merm_hut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="N_mini_glacier_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\N_mini_glacier_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -4086,5 +4080,11 @@
   </data>
   <data name="B_SwitchRight_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\B_SwitchRight_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N_fishermerm_s_hut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N_fishermerm's_hut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N_merm_hut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N_merm_hut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

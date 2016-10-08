@@ -6961,6 +6961,10 @@
                             </Style>
                         </TabItem.Style>
                         <Grid x:Name="Grid_Natural" Margin="0,50,0,0" Width="930">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="730"/>
+                            </Grid.ColumnDefinitions>
                             <!--
                             <WrapPanel x:Name="WrapPanel_N_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,249,0">
                                 <CheckBox x:Name="checkBox_N_DLC_ROG" VerticalAlignment="Center" IsChecked="True"/>
@@ -7001,8 +7005,8 @@
                                 </Button>
                             </WrapPanel>
                             -->
-                            <ScrollViewer x:Name="ScrollViewer_NaturalRight" Width="700" Height="554" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="224,52,0,-2" Template="{DynamicResource MyScrollViewer}">
-                                <WrapPanel x:Name="WrapPanel_Natural" Height="3155" Width="680" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#99FFFFFF">
+                            <ScrollViewer x:Name="ScrollViewer_NaturalRight" Grid.Column="1" Width="700" Height="554" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,52,0,-2" Template="{DynamicResource MyScrollViewer}">
+                                <WrapPanel x:Name="WrapPanel_Natural" Height="3265" Width="680" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#99FFFFFF">
                                     <TextBlock TextWrapping="Wrap" Text="生物群落" FontSize="20" Width="680"/>
                                     <WrapPanel x:Name="WrapPanel_N_biome" Height="550" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_N_grasslands" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
@@ -7534,7 +7538,7 @@
                                         </Button>
                                     </WrapPanel>
                                     <TextBlock TextWrapping="Wrap" Text="生物巢穴" FontSize="20" Width="680"/>
-                                    <WrapPanel x:Name="WrapPanel_N_mobshousing" Height="440" Width="680" Margin="0,10,0,0">
+                                    <WrapPanel x:Name="WrapPanel_N_mobshousing" Height="550" Width="680" Margin="0,10,0,0">
                                         <Button x:Name="button_N_rabbit_hole" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_rabbit_hole.png" Width="64" Height="64" />
@@ -7667,16 +7671,59 @@
                                                 <TextBlock Text="兔蟹的窝" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
-                                        <Button x:Name="button_N_merm_hut" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                        <Button x:Name="button_N_wildbore_house" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_merm_hut.png" Width="64" Height="64" />
-                                                <TextBlock Text="鱼人房" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                                <Image Source="Resources/N_wildbore_house.png" Width="64" Height="64" />
+                                                <TextBlock Text="荒野小屋" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_mussel" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_mussel.png" Width="64" Height="64" />
+                                                <TextBlock Text="贻贝床" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_wobster_den" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_wobster_den.png" Width="64" Height="64" />
+                                                <TextBlock Text="龙虾的巢穴" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_N_prime_ape_hut" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_prime_ape_hut.png" Width="64" Height="64" />
                                                 <TextBlock Text="猿猴小屋" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_shoal" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_shoal.png" Width="64" Height="64" />
+                                                <TextBlock Text="浅滩" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_merm_hut" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_merm_hut.png" Width="64" Height="64" />
+                                                <TextBlock Text="鱼人房" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_fishermerms_hut" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_fishermerm's_hut.png" Width="64" Height="64" />
+                                                <TextBlock Text="Fishermerm" HorizontalAlignment="Center" Margin="0,-2,0,0" Height="19" FontSize="14"/>
+                                                <TextBlock Text="的小屋" FontSize="15" HorizontalAlignment="Center" Margin="0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_tidal_pool" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_tidal_pool.png" Width="64" Height="64" />
+                                                <TextBlock Text="潮水池" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="button_N_sharkitten_den" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
+                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/N_sharkitten_den.png" Width="64" Height="64" />
+                                                <TextBlock Text="虎鲨的窝" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_N_dragoon_den" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
@@ -7689,43 +7736,6 @@
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_dragoon_egg.png" Width="64" Height="64" />
                                                 <TextBlock Text="龙人蛋" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_fishermerms_hut" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_fishermerm's_hut.png" Width="64" Height="64" />
-                                                <TextBlock Text="Fishermerm" HorizontalAlignment="Center" Margin="0,-2,0,0" Height="19" FontSize="14"/>
-                                                <TextBlock Text="的小屋" FontSize="15" HorizontalAlignment="Center" Margin="0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_sharkitten_den" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_sharkitten_den.png" Width="64" Height="64" />
-                                                <TextBlock Text="虎鲨的窝" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_shoal" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_shoal.png" Width="64" Height="64" />
-                                                <TextBlock Text="浅滩" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_tidal_pool" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_tidal_pool.png" Width="64" Height="64" />
-                                                <TextBlock Text="潮水池" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_wildbore_house" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_wildbore_house.png" Width="64" Height="64" />
-                                                <TextBlock Text="荒野小屋" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_wobster_den" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_wobster_den.png" Width="64" Height="64" />
-                                                <TextBlock Text="龙虾的巢穴" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
                                     </WrapPanel>
@@ -8111,12 +8121,6 @@
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/N_coral_reef.png" Width="64" Height="64" />
                                                 <TextBlock Text="珊瑚礁" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
-                                            </StackPanel>
-                                        </Button>
-                                        <Button x:Name="button_N_mussel" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
-                                            <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_mussel.png" Width="64" Height="64" />
-                                                <TextBlock Text="青口贝" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_N_gunpowder_barrel" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
@@ -9291,6 +9295,12 @@
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/S_walking_cane.png" Width="48" Height="48" />
                                                 <TextBlock Text="步行手杖" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
+                                            </StackPanel>
+                                        </Button>
+										<Button x:Name="button_G_sleek_hat" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
+                                            <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
+                                                <Image Source="Resources/S_sleek_hat.png" Width="48" Height="48" />
+                                                <TextBlock Text="星芒头盔" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
                                             </StackPanel>
                                         </Button>
                                         <Button x:Name="button_G_rawling" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">

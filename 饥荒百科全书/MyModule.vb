@@ -106,9 +106,10 @@
     Public A_LootTrapOrBugNetP_Select_5 As String
 
     REM 自然群落全局变量
-    Public NB_AbundantArray(7) As String
-    Public NB_OccasionalArray(13) As String
-    Public NB_RareArray(6) As String
+    Public NB_AbundantArray(7) As String        '富含
+    Public NB_OccasionalArray(13) As String     '偶尔
+    Public NB_RareArray(6) As String            '稀有
+
     Public NP_ArrayIndex As Byte
     Public NP_PictureArray() As String
     Public NP_ResourcesArray(,) As String
