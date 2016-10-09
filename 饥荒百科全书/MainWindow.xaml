@@ -7,65 +7,13 @@
         mc:Ignorable="d"
         x:Class="MainWindow"
         Opacity="1.0" WindowStyle="None" Width="1120" Height="700" AllowsTransparency="True" Title="饥荒百科全书" MouseLeftButtonDown="move" SourceInitialized="mydelegate" Background="Transparent" Icon="/Resources/DST.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    
     <Window.Resources>
-        <ControlTemplate x:Key="MyScrollViewer" TargetType="{x:Type ScrollViewer}">
-            <Grid x:Name="Grid">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <ScrollContentPresenter x:Name="PART_ScrollContentPresenter" CanContentScroll="{TemplateBinding CanContentScroll}" CanHorizontallyScroll="False" CanVerticallyScroll="False" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Grid.Column="0" Margin="{TemplateBinding Padding}" Grid.Row="0"/>
-                <ScrollBar x:Name="PART_VerticalScrollBar" AutomationProperties.AutomationId="VerticalScrollBar" Cursor="Arrow" Grid.Column="1" Maximum="{TemplateBinding ScrollableHeight}" Minimum="0" Grid.Row="0" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Style="{DynamicResource MyScrollBarStyle}"/>
-            </Grid>
-        </ControlTemplate>
-        <SolidColorBrush x:Key="ScrollBar.MouseOver.Thumb" Color="#4F4F4F"/>
-        <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="#090909"/>
-        <SolidColorBrush x:Key="ScrollBar.Static.Thumb" Color="#767676"/>
-        <Style x:Key="ScrollBarThumbVertical" TargetType="{x:Type Thumb}">
-            <Setter Property="OverridesDefaultStyle" Value="true"/>
-            <Setter Property="IsTabStop" Value="false"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Thumb}">
-                        <Rectangle x:Name="rectangle" Fill="{DynamicResource ScrollBar.Static.Thumb}" Height="{TemplateBinding Height}" SnapsToDevicePixels="True" Width="5"/>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Fill" TargetName="rectangle" Value="{StaticResource ScrollBar.MouseOver.Thumb}"/>
-                            </Trigger>
-                            <Trigger Property="IsDragging" Value="true">
-                                <Setter Property="Fill" TargetName="rectangle" Value="{StaticResource ScrollBar.Pressed.Thumb}"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <Style x:Key="MyScrollBarStyle" TargetType="{x:Type ScrollBar}">
-            <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
-            <Setter Property="Stylus.IsFlicksEnabled" Value="false"/>
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-            <Setter Property="BorderThickness" Value="1,0"/>
-            <Setter Property="Width" Value="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}"/>
-            <Setter Property="MinWidth" Value="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type ScrollBar}">
-                        <Grid x:Name="Bg" SnapsToDevicePixels="true">
-                            <Grid.RowDefinitions>
-                                <RowDefinition MaxHeight="{DynamicResource {x:Static SystemParameters.VerticalScrollBarButtonHeightKey}}"/>
-                                <RowDefinition Height="0.00001*"/>
-                                <RowDefinition MaxHeight="{DynamicResource {x:Static SystemParameters.VerticalScrollBarButtonHeightKey}}"/>
-                            </Grid.RowDefinitions>
-                            <Track x:Name="PART_Track" IsDirectionReversed="true" IsEnabled="{TemplateBinding IsMouseOver}" Grid.Row="1">
-                                <Track.Thumb>
-                                    <Thumb Style="{StaticResource ScrollBarThumbVertical}"/>
-                                </Track.Thumb>
-                            </Track>
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
 
     <Canvas x:Name="WindowCanvas" Width="1080" Height="660" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Height" Margin="20,20,0,0">
@@ -9297,7 +9245,7 @@
                                                 <TextBlock Text="步行手杖" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
                                             </StackPanel>
                                         </Button>
-										<Button x:Name="button_G_sleek_hat" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
+                                        <Button x:Name="button_G_sleek_hat" Width="60" Background="{x:Null}" BorderBrush="{x:Null}" Height="80">
                                             <StackPanel Height="80" Width="60" Margin="-2,-2,0,0" >
                                                 <Image Source="Resources/S_sleek_hat.png" Width="48" Height="48" />
                                                 <TextBlock Text="星芒头盔" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" />
@@ -11397,7 +11345,7 @@
                                             <TextBlock x:Name="TextBlock_GP_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
-                                    <Button x:Name="button_GP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="19" Canvas.Top="529" Height="61" Visibility="Collapsed">
+                                    <Button x:Name="button_GP_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="29" Canvas.Top="10" Height="61" Visibility="Collapsed">
                                         <Button.Style>
                                             <Style TargetType="{x:Type Button}">
                                                 <Setter Property="Template">
@@ -11421,7 +11369,7 @@
                                             </Style>
                                         </Button.Style>
                                     </Button>
-                                    <Button x:Name="button_GP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="137" Canvas.Top="530" Height="61" Visibility="Collapsed">
+                                    <Button x:Name="button_GP_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="127" Canvas.Top="10" Height="61" Visibility="Collapsed">
                                         <Button.Style>
                                             <Style TargetType="{x:Type Button}">
                                                 <Setter Property="Template">
@@ -11575,7 +11523,7 @@
                                             <TextBlock x:Name="TextBlock_GC_Introduce" TextWrapping="Wrap" Width="176" Margin="0" Text="主要还是来源于烧毁的植物。" />
                                         </WrapPanel>
                                     </WrapPanel>
-                                    <Button x:Name="button_GC_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="19" Canvas.Top="529" Height="61" Visibility="Collapsed">
+                                    <Button x:Name="button_GC_Switch_Left" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="29" Canvas.Top="10" Height="61" Visibility="Collapsed">
                                         <Button.Style>
                                             <Style TargetType="{x:Type Button}">
                                                 <Setter Property="Template">
@@ -11599,7 +11547,7 @@
                                             </Style>
                                         </Button.Style>
                                     </Button>
-                                    <Button x:Name="button_GC_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="137" Canvas.Top="530" Height="61" Visibility="Collapsed">
+                                    <Button x:Name="button_GC_Switch_Right" Width="44" Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Left="127" Canvas.Top="10" Height="61" Visibility="Collapsed">
                                         <Button.Style>
                                             <Style TargetType="{x:Type Button}">
                                                 <Setter Property="Template">

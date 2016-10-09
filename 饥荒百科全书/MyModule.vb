@@ -1,5 +1,6 @@
 ﻿Module MyModule
 
+#Region "变量初始化"
     Public PanelAlpha As Single = 0.6
 
     REM 食物全局变量
@@ -148,7 +149,9 @@
     Public G_ComponentList() As String
     Public G_ComponentListIndex As SByte = 0
     Public G_ComponentListIndexMax As SByte = -128
+#End Region 
 
+#Region "访问注册表"
     REM ------------------注册表读写函数------------------
     Public Sub Reg_Write(ValueName As String, Value As Integer)
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\JiHuangBaiKe", ValueName, Value)
@@ -177,7 +180,9 @@
         End If
         Return GetValue
     End Function
+#End Region 
 
+#Region "短名"
     REM ------------------资源短名------------------
     Public Function Res_Short_Name(R_URL As String)
         R_URL = "Resources/" & R_URL & ".png"
@@ -196,5 +201,22 @@
         Picture.EndInit()
         Return Picture
     End Function
+#End Region 
+    
+#Region "返回TextBlock高度"
+    REM ------根据字符串长度返回TextBlock高度------
+    Public Function ReturnTextBlockHeight(Text As String, colLen As Integer)
+        Dim TextBlockHeight As Double
+        TextBlockHeight = ((Len(Text) - 1) \ colLen + 1) * 15.24
+        Return TextBlockHeight
+    End Function
+
+    REM 函数重载
+    Public Function ReturnTextBlockHeight(canvas As Canvas, textBlock As TextBlock)
+        canvas.UpdateLayout()
+        Return textBlock.ActualHeight
+    End Function
+
+#End Region
 
 End Module

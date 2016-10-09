@@ -34,22 +34,6 @@ Public Class MainWindow
     End Sub
 #End Region
 
-#Region "返回TextBlock高度"
-    REM ------根据字符串长度返回TextBlock高度------
-    Public Function ReturnTextBlockHeight(Text As String, colLen As Integer)
-        Dim TextBlockHeight As Double
-        TextBlockHeight = ((Len(Text) - 1) \ colLen + 1) * 15.24
-        Return TextBlockHeight
-    End Function
-
-    REM 函数重载
-    Public Function ReturnTextBlockHeight(canvas As Canvas, textBlock As TextBlock)
-        canvas.UpdateLayout()
-        Return textBlock.ActualHeight
-    End Function
-
-#End Region
-
 #Region "窗口加载"
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         REM 版本号
