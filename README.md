@@ -7,6 +7,8 @@
 
 开发环境：Visual Studio 2015、Windows 10
 
+Visual Studio 2015 插件：XAMLRegions
+
 开发语言：VB.NET
 
 测试环境：Windows 10
