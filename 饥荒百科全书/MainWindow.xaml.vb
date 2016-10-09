@@ -6592,7 +6592,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_S_thulecite_club_click(sender As Object, e As RoutedEventArgs) Handles button_S_thulecite_club.Click
-        S_Show("铥矿棒", "Thulecite Club", "S_thulecite_club", "ROG", 1, 0, 1, "G_living_log", "×3", "S_thulecite", "×4", "G_nightmare_fuel", "×4", 6, "", "攻击和耐久都非常优异，攻击有概率产出魂触手助攻，但是铥矿石比较宝贵，要合理使用。")
+        S_Show("铥矿棒", "Thulecite Club", "S_thulecite_club", "ROG", 1, 0, 1, "G_living_log", "×3", "S_thulecite", "×4", "G_nightmare_fuel", "×4", 6, "", "攻击和耐久都非常优异，攻击有概率产出魂触手助攻，并且拥有10%的加速效果，但是铥矿石比较宝贵，要合理使用。")
     End Sub
 
     Private Sub button_S_houndius_shootius_click(sender As Object, e As RoutedEventArgs) Handles button_S_houndius_shootius.Click
@@ -14443,7 +14443,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_G_walking_cane_click(sender As Object, e As RoutedEventArgs) Handles button_G_walking_cane.Click
-        G_Show_E("步行手杖", "Walking Cane", "S_walking_cane", "NoDLC", 1, 0, 1, "", "", "", "", "用海象牙制作的加速工具。", {17, 0, 0, 0, 0, 1000, 0, 0, 0, 0, 0})
+        G_Show_E("步行手杖", "Walking Cane", "S_walking_cane", "NoDLC", 1, 0, 1, "", "", "", "", "用海象牙制作的加速工具，增加25%的移动速度。", {17, 0, 0, 0, 0, 1000, 0, 0, 0, 0, 0})
     End Sub
 
     Private Sub button_G_sleek_hat_click(sender As Object, e As RoutedEventArgs) Handles button_G_sleek_hat.Click
@@ -14667,7 +14667,7 @@ Public Class MainWindow
     End Sub
 
     Private Sub button_G_thulecite_club_click(sender As Object, e As RoutedEventArgs) Handles button_G_thulecite_club.Click
-        G_Show_E("铥矿棒", "Thulecite Club", "S_thulecite_club", "NoDLC", 1, 0, 1, "", "", "", "", "攻击力不错的武器。", {59.5, 0, 0, 0, 150, 0, 0, 0, 0, 0, 0})
+        G_Show_E("铥矿棒", "Thulecite Club", "S_thulecite_club", "NoDLC", 1, 0, 1, "", "", "", "", "攻击力不错的武器，增加10%的移动速度。", {59.5, 0, 0, 0, 150, 0, 0, 0, 0, 0, 0})
     End Sub
 
     Private Sub button_G_obsidian_spear_click(sender As Object, e As RoutedEventArgs) Handles button_G_obsidian_spear.Click

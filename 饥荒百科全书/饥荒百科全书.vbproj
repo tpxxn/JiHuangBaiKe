@@ -94,7 +94,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="MyModule.vb" />
+    <Compile Include="Module.vb" />
     <Compile Include="Splash.xaml.vb">
       <DependentUpon>Splash.xaml</DependentUpon>
     </Compile>
@@ -3441,9 +3441,6 @@
     <Resource Include="Resources\Texture_wooden_flooring.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\N_spider_den.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\N_spilagmite.png" />
   </ItemGroup>
   <ItemGroup>
@@ -4167,6 +4164,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\N_merm_hut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\N_spider_den_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\N_spider_den_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\N_spider_den_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

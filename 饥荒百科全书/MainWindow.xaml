@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         x:Class="MainWindow"
         Opacity="1.0" WindowStyle="None" Width="1120" Height="700" AllowsTransparency="True" Title="饥荒百科全书" MouseLeftButtonDown="move" SourceInitialized="mydelegate" Background="Transparent" Icon="/Resources/DST.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
-    
+
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -4840,21 +4840,21 @@
                         <Grid x:Name="Grid_Animal" Margin="0,50,0,0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="280"/>
-                                <ColumnDefinition Width="6500"/>
+                                <ColumnDefinition Width="650"/>
                             </Grid.ColumnDefinitions>
-                            <WrapPanel x:Name="WrapPanel_A_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,6099,0">
+                            <WrapPanel x:Name="WrapPanel_A_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,249,0">
                                 <CheckBox x:Name="checkBox_A_DLC_ROG" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="SL_button_A_DLC_ROG" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" BorderThickness="1" Margin="-1,-2,0,0">
                                     <Image x:Name="SL_image_A_DLC_ROG" Source="Resources/DLC_ROG.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_A_DLCCheck_SW" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,6016,0">
+                            <WrapPanel x:Name="WrapPanel_A_DLCCheck_SW" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,166,0">
                                 <CheckBox x:Name="checkBox_A_DLC_SW" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="SL_button_A_DLC_SW" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="-1,-2,0,0">
                                     <Image x:Name="SL_image_A_DLC_SW" Source="Resources/DLC_SW.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_A_DLCCheck_DST" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,5933,0">
+                            <WrapPanel x:Name="WrapPanel_A_DLCCheck_DST" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,83,0">
                                 <CheckBox x:Name="checkBox_A_DLC_DST" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="SL_button_A_DLC_DST" Width="36" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="0,-2,0,0">
                                     <Image x:Name="SL_image_A_DLC_DST" Source="Resources/DLC_DST.png" Height="35" Width="32"/>
@@ -6908,51 +6908,32 @@
                                 </Setter>
                             </Style>
                         </TabItem.Style>
-                        <Grid x:Name="Grid_Natural" Margin="0,50,0,0" Width="930">
+                        <Grid x:Name="Grid_Natural" Margin="0,50,0,0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="200"/>
                                 <ColumnDefinition Width="730"/>
                             </Grid.ColumnDefinitions>
-                            <!--
-                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,249,0">
+
+                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,249,0" Visibility="Collapsed">
                                 <CheckBox x:Name="checkBox_N_DLC_ROG" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="NL_button_N_DLC_ROG" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="-1,-2,0,0">
                                     <Image x:Name="NL_image_N_DLC_ROG" Source="Resources/DLC_ROG.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_SW" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,166,0">
+                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_SW" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,166,0" Visibility="Collapsed">
                                 <CheckBox x:Name="checkBox_N_DLC_SW" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="NL_button_N_DLC_SW" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="-1,-2,0,0">
                                     <Image x:Name="NL_image_N_DLC_SW" Source="Resources/DLC_SW.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_DST" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,83,0">
+                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_DST" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,83,0" Visibility="Collapsed">
                                 <CheckBox x:Name="checkBox_N_DLC_DST" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="NL_button_N_DLC_DST" Width="36" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="0,-2,0,0">
                                     <Image x:Name="NL_image_N_DLC_DST" Source="Resources/DLC_DST.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            -->
-                            <!--
-                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,249,0">
-                                <CheckBox x:Name="checkBox_N_DLC_ROG" VerticalAlignment="Center" IsChecked="True"/>
-                                <Button x:Name="NL_button_N_DLC_ROG" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="-1,-2,0,0">
-                                    <Image x:Name="NL_image_N_DLC_ROG" Source="Resources/DLC_ROG.png" Height="35" Width="32"/>
-                                </Button>
-                            </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_SW" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,166,0">
-                                <CheckBox x:Name="checkBox_N_DLC_SW" VerticalAlignment="Center" IsChecked="True"/>
-                                <Button x:Name="NL_button_N_DLC_SW" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="-1,-2,0,0">
-                                    <Image x:Name="NL_image_N_DLC_SW" Source="Resources/DLC_SW.png" Height="35" Width="32"/>
-                                </Button>
-                            </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_N_DLCCheck_DST" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,83,0">
-                                <CheckBox x:Name="checkBox_N_DLC_DST" VerticalAlignment="Center" IsChecked="True"/>
-                                <Button x:Name="NL_button_N_DLC_DST" Width="36" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="0,-2,0,0">
-                                    <Image x:Name="NL_image_N_DLC_DST" Source="Resources/DLC_DST.png" Height="35" Width="32"/>
-                                </Button>
-                            </WrapPanel>
-                            -->
+
+
                             <ScrollViewer x:Name="ScrollViewer_NaturalRight" Grid.Column="1" Width="700" Height="554" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,52,0,-2" Template="{DynamicResource MyScrollViewer}">
                                 <WrapPanel x:Name="WrapPanel_Natural" Height="3265" Width="680" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#99FFFFFF">
                                     <TextBlock TextWrapping="Wrap" Text="生物群落" FontSize="20" Width="680"/>
@@ -7531,7 +7512,7 @@
                                         </Button>
                                         <Button x:Name="button_N_spider_den" Width="80" Background="{x:Null}" BorderBrush="{x:Null}" Height="110">
                                             <StackPanel Height="110" Width="80" Margin="-2,-2,0,0" >
-                                                <Image Source="Resources/N_spider_den.png" Width="64" Height="64" />
+                                                <Image Source="Resources/N_spider_den_1.png" Width="64" Height="64" />
                                                 <TextBlock Text="蜘蛛巢" FontSize="15" HorizontalAlignment="Center" Margin="0,10,0,0" />
                                             </StackPanel>
                                         </Button>
@@ -8617,26 +8598,30 @@
                                 </Setter>
                             </Style>
                         </TabItem.Style>
-                        <Grid x:Name="Grid_Goods" Margin="0,50,0,0" Width="930">
-                            <WrapPanel x:Name="WrapPanel_G_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,249,0">
+                        <Grid x:Name="Grid_Goods" Margin="0,50,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="730"/>
+                            </Grid.ColumnDefinitions>
+                            <WrapPanel x:Name="WrapPanel_G_DLCCheck_ROG" HorizontalAlignment="Right" VerticalAlignment="Top"  Grid.Column="1" Margin="0,10,249,0">
                                 <CheckBox x:Name="checkBox_G_DLC_ROG" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="GL_button_G_DLC_ROG" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="-1,-2,0,0">
                                     <Image x:Name="GL_image_G_DLC_ROG" Source="Resources/DLC_ROG.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_G_DLCCheck_SW" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,166,0">
+                            <WrapPanel x:Name="WrapPanel_G_DLCCheck_SW" HorizontalAlignment="Right" VerticalAlignment="Top"  Grid.Column="1" Margin="0,10,166,0">
                                 <CheckBox x:Name="checkBox_G_DLC_SW" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="GL_button_G_DLC_SW" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="-1,-2,0,0">
                                     <Image x:Name="GL_image_G_DLC_SW" Source="Resources/DLC_SW.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            <WrapPanel x:Name="WrapPanel_G_DLCCheck_DST" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,83,0">
+                            <WrapPanel x:Name="WrapPanel_G_DLCCheck_DST" HorizontalAlignment="Right" VerticalAlignment="Top"  Grid.Column="1" Margin="0,10,83,0">
                                 <CheckBox x:Name="checkBox_G_DLC_DST" VerticalAlignment="Center" IsChecked="True"/>
                                 <Button x:Name="GL_button_G_DLC_DST" Width="36" Background="{x:Null}" BorderBrush="{x:Null}" Height="39" Margin="0,-2,0,0">
                                     <Image x:Name="GL_image_G_DLC_DST" Source="Resources/DLC_DST.png" Height="35" Width="32"/>
                                 </Button>
                             </WrapPanel>
-                            <ScrollViewer x:Name="ScrollViewer_GoodsRight" Width="700" Height="554" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="224,52,0,-2" Template="{DynamicResource MyScrollViewer}">
+                            <ScrollViewer x:Name="ScrollViewer_GoodsRight" Grid.Column="1" Width="700" Height="554" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,52,0,-2" Template="{DynamicResource MyScrollViewer}">
                                 <WrapPanel x:Name="WrapPanel_Goods" Height="3270" Width="680" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#99FFFFFF">
                                     <TextBlock TextWrapping="Wrap" Text="材料" FontSize="20" Canvas.Left="10" Canvas.Top="10" Width="680"/>
                                     <WrapPanel x:Name="WrapPanel_G_material" Height="650" Width="680" Margin="0,10,0,0">

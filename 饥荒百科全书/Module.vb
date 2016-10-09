@@ -1,4 +1,4 @@
-﻿Module MyModule
+﻿Module MainModule
 
 #Region "变量初始化"
     Public PanelAlpha As Single = 0.6
